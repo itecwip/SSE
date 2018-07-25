@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent"
+	android:paddingTop="8.0dp"
+	android:paddingBottom="8.0dp"
+	android:paddingRight="5.0dp"
+	android:paddingLeft="10.0dp"
+	android:clickable="true"
+	android:focusable="true"
+    android:background="@drawable/d_clickable"> 
+
+		<LinearLayout
+		    android:id="@+id/S_itemTexts"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_toLeftOf="@+id/S_itemImage"
+		    android:orientation="horizontal" >
+</LinearLayout>
+
+		<LinearLayout
+		    android:id="@+id/S_itemImage"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"
+		    android:orientation="horizontal" >
+</LinearLayout>
+</RelativeLayout>

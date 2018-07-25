@@ -1,0 +1,99 @@
+﻿<!doctype html>
+<html lang="cs">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Secret Space Encryptor for Android - Nastavení</title>
+	<script language="JavaScript" src="/android_asset/js/help.js"></script>
+	<script language="JavaScript" src="/android_asset/js/imageMapResizer.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+	<link rel="shortcut icon" href="/android_asset/img/sse_favicon.png"></link>
+</head>
+<body>
+	<h1 class="smallPad" id="anchor_main">
+		Nastavení
+		<div class="smallFont">(klikněte na písmeno, nebo scrolujte dolů pro další témata)</div>
+	</h1>
+	
+	<div class="screenShot">
+		<img src="../../img/settings_SSB.png" usemap="#ScreenShotMap" id="img_ID" style="width:400px; max-width: 100%;"/>
+	</div>
+	
+	<map name="ScreenShotMap" id="map_ID">
+		<area shape='rect' coords='598,292,707,405' href="#anchor_a"/>
+		<area shape='rect' coords='351,764,460,877' href="#anchor_b"/>
+	</map>
+	
+	<div><i>pozn.: vzhledem k výsledné velikosti aplikačního balíčku jsou screenshoty ve výchozím jazyce (tedy v angličtině)</i></div><br/>
+	<div class="anchor" id="anchor_a">
+		<h2>A - Dostupná Nastavení</h2>
+		<ul>
+			<li><b class="font120">Správce Hesel</b>
+				<ul>
+					<li><b>Algoritmus: </b>šifrovací algoritmus pro Správce Hesel</li>
+					<li><b>Velikost písma v seznamu hesel: </b>nastavení velikosti písma pro název hesla a heslo samotné</li>
+					<!--<li><b>Zobrazit spodní menu: </b>zobrazit menu dalších možností ve spodu obrazovky složek již při otevření správce</li>-->
+					<li><b>Adresář automatické zálohy: </b>exportovat aktuální data správce hesel do souboru PWV_AutoBackup.pwv (při každé změně)</li>
+					<li><b>Uzamknout obrazovku: </b>uzamknout obrazovku aplikace "Správce Hesel" v případě jejího převedení na pozadí ("minimalizace" aplikace)</li>
+				</ul>
+			</li>
+			<hr/>
+			<li><b class="font120">Šifrování Textu</b>
+				<ul>
+					<li><b>Algoritmus: </b>šifrovací algoritmus pro Šifrování Textu</li>
+					<li><b>Velikost písma: </b>velikost písma v polích šifrovaný/nešifrovaný text</li>
+					<li><b>Skrýt informační zprávy: </b>skrýt méně důležité pop-up zprávy (jako: <i>zpráva byla vložena...</i>)</li>
+					<li><b>Finální kódování: </b>Kódování výstupního textu. Možnosti: Base64 (PTE default), Base32 (RFC 4648), Pouze čísla</li>
+					<li><b>Vlož mezeru: </b>vlož mezeru do výstupního textu (po kažtém N-tém znaku)</li>
+					<li><b>Uzamknout obrazovku: </b>uzamknout obrazovku aplikace "Šifrování Textu" v případě jejího převedení na pozadí ("minimalizace" aplikace)</li>
+				</ul>
+			</li>
+			<hr/>
+			<li><b class="font120">Šifrování Souborů</b>
+				<ul>
+					<li><b>Algoritmus: </b>šifrovací algoritmus pro Šifrování Souborů</li>
+					<li><b>Vícenásobné označení: (jen PRO verze)</b> - Aktivace/Deaktivace vícenásobného označení souborů (dávkového zpracování)</li>
+					<li><b>Adresář pro šifrované soubory: </b><br/>
+						<b>Stejné jako zdroj:</b> Výstupní soubory jsou umístěny do stejného adresáře v jakém jsou soubory zdrojové.<br/>
+						<b>Předdefinovaná složka:</b> Použijte tlačítko "Domovské adresáře" (levý horní roh - <img style="vertical-align: middle;" width="37px" height="20px" src="../../img/favbutton.png"/> ) v Šifrování souborů (<b>Nastavit současný adr. jako ... → Adresář pro šifrované soubory</b>).<br/>
+						<b>Dotázat se:</b> Aplikace se dotáže na umístění před zahájením šifrovacího procesu.<br/>
+					</li>
+					<li><b>Adresář pro dešifrované soubory:</b> Stejný postup jako "Adresář pro šifrované soubory" viz výše.</li>
+					<li><b>Smazat zdroje po zašifrování: </b>zdrojové soubory budou po zašifrování automaticky smazány (s Wipe)</li>
+					<li><b>Zmazat .enc soubor po dešifrování: </b>zdrojový soubor (zašifrovaný .enc soubor) bude automaticky zmazán po dešifrování</li>
+					<li><b>Zobrazit varování před nahrazením .enc souboru:</b> Zobrazí "pokračovat/zrušit" dialog před zahájením šifrovacího procesu.</li>
+					<li><b>Velikost náhledů: </b>Nastavení velikosti náhledů (miniatur) obrázků + případná deaktivace náhledů.</li>
+					<li><b>Uzamknout obrazovku: </b>uzamknout obrazovku aplikace "Šifrování Souborů" v případě jejího převedení na pozadí ("minimalizace" aplikace) - musí být zadáno "Session" heslo</li>
+				</ul>
+			</li>
+			<hr/>
+			<li id="anchor_spec_a"><b class="font120">Společné</b>
+				<ul>
+					<li><b>Import/Export adresář: </b>import/export adresář aplikace</li>
+					<li><b>Autentizace při spuštění aplikace: </b>Vyžadovat heslo při spuštění aplikace. Heslo slouží pouze pro tento účel (nemá nic společného s funkcemi šifrování).</li>
+					<li><b>Zakázat screenshoty: </b>Zabránit pořizování screenshotů obrazovky aplikace (dostupné v Android 4.4+). (vyžaduje restart)</li>
+					<li><b>Dotázat se při opuštění: </b>potvrdit návrat do hlavního menu (při použití tlačítka Zpět - na "přímá" tlačítka Hlavní Menu se nevztahuje)</li>
+					<li><b>Povolit Unicode Hesla: </b>Jen ASCII 32-126 znaky jsou povoleny ve výchozím nastavení. (=> kompatibilita - téměř všechny zařízení/systémy mají odpovídající klávesnici). Pokud povolíte "Unicode Hesla", můžete používat všechny znaky, které vám dovolí vaše klávesnice.</li>
+					<li><b>Zakázat Native Code Algoritmy: </b>použít pouze verzi kódů, která je nezávislá na platformě (použít pouze v případě problémů s N.C. na vašem zařízení)</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_b">
+		<h2>B - Uložit změny</h2>
+		<ul>
+			<li>uloží změny nastavení a vrátí se do Hlavního menu aplikace</li>
+		</ul>
+	</div>
+	
+	<div id="toMainMenu" class="gradient"><a href="/sse/~cs">&lt;&lt; Zpět do hlavního menu aplikace</a></div>
+	<div id="reserveSpace"></div>
+	<script language="JavaScript">
+		formatPage();
+		imageMapResize(document.getElementById("map_ID"));
+	</script>
+	
+</body>
+</html>

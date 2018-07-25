@@ -1,0 +1,171 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Android 版 Secret Space Encryptor  - 文字加密</title>
+	<script language="JavaScript" src="/android_asset/js/help.js"></script>
+	<script language="JavaScript" src="/android_asset/js/imageMapResizer.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+	<link rel="icon" type="image/png" href="/sse/img/sse_icon.png"/>
+</head>
+<body>
+	<h1 class="smallPad" id="anchor_main">
+		文字加密
+		<div class="smallFont">（輕觸某個字母或向下捲動，即可檢視更多主題）</div>
+	</h1>
+	
+	<div class="screenShot">
+		<img src="../../img/messageencryptor_SSB.png" usemap="#ScreenShotMap" style="width:400px; max-width: 100%;"/>
+	</div>
+	
+	<map name="ScreenShotMap" id="map_ID">
+		<area shape='rect' coords='205,154,314,267' href="#anchor_a"/>
+		<area shape='rect' coords='205,488,314,600' href="#anchor_b"/>
+		<area shape='rect' coords='585,193,694,306' href="#anchor_c"/>
+		<area shape='rect' coords='585,345,694,458' href="#anchor_d"/>
+		<area shape='rect' coords='585,559,694,672' href="#anchor_e"/>
+		<area shape='rect' coords='526,762,635,875' href="#anchor_f"/>
+		<area shape='rect' coords='205,762,314,875' href="#anchor_g"/>
+		<area shape='rect' coords='340,154,449,267' href="#anchor_h"/>
+		<area shape='rect' coords='342,762,451,875' href="#anchor_i"/>
+	</map>
+	
+	<div class="anchor" id="other_menu">
+		<h2>其他主題</h2>
+		<ul class="menu">
+			<li><a href="#quick_start" class="large">快速入門</a></li>
+			<li><a href="#session_password" class="large">工作階段密碼</a></li>
+			<li><a href="#forgotten_password" class="large">忘記密碼</a></li>
+			<li><a href="#pasteboard" class="large">系統剪貼簿</a></li>
+			<hr/>
+			<span class="outer25"><span class="iconOnline"/></span>&nbsp;<a href="https://pteo.paranoiaworks.mobi/cn" class="large">在線（基於網絡）文本加密工具</a>
+		</ul>	
+	</div>
+	
+	<div class="anchor" id="quick_start">
+		<h2>快速入門</h2>
+		<ul>
+		<b>加密</b>
+		<ul>
+			<li>為當前工作階段設定一個<a href="javascript:scrollToElement('session_password')">密碼</a>。</li>
+			<li>在「<a href="javascript:scrollToElement('anchor_c')">未加密文字</a>」區域（<a href="javascript:scrollToElement('anchor_main')">上圖</a>中的 <B>C</B> 區）寫入或貼入文字。</li>
+			<li>按下「加密」按鈕。</li>
+			<li>「<a href="javascript:scrollToElement('anchor_e')">加密文字</a>」區域（<a href="javascript:scrollToElement('anchor_main')">上圖</a>中的 <B>E</B> 區）中將出現經加密的文字。</li>
+			<li>將加密文字複製到<a href="javascript:scrollToElement('pasteboard')">系統剪貼簿</a>中，可隨意使用，也可以將其儲存到應用程式資料庫中供以後使用（<b>F </b>按鈕）。</li>
+		</ul>
+		<br/> <b>解密</b>
+		<ul>
+			<li>為當前工作階段設定一個<a href="javascript:scrollToElement('session_password')">密碼</a>。</li>
+			<li>在「<a href="javascript:scrollToElement('anchor_e')">加密文字</a>」區域（<a href="javascript:scrollToElement('anchor_main')">上圖</a>中的 <B>E</B> 區）寫入或貼入加密文字。</li>
+			<li>按下「解密」按鈕。（<i>註：<b>解密演算法</b>被自動偵測）</i></li>
+			<li>「<a href="javascript:scrollToElement('anchor_c')">未加密文字</a>」區域（<a href="javascript:scrollToElement('anchor_main')">上圖</a>中的 <B>C</B> 區）中將出現解密後的文字。</li>
+			<li>將已解密的文字複製到<a href="javascript:scrollToElement('pasteboard')">系統剪貼簿</a>中，可隨意使用。</li>
+		</ul>
+		</ul>	
+	</div>
+	
+	<div class="anchor" id="session_password">
+		<h2>工作階段密碼</h2>
+		<ul>
+			<li>「文字加密」應用程式與「密碼保險箱」應用程式的工作方式不同。「文字加密」應用程式未設定進入應用程式的密碼，但設定了當前加密/解密工作階段的密碼。您可以為任何目的（註釋、電子郵件、社交網路、與 A、B、C...等人的通訊溝通記錄等....）設定不限數量的密碼。</li>
+		</ul>
+	</div>
+	
+	 <div class="anchor" id="forgotten_password">
+		<h2>忘記密碼</h2>
+		<ul>
+			<li>如沒有正確的密碼，不能透過任何「後門」來解密任何文字。如果您忘記了密碼，「抱歉。」 ;-)</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="pasteboard">
+		<h2>系統剪貼簿</h2>
+		<ul>
+			<li>某些其他系統使用的名稱是「<b>貼上板</b>」。</li>
+			<li>如需瞭解更多資訊，建議使用谷歌搜尋尋找此類資訊：<i><b>android using copy paste</b>（<b>android 使用 複製 貼上）</b></i> </li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_a">
+		<h2>A - 複製/貼上文字</h2>
+		<ul>
+			<li><B><I>複製：</I></B>將「<a href="javascript:scrollToElement('anchor_c')">未加密文字</a>」區內的文字<B>複製</B>到系統剪貼簿上。</li>
+			<li><B><I><I>貼上</I>：</I></B>將系統剪貼簿上的文字<B>貼上</B>到「<a href="javascript:scrollToElement('anchor_c')">未加密文字</a>」區中。</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_b">
+		<h2>B - 加密/解密文字</h2>
+		<ul>
+			<li><B><I><I>加密</I>：</I>加密</B>「<a href="javascript:scrollToElement('anchor_c')">未加密文字</a>」區內的文字，並將結果置於「<a href="javascript:scrollToElement('anchor_e')">加密文字</a>」區中。</li>
+			<li><B><I><I>解密</I>：</I>解密</B>「<a href="javascript:scrollToElement('anchor_e')">加密文字</a>」區內的文字，並將結果置於「<a href="javascript:scrollToElement('anchor_c')">未加密文字</a>」區中。</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_c">
+		<h2>C - 未加密文字區</h2>
+		<ul>
+			<li>在此放置需要加密的文字。</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_d">
+		<h2>D - 設定密碼按鈕</h2>
+		<ul>
+			<li>設定<a href="javascript:scrollToElement('session_password')">工作階段密碼</a>.</li>
+			<li>此按鈕的色彩取決於當前密碼的強度（紅色=弱，黃色=不錯，綠色=強）。</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_e">
+		<h2>E - 加密文字區</h2>
+		<ul>
+			<li>在此放置需要解密的文字。</li>
+			<li>當其中一個文本欄位（未加密/加密）改變時，此區域的文本為紅色，所以其它欄位的資料不對應於實際值。</li>
+			<li>當加密文本未被使用（複製、儲存）時，此區域的文字為藍色。</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_f">
+		<h2>F - 更多選項按鈕</h2>
+		<ul>
+			<li><b>從資料庫或檔案中載入文字：</b>從應用程式資料庫（或一個檔案）中載入以前儲存的資料。</li>
+			<li><b>將文字儲存到資料庫或檔案：</b>將「<a href="javascript:scrollToElement('anchor_e')">加密文字</a>」區內的資料儲存到應用程式資料庫（或一個檔案）中，以便以後使用。</li>
+			<li><b>刪除資料庫中的文字或刪除檔案：</b>刪除應用程式資料庫中的選定資料（或刪除一個檔案）。</li>
+			<li>+ <b>隱寫術 (steganography)</b>（在圖像中隱藏文字 - JPG, F5 算法）。</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_g">
+		<h2>G - 複製/貼上加密文字</h2>
+		<ul>
+			<li><B><I>複製：</I></B>將「<a href="javascript:scrollToElement('anchor_e')">加密文字</a>」區內的文字<B>複製</B>到系統剪貼簿上。</li>
+			<li><B><I><I>貼上</I>：</I></B>將系統剪貼簿上的文字<B>貼上</B>到「<a href="javascript:scrollToElement('anchor_e')">加密文字</a>」區中。</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_h">
+		<h2>H - 抹除文字區</h2>
+		<ul>
+			<li>清空文字區。</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_i">
+		<h2>I - 傳送文字到應用程式</h2>
+		<ul>
+			<li>將加密文字傳送到選定的應用。</li>
+		</ul>
+	</div>
+	
+	<div id="toMainMenu" class="gradient"><a href="/android_asset/~sse/zh-Hant">&lt;&lt; 返回 SSE 主功能表</a></div>
+	<div id="reserveSpace"></div>
+	<script language="JavaScript">
+		formatPage();
+		imageMapResize(document.getElementById("map_ID"));
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+</head>
+<body>
+
+<b>Background</b><br/>
+<span style="font-size: 80%;">In Android 4.4 (KitKat), Google suddenly cut off all third-party (non-preinstalled) applications from the permission to write to external/removable storage. Thanks to this decision, a lot of applications have been crippled and some have become entirely useless. Pressure on Google has led to a compromise solution that has been integrated into Android 5. Applications can regain the write permission to external storage using a new API together with SAF (Storage Access Framework).</span><br/>
+<br/>
+<b>First Start</b><br/>
+<span style="font-size: 80%;">
+	<ul>
+		<li>Directory picker will appear. You need to select the directory (or volume) with which you want to work.</li>
+		<li>Tap the <b>More button</b> (top-right corner) and choose <b>Show SD card</b>.</li>
+		<li>Tap the <b>Menu button</b> (top-left corner) and choose the storage you want to use.</li>
+		<li>Tap <b>SELECT</b> (bottom).</li>
+	</ul>
+</span>
+<br/>
+<b>Limitations</b><br/>
+<span style="font-size: 80%;">
+	There are some limitations in the SAF mode you should know. 
+	<ul>
+		<li>Home/Custom directories cannot be set in SAF; however, the last-picked SAF URI is automatically saved: <b>Home Button → Go to Last Picked SAF Dir</b>.</li>
+		<li>The wipe feature does not work. If option “Wipe after Encryption” is checked in the app settings, file(s) will be deleted only.</li>
+		<li>SAF mode provides lower performance than the standard direct file access mode (especially with dirs that contain a lot of files/subdirs).</li>
+		<li>The “Open File” function will work only if the destination application is able to decode the SAF URI.</li>
+	</ul>
+</span>
+
+</body>
+ 

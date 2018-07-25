@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Alert Directory -->
+	<string name="alerts_dir">file:///android_asset/~sse/ru/alerts/</string>
+    
+	<!-- Help Links -->
+	<string name="helpLink_Main">file:///android_asset/~sse/ru/help/index_internal.html</string>
+	<string name="helpLink_Main_Pro">file:///android_asset/~sse/ru/help/index_internal_pro.html</string>
+	<string name="helpLink_PasswordVault">file:///android_asset/~sse/ru/help/passwordvault_help.html</string>
+	<string name="helpLink_MessageEncryptor">file:///android_asset/~sse/ru/help/messageenc_help.html</string>
+	<string name="helpLink_FileEncryptor">file:///android_asset/~sse/ru/help/fileenc_help.html</string>
+	<string name="helpLink_OtherUtils">file:///android_asset/~sse/ru/help/otherutils_help.html</string>
+	<string name="helpLink_Settings">file:///android_asset/~sse/ru/help/settings_help.html</string>
+
+</resources>

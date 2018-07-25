@@ -1,0 +1,146 @@
+﻿*************************************************
+* Graphical Elements Licenses                   *
+* note: MBPW means (Modified by Paranoia Works) *
+*************************************************
+
+
+Paranoia Works (www.paranoiaworks.com) - MIT license
+----------------------------------------------------
+crypt_button_left.png
+crypt_button_right.png
+icon.png
+strength_metter_0.png
+strength_metter_1.png
+strength_metter_2.png
+strength_metter_3.png
+strength_metter_4.png
+strength_metter_5.png
+waitkol_001.png
+waitkol_002.png
+waitkol_003.png
+waitkol_004.png
+waitkol_005.png
+waitkol_006.png
+
+
+Oxygen Team (www.oxygen-icons.org) - GNU LGPL license
+-----------------------------------------------------
+add_new.png
+ask_icon_large.png (MBPW)
+ask_icon_red_large.png (MBPW)
+backto_icon.png
+close_window.png (MBPW)
+close_window_light.png (MBPW)
+compress_act.png
+compress_inact.png (MBPW)
+exit_icon.png
+exit_icon_large.png
+forwardto_icon.png
+info_icon.png
+info_icon_large.png
+info_icon_red.png (MBPW)
+info_icon_red_large.png (MBPW)
+item_back.png (MBPW)
+password_item_blue.png (MBPW)
+password_item_green.png (MBPW)
+password_item_lightblue.png (MBPW)
+password_item_orange.png (MBPW)
+password_item_purple.png (MBPW)
+password_item_red.png (MBPW)
+password_item_yellow.png (MBPW)
+password_generator_icon_cropped.png
+settings_icon.png (MBPW)
+folder_spec_data.png
+folder_spec_database.png
+folder_spec_internet.png
+folder_spec_personal.png
+folder_spec_education.png
+folder_spec_games.png
+folder_spec_garbage.png
+folder_spec_hardware.png
+folder_spec_job.png
+folder_spec_mail.png
+folder_spec_notes.png
+folder_spec_wifi.png
+forder_spec_ideas.png
+forder_spec_phone.png
+forder_spec_computer.png
+forder_spec_files.png
+forder_spec_texts.png
+main_text.png
+main_utils.png
+main_file.png
+to_clipboard.png (MBPW)
+expand_up.png (MBPW)
+expand_up_light.png (MBPW)
+clean_icon.png
+home_icon_cropped.png
+key_act.png
+key_inact.png
+cancel_icon.png (MBPW) xhdpi+
+cancel_icon_large.png (MBPW) xhdpi+
+ok_icon.png (MBPW) xhdpi+
+ok_icon_large.png (MBPW) xhdpi+
+sdcard.png
+diskdir.png
+database.png
+go_fullscreen_cropped.png
+disable_fullscreen_cropped.png (MBPW)
+to_file_encryptor.png (MBPW)
+to_text_encryptor.png (MBPW)
+steganogram_delete.png (MBPW)
+steganogram_export.png (MBPW)
+steganogram_import.png (MBPW)
+
+
+VisualPharm (www.visualpharm.com) - CC BY-ND 3.0
+------------------------------------------------
+folder_spec_cards.png
+folder_spec_finance.png
+folder_spec_freetime.png
+folder_spec_elephant.png
+main_safe.png
+ask_icon_large.png (MBPW) xhdpi+
+ask_icon_red_large.png (MBPW) xhdpi+
+
+
+Mart (Marco Martin) (www.notmart.org) - GNU LGPL license
+--------------------------------------------------------
+file.png
+file_enc.png
+file_enc_readonly.png (MBPW)
+file_*.png (MBPW)
+
+
+Umut Pulat - GNU LGPL license
+-----------------------------
+directory.png
+directory_readonly.png (MBPW)
+
+
+Silvestre Herrera - GNU GPL license
+-----------------------------------
+folder_blue.png (MBPW)
+folder_green.png (MBPW)
+folder_lightblue.png (MBPW)
+folder_orange.png (MBPW)
+folder_purple.png (MBPW)
+folder_red.png (MBPW)
+folder_yellow.png (MBPW)
+new_folder_icon.png (MBPW)
+
+
+Everaldo Coelho (www.everaldo.com) - GNU GPL license
+----------------------------------------------------
+cancel_icon.png hdpi
+cancel_icon_large.png (MBPW) hdpi
+ok_icon.png (MBPW) hdpi
+ok_icon_large.png (MBPW) hdpi
+
+
+YOOtheme (www.yootheme.com) - GPL
+---------------------------------
+folder_spec_social.png (MBPW) 
+
+
+NOTE: graphical elements, that are not present in the list above are modified "standard Android icons" or Public Domain

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>	
+    <string name="nnfp_new_folder">Nový adresář</string>
+    <string name="nnfp_create_folder_error">Adresář nelze vytvořit</string>
+    <string name="nnfp_name">Název</string>
+    <string name="nnfp_go_back">Zpět</string>
+    <string name="nnfp_select_something_first">Vyberte prosím něco</string>
+
+    <plurals
+        name="nnfp_select_dir">
+        <item quantity="one">Vyberte adresář</item>
+        <item quantity="other">Vyberte adresáře</item>
+    </plurals>
+
+    <plurals
+        name="nnfp_select_file">
+        <item quantity="one">Vyberte soubor</item>
+        <item quantity="other">Vyberte soubory</item>
+    </plurals>
+
+    <plurals
+        name="nnfp_select_dir_or_file">
+        <item quantity="one">Vyberte soubor nebo adresář</item>
+        <item quantity="other">Vyberte soubory a adresáře</item>
+    </plurals>
+</resources>

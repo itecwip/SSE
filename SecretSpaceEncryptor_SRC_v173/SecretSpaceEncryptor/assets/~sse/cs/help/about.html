@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html lang="cs">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Secret Space Encryptor pro Android (Správce Hesel, Šifrování Textů a Šifrování Souborů)</title>
+	<script language="JavaScript" src="/android_asset/js/help.js"></script>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+	<link rel="shortcut icon" href="/sse/img/sse_icon.png"></link>
+</head>
+<body>
+	<h1 class="smallPad">
+		<div class="normalLabelCenter">Secret Space Encryptor</div>
+		<div id="versionText" class="textToCenter smallerFont">(verze 1.7.3)</div>
+	</h1>
+	<ul>
+		<li><b>Správce Hesel, Šifrování Textů a Šifrování Souborů - vše integrováno v jedné aplikaci.</b></li>
+		<li>Všechna Vaše hesla na jednom bezpečném místě - ve Správci Hesel.</li>
+		<li>Vaše texty a zprávy chráněné před nechtěnými "čtenáři" - s použitím Šifrování Textu.</li>
+		<li>Vaše soukromé soubory bezpečně zašifrovány - s použitím Šifrování Souborů.</li>
+		<li>Dostupné algoritmy v této verzi aplikace SSE: AES (Rijndael) 256bit, RC6 256bit, Serpent 256bit, Blowfish 448bit, Twofish 256bit, GOST 256bit + <b>Threefish 1024bit a SHACAL-2 512bit (u S.S.E. Pro Verze).</b></li>
+		<li>Šifrovací Engine založen na Bouncy Castle Crypto Library (Java) a Crypto++ (C++).</li>
+		<li>Multi-platformové <b>(Windows, Linux, Mac OS X, ...)</b> verze <b>Šifrování souborů</b> a <b>Šifrování textu</b> jsou k dispozici na domovské stránce aplikace (sekce <a href="http://www.paranoiaworks.mobi/download/~cs/downloads.html">Ke stažení</a>).</li>
+		<li><b>Paranoia Text Encryption pro iOS (iPhone/iPad/iPod)</b> je k dispozici na <a href="http://www.paranoiaworks.mobi/pte" target="_blank">P.T.E. for iOS</a>.
+		<li><b>Webová verze Šifrování textu</b> (client-side AES) je dostupná na: <a href="https://pteo.paranoiaworks.mobi">https://pteo.paranoiaworks.mobi</a></li>
+		<li>Tento software je Open Source.</li>
+		<li><b>(EN) Detailed format specifications:</b> <a href="../../en/help/pwv_specifications.html">Password Vault</a>, <a href="../../en/help/te_specifications.html">Text Encryptor</a>, <a href="../../en/help/fe_specifications.html">File Encryptor</a></li>
+	</ul>
+	<br/>
+	<b>&#169; Paranoia Works 2017</b><br/>
+	<br/>
+	<a href="../../en/help/license.html">Licence</a><br/>
+	<br/>
+	<div>Pokud narazíte na nějaký problém, nebo máte nějaký návrh na zlepšení aplikace, neváhejte nás kontaktovat na:</div>
+	<div id='signHere'></div>
+	<div>Domovská stránka aplikace (aktuální nápověda, zdrojové kódy, ...): <br/>
+	<a href="http://www.paranoiaworks.mobi/sse/_cs">http://www.paranoiaworks.mobi/sse/_cs</a></div>
+	
+	<br/>
+	<div id="toMainMenu" class="gradient"><a href="/sse/~cs">&lt;&lt; Zpět do hlavního menu aplikace</a></div>
+	<div id="reserveSpace"><br/><a href="../../en/help/license.html">Licence</a></div>
+	<script language="JavaScript">formatPage();</script>
+	<script language="JavaScript">
+		try {if(getValue("SHOW_UPGRADE_FEATURES") == 0) document.getElementById("rate").style.display = 'none';}catch(err){} 
+		try {
+			if(getValue("CN_VERSION") == 1)
+			{
+				document.getElementById("noAds").style.display = 'none';
+				var str = document.getElementById("versionText").innerHTML;
+				document.getElementById("versionText").innerHTML = str.replace(")", " CN)");
+			}
+		}catch(err){}
+	</script>
+	<script language="JavaScript">setSignElement('signHere', 'paranoiaworks.mobile', 'gmail.com');</script>
+</body>
+</html>

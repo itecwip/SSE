@@ -1,0 +1,81 @@
+﻿<!doctype html>
+<html lang="zh-Hans">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Android 版 Secret Space Encryptor</title>
+	<script language="JavaScript" src="/android_asset/js/help.js"></script>
+	<script language="JavaScript" src="/android_asset/js/imageMapResizer.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+	<link rel="shortcut icon" href="/android_asset/img/sse_favicon.png"></link>
+</head>
+<body>
+	<h1>
+		<table class="layout">
+			<tr>
+				<td>
+					<span class="outerB"><span class="mainIconSSE"/></span>
+				</td>
+				<td width="100%" class="textToCenter">
+					<div style="font-size: 130%;">S.S.E. 帮助</div>
+				</td>
+				<td>
+					<span class="outerB"><span class="mainIconBlank"/></span>
+				</td>
+			</tr>
+		</table>
+	</h1>
+	<div class="textToCenter" width="100%">
+		<table class="links" align="center">
+			<tr onclick="gotoURL('passwordvault_help.html')" onmouseover="showHand(this)">
+				<td><span class="outer"><span class="mainIconSafe"/></span></td>
+				<td><div>密码保险箱</div></td>
+				<td><span class="outer"><span class="mainIconBlank"/></span></td>
+			</tr>
+			<tr><th colspan="3"><hr/></th></tr>
+			<tr onclick="gotoURL('messageenc_help.html')" onmouseover="showHand(this)">
+				<td><span class="outer"><span class="mainIconText"/></span></td>
+				<td><div>文本加密</div></td>
+				<td><span class="outer"><span class="mainIconBlank"/></span></td>
+			</tr>
+			<tr><th colspan="3"><hr/></th></tr>
+			<tr onclick="gotoURL('fileenc_help.html')" onmouseover="showHand(this)">
+				<td><span class="outer"><span class="mainIconFile"/></span></td>
+				<td><div>文件加密</div></td>
+				<td><span class="outer"><span class="mainIconBlank"/></span></td>
+			</tr>
+			<tr><th colspan="3"><hr/></th></tr>
+			<tr onclick="gotoURL('otherutils_help.html')" onmouseover="showHand(this)">
+				<td><span class="outer"><span class="mainIconUtils"/></span></td>
+				<td><div>工具箱</div></td>
+				<td><span class="outer"><span class="mainIconBlank"/></span></td>
+			</tr>
+			<tr><th colspan="3"><hr/></th></tr>
+			<tr onclick="gotoURL('settings_help.html')" onmouseover="showHand(this)">
+				<td><span class="outer"><span class="mainIconSettings"/></span></td>
+				<td><div>设置</div></td>
+				<td><span class="outer"><span class="mainIconBlank"/></span></td>
+			</tr>
+			<tr id="upgradeLine"><th colspan="3"><hr/></th></tr>
+			<tr id="upgrade" onclick="sendMessageAndClose('upgrade')" onmouseover="showHand(this)">
+				<td><span class="outer"><span class="mainIconSSEProSmall"/></span></td>
+				<td><div>升级到 Pro 版</div></td>
+				<td><span class="outer"><span class="mainIconBlank"/></span></td>
+			</tr>
+			<tr><th colspan="3"><hr/></th></tr>
+			<tr onclick="gotoURL('about.html')" onmouseover="showHand(this)">
+				<td><span class="outer"><span class="mainIconBlank"/></span></td>
+				<td><div>关于</div></td>
+				<td><span class="outer"><span class="mainIconBlank"/></span></td>
+			</tr>
+			<tr><th colspan="3"><br/></th></tr>
+		</table>
+	</div>
+	
+	<div id="toMainMenu" class="gradient"><a href="/sse">&lt;&lt; 返回 SSE 主菜单</a></div>
+	<div id="reserveSpace"></div>
+	<script language="JavaScript">formatPage(); if(getValue("SHOW_UPGRADE_FEATURES") == 0) {document.getElementById("upgrade").style.display = 'none';document.getElementById("upgradeLine").style.display = 'none';}</script>
+	
+</body>
+</html>

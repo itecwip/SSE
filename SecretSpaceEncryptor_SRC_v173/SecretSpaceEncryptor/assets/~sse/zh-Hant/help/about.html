@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Android 版 Secret Space Encryptor - 密碼管理員、檔案加密、文字（訊息、註釋……）加密</title>
+	<script language="JavaScript" src="/android_asset/js/help.js"></script>
+	<script language="JavaScript" src="/android_asset/js/imageMapResizer.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+	<link rel="icon" type="image/png" href="/sse/img/sse_icon.png"/>
+</head>
+<body>
+	<h1 class="smallPad">
+		<div class="normalLabelCenter smallerFont">Secret Space Encryptor</div>
+		<div id="versionText" class="textToCenter smallerFont">（1.7.3）</div>
+	</h1>
+	<ul>
+		<li><b>密碼管理員、文字加密和檔案加密等功能已整合為全方位解決方案。</b></li>
+		<li><b>密碼保險箱：</b>將所有密碼、PIN 和註釋資訊置於同一個安全位置用一個主密碼統一存儲和管理。提供匯入/匯出功能（使用經壓縮、完全加密的 .pwv 檔案格式，或未加密、可編輯的 .xml 檔案格式）。</li>
+		<li><b>文字加密：</b>為您的訊息、註釋和其他類型文字提供安全防護，避免意外被他人讀取。使用內部資料庫，或僅在本應用程式和您喜愛的其他應用程式之間相互複製/貼上。為當前加密/解密工作階段設定一個工作階段密碼，您也可以為任何目的（註釋、電子郵件、社交網路、與 A、B、C ……等人的通訊溝通記錄等）設定不限數量的密碼。</li>
+		<li><b>檔案加密：</b>安全加密您的私人/保密檔案或整個資料夾。</li>
+		<li><b>工具箱：</b>密碼生成器、清空剪貼簿、演算法效能評測……</li>
+		<li>所有加密都採用強大加密演算法進行：目前支援 AES（Rijndael）256 位元、RC6 256 位元、Serpent 256 位元、Blowfish 448 位元、Twofish 256 位元、GOST 256 位元 + <B>Threefish 1024 位元、SHACAL-2 512 位元（用於 S.S.E. Pro 版）</B>等加密演算法。</li>
+		<li id="noAds">安裝執行本應用程式只需很小權限。沒有廣告。</li>
+		<li>加密引擎基於 Bouncy Castle 加密庫（Java）和 Crypto++（C++）。</li>
+		<li>應用程式首頁（見<a href="http://www.paranoiaworks.mobi/download" >下載</a>一節）上提供了<b>文字加密（<b>Text Encryptor</b>）</b>和<b>檔案加密（<b>File Encryptor</b>）</b>的跨平台桌面版本<B>（</B><b>Windows、Linux、Mac OS X……）</b>。</li>
+		<li>在 <a href="http://www.paranoiaworks.mobi/pte" target="_blank">P.T.E. for iOS</a> 提供了 <b>Paranoia Text Encryption for iOS（支援 iPhone/iPad/iPod）</b>。
+		<li><b>在線（基於網絡）文本加密工具：</b><a href="https://pteo.paranoiaworks.mobi/cn">https://pteo.paranoiaworks.mobi/cn</a></li>
+		<li>本軟體為開源軟體。</li>
+		<li><b>(EN) Detailed format specifications:</b> <a href="../../en/help/pwv_specifications.html">Password Vault</a>, <a href="../../en/help/te_specifications.html">Text Encryptor</a>, <a href="../../en/help/fe_specifications.html">File Encryptor</a></li>
+	</ul>
+	<br/> <b>© Paranoia Works 2017</b><br/> <br/> <a href="javascript:gotoAndRoll('../../en/help/license.html', 0)">閱讀授權資訊</a><br/> <br/>
+	<div>如果您有任何改進意見或技術問題報告要回饋給我們，我們將不勝感激！歡迎透過電子郵件與我們聯絡：</div>
+	<div id='signHere'></div>
+	<div>應用程式首頁（提供最新說明、原始碼等）：<br/><a href="http://www.paranoiaworks.mobi/sse/zh-Hant">http://www.paranoiaworks.mobi/sse/zh-Hant</a></div>
+	
+	<br/>
+
+	<div class="delimiter">&nbsp;</div>
+	<div class="gradient">&nbsp;</div>
+	<div id="toMainMenu" class="gradient"><a href="/android_asset/~sse/zh-Hant">&lt;&lt; 返回 SSE 主功能表</a></div>
+	<div id="reserveSpace"><br/>
+		<a href="../../en/help/license.html">Licence</a><br/>
+	</div>
+	<script language="JavaScript">formatPage();</script>
+	<script language="JavaScript">
+		try {if(getValue("SHOW_UPGRADE_FEATURES") == 0) document.getElementById("rate").style.display = 'none';}catch(err){} 
+		try {
+			if(getValue("CN_VERSION") == 1)
+			{
+				document.getElementById("noAds").style.display = 'none';
+				var str = document.getElementById("versionText").innerHTML;
+				document.getElementById("versionText").innerHTML = str.replace(")", " CN)");
+			}
+		}catch(err){}
+	</script>
+	<script language="JavaScript">setSignElement('signHere', 'paranoiaworks.mobile', 'gmail.com');</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	>
+	<TextView
+		android:id="@+id/S_name"
+		android:text="@string/common_name_text"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		style="@style/TextViewTitleSmall"
+		android:ellipsize="end"
+		android:singleLine="true"
+		/>
+	<TextView
+		android:id="@+id/S_comment"
+		android:text="@string/common_comment_text"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone"
+		style="@style/Default_TextAppearance_Small_WhiteFile"
+		/>
+	<TextView
+		android:id="@+id/S_value"
+		android:text="current value"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		style="@style/Default_TextAppearance_Small_White"
+		android:ellipsize="end"
+		android:singleLine="true"
+		/>
+</LinearLayout>

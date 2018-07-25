@@ -1,0 +1,95 @@
+﻿<!doctype html>
+<html lang="zh-Hans">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Android 版 Secret Space Encryptor  - 设置</title>
+	<script language="JavaScript" src="/android_asset/js/help.js"></script>
+	<script language="JavaScript" src="/android_asset/js/imageMapResizer.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+	<link rel="icon" type="image/png" href="/sse/img/sse_icon.png"/>
+</head>
+<body>
+	<h1 class="smallPad" id="anchor_main">
+		设置
+		<div class="smallFont">（轻触某个字母或向下滚动，即可查看更多主题）</div>
+	</h1>
+	
+	<div class="screenShot">
+		<img src="../../img/zh-Hans/settings_SSB.png" usemap="#ScreenShotMap" id="img_ID" style="width:400px; max-width: 100%;"/>
+	</div>
+	
+	<map name="ScreenShotMap" id="map_ID">
+		<area shape='rect' coords='598,292,707,405' href="#anchor_a"/>
+		<area shape='rect' coords='351,764,460,877' href="#anchor_b"/>
+	</map>
+	
+	<div class="anchor" id="anchor_a">
+		<h2>A - 可用的设置</h2>
+		<ul>
+			<li><b class="font120">密码保险箱</b>
+				<ul>
+					<li><b>算法：</b>密码保险箱的加密算法。</li>
+					<li><b>密码列表字体大小：</b>密码（项）列表区中文字的大小（密码名和密码的字体大小）。</li>
+					<!--<li><b>显示底部菜单栏：</b>默认在&ldquo;文件夹屏幕&rdquo;的底部显示选项菜单。</li>-->
+					<li><b>自动备份文件夹：</b>如果启用，每次密码保险箱内容发生变化，密码保险箱数据会导出（PWV_AutoBackup.pwv文件）到所选的文件夹。它可以备份到云端存储设备。</li>
+					<li><b>锁定屏幕：</b>当应用进入后台运行（当应用被&ldquo;最小化&rdquo;）时锁定密码保险箱的屏幕。</li>
+				</ul>
+			</li>
+			<hr/>
+			<li><b class="font120">文本加密</b>
+				<ul>
+					<li><b>算法：</b>文本加密的加密算法。</li>
+					<li><b>字号：</b>未加密/加密文本区中文本的大小。</li>
+					<li><b>隐藏信息消息：</b>隐藏不重要的弹出消息（例如： <i>消息已被复制到...</i>）。</li>
+					<li><b>最终编码：</b>输出文本编码。可用的编码： Base64 (PTE default), Base32 (RFC 4648), 仅数字(0-9)</li>
+					<li><b>添加空格：</b>在第N个字符后 - 以对文本编码。</li>
+					<li><b>锁定屏幕：</b>当应用进入后台运行（当应用被&ldquo;最小化&rdquo;）。</li>
+				</ul>
+			</li>
+			<hr/>
+			<li><b class="font120">文件加密</b>
+				<ul>
+					<li><b>算法：</b>文件加密的加密算法。</li>
+					<li><b>选中多个文件：（只限 Pro 版）</b> - 启用/停用文件多选模式（批处理）。</li>
+					<li><b>加密后擦除源文件：</b>加密后自动删除（并擦除）源文件。</li>
+					<li><b>解密后删除.enc文件：</b>解密后自动删除源文件（加密的.enc文件）。</li>
+					<li><b>加密文件目标路径：</b><br/><b>与源文件相同：</b>将输出文件存放于输入文件所在的同一目录。<br/><b>预定义位置：</b>使用文件加密应用中的&ldquo;自定义目录&rdquo;按钮（位于左上角 - <img style="vertical-align: middle;" width="37px" height="20px" src="../../img/favbutton.png"/>）来设置位置（<b>设置当前目录为... → 加密文件目录</b>）。<br/><b>询问：</b>应用每次加密之前都会向您询问输出文件的位置。<br/>
+					</li>
+					<li><b>解密文件目标路径：</b>设置方式与上述&ldquo;加密文件目标路径&rdquo;相同。</li>
+					<li><b>显示替换 .enc 文件的警告：</b>当指定 .enc 文件名已存在时显示&ldquo;继续/取消&rdquo;对话框。</li>
+					<li><b>缩略图大小：</b>设置图像缩略图大小或禁用缩略图。</li>
+					<li><b>锁定屏幕：</b>当应用进入后台运行（当应用被&ldquo;最小化&rdquo;）时锁定文件加密应用的屏幕；必须设置会话密码。</li>
+				</ul>
+			</li>
+			<hr/>
+			<li id="anchor_spec_a"><b class="font120">通用设置</b>
+				<ul>
+					<li><b>导入/导出路径：</b>应用的导入/导出目录。</li>
+					<li><b>应用程序启动保护：</b>在每次启动应用程序时要求身份验证。此密码仅用于启动身份验证。它不影响加密功能或相关的锁屏功能。</li>
+					<li><b>防止截图：</b>安全处理窗口内容，防止它出现在截图中。此选项可在Android 4.4或更高版本中使用。需要重新启动应用程序。</li>
+					<li><b>允许使用 Unicode 密码：</b>默认情况下只有值为 32-126 的 ASCII 字符允许作为密码（=&gt; 兼容性，几乎每个设备/系统都有足够打出所有这些字符的键盘）。如果&ldquo;允许使用 Unicode 密码&rdquo;，您键盘上可以打出的每个字符都可以作为密码。</li>
+					<li><b>禁用本机代码算法：</b>仅使用平台独立版本的代码（仅当在本设备上使用本机代码会引发错误的情况下使用）。</li>
+					<li><b>显示子应用退出对话框：</b>确认返回主菜单（只在点按&ldquo;返回&rdquo;按钮时出现此提示，直接按&ldquo;主菜单&rdquo;按钮将无此提示，直接返回）。</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_b">
+		<h2>B - 保存更改</h2>
+		<ul>
+			<li>保存更改并返回主菜单。</li>
+		</ul>
+	</div>
+		
+	<div id="toMainMenu" class="gradient"><a href="/sse/zh-Hans">&lt;&lt; 返回 SSE 主菜单</a></div>
+	<div id="reserveSpace"></div>
+	<script language="JavaScript">
+		formatPage();
+		imageMapResize(document.getElementById("map_ID"));
+	</script>
+	
+</body>
+</html>

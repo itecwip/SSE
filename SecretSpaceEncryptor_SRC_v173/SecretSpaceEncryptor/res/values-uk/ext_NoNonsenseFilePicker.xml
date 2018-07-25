@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>	
+    <string name="nnfp_new_folder">Нова тека</string>
+    <string name="nnfp_create_folder_error">Не вдалося створити теку</string>
+    <string name="nnfp_name">Назва</string>
+    <string name="nnfp_go_back">Назад</string>
+    <string name="nnfp_select_something_first">Будь ласка, спочатку щось виберіть</string>
+    
+    <plurals
+        name="nnfp_select_dir">
+        <item quantity="one">Вибрати каталог</item>
+        <item quantity="other">Вибрати каталоги</item>
+    </plurals>
+
+    <plurals
+        name="nnfp_select_file">
+        <item quantity="one">Вибрати файл</item>
+        <item quantity="other">Вибрати файли</item>
+    </plurals>
+
+    <plurals
+        name="nnfp_select_dir_or_file">
+        <item quantity="one">Вибрати каталог або файл</item>
+        <item quantity="other">Вибрати каталоги або файли</item>
+    </plurals>
+</resources>

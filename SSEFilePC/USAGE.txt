@@ -1,0 +1,39 @@
+USAGE GUI:
+==========
+
+- Java 6 or later is needed (http://java.com/download)
+
+- Just double click on ssefencgui.jar file
+or
+- use command: start javaw -jar ssefencgui.jar
+
+Mac OS X note (can be helpful on first run):
+Right Click on ssefencgui.jar > Open With > Jar Launcher ... > Open
+
+
+------------------------------------------------------------------------
+
+USAGE CMD:
+==========
+
+java -jar ssefenc.jar [options] <infile|infolder> <password> [algorithm]
+
+Examples:
+=========
+
+java -jar ssefenc.jar c:\Docs\Secret\myfile.doc mypassword aes
+(FILE encryption - Windows absolute file path example)
+
+java -jar ssefenc.jar c:\Docs\Secret mypassword aes
+(FOLDER encryption - Windows absolute file path example)
+
+java -jar ssefenc.jar c:\Docs\Secret\myfile.doc.enc mypassword
+(decryption - Windows absolute file path example)
+
+java -jar ssefenc.jar -a
+("ask mode" - application will ask you for the necessary parameters)
+
+Algorithms: aes, rc6, serpent, twofish, gost, blowfish
+
+Note: use Unix file separators in Unix based systems
+

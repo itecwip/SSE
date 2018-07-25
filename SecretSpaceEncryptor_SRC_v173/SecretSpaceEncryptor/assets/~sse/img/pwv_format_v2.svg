@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="740" height="390" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <g>
+  <title>S.S.E. Password Vault - Format Specifications</title>
+  <line fill="none" stroke="#969696" stroke-miterlimit="10" stroke-dasharray="5,3" x1="24" y1="230" x2="201" y2="319" id="svg_1"/>
+  <line fill="none" stroke="#969696" stroke-miterlimit="10" stroke-dasharray="5,3" x1="400.5" y1="230" x2="400.5" y2="318" id="svg_2"/>
+  <line fill="none" stroke="#969696" stroke-miterlimit="10" stroke-dasharray="5,3" x1="162" y1="65" x2="201" y2="184" id="svg_3"/>
+  <line fill="none" stroke="#969696" stroke-miterlimit="10" stroke-dasharray="5,3" x1="439" y1="65" x2="401" y2="184" id="svg_4"/>
+  <rect x="201" y="184" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="200" height="46" id="svg_5"/>
+  <rect x="162" y="19" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="277" height="46" id="svg_6"/>
+  <polyline points="300.5,152.047 325.342,126.772 312.424,126.772 312.424,96.033 288.576,96.033 288.576,126.772 275.658,126.772   300.5,152.047 " id="svg_7"/>
+  <text transform="matrix(1, 0, 0, 1, 235.415, 86.8208)" font-family="Sans-serif" font-size="18" id="svg_8" fill="black">compression (A*)</text>
+  <text transform="matrix(1, 0, 0, 1, 245.494, 170.899)" font-family="Sans-serif" font-size="18" id="svg_9" fill="black">encryption (B*)</text>
+  <text transform="matrix(1, 0, 0, 1, 225.235, 214.888)" font-family="Sans-serif" font-size="21" id="svg_10" fill="black" font-weight="bold">Encrypted Data</text>
+  <rect x="24" y="184" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="105" height="46" id="svg_11"/>
+  <rect x="129" y="184" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="72" height="46" id="svg_12"/>
+  <text transform="matrix(1, 0, 0, 1.05653, 30, 211.594)" font-family="Sans-serif" font-size="14" id="svg_13" fill="black" font-weight="bold" y="-6.58849" x="0">Algorithm (*D)</text>
+  <text transform="matrix(1, 0, 0, 1, 133.568, 211.888)" font-family="Sans-serif" font-size="16" id="svg_14" fill="black" font-weight="bold">Salt (*C)</text>
+  <text transform="matrix(1, 0, 0, 1, 421.667, 214.888)" font-family="Sans-serif" font-size="24" id="svg_15" fill="black" font-weight="bold" y="0" x="-5.625">= (Database Format)</text>
+  <rect x="201" y="319" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="200" height="46" id="svg_16"/>
+  <polyline points="300.5,302.713 325.342,277.438 312.425,277.438 312.425,246.699 288.576,246.699 288.576,277.438 275.659,277.438   300.5,302.713 " id="svg_17"/>
+  <text transform="matrix(1, 0, 0, 1, 245.494, 348.555)" font-family="Sans-serif" font-size="21" id="svg_18" fill="black" font-weight="bold">DB Format</text>
+  <rect x="129" y="319" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="72" height="46" id="svg_19"/>
+  <rect x="24" y="319" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="105" height="46" id="svg_20"/>
+  <rect x="401" y="319" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="83" height="46" id="svg_24"/>
+  <text transform="matrix(1, 0, 0, 1, 406.902, 346.221)" font-family="Sans-serif" font-size="16" id="svg_25" fill="black" font-weight="bold">Hash (*E)</text>
+  <text transform="matrix(1, 0, 0, 1, 501.667, 350.554)" font-family="Sans-serif" font-size="24" id="svg_26" fill="black" font-weight="bold" y="0" x="-2.25">= (.pwv File Format)</text>
+  <text transform="matrix(1, 0, 0, 1, 189, 48.8877)" font-family="Sans-serif" font-size="21" id="svg_27" fill="black" font-weight="bold" y="0.5625" x="-1.6875">Serialized Vault Object</text>
+  <text transform="matrix(1, 0, 0, 1, 136.5, 348.555)" font-family="Sans-serif" font-size="16" id="svg_28" fill="black" font-weight="bold" y="-9.035156" x="0">Version</text>
+  <text transform="matrix(1, 0, 0, 1, 30, 211.888)" font-family="Sans-serif" font-size="14" fill="black" font-weight="bold" id="svg_30" y="125.268299" x="-0.60779">Header String</text>
+  <text transform="matrix(1, 0, 0, 1, 30, 211.888)" font-family="Sans-serif" font-size="14" fill="black" font-weight="bold" id="svg_31" y="145.23701" x="22.981998">"PWV"</text>
+  <text id="svg_21" transform="matrix(1, 0, 0, 1, 136.5, 348.555)" font-family="Sans-serif" font-size="16" fill="black" font-weight="bold" y="9.062195" x="18.033203">1B</text>
+  <text id="svg_22" transform="matrix(1, 0, 0, 1, 136.5, 348.555)" font-family="Sans-serif" font-size="16" fill="black" font-weight="bold" y="-125.410461" x="-71.188087">1B</text>
+ </g>
+
+</svg>

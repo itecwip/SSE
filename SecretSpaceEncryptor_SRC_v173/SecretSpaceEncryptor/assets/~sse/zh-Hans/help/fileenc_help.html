@@ -1,0 +1,240 @@
+﻿<!doctype html>
+<html lang="zh-Hans">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Android 版 Secret Space Encryptor  - 文件加密</title>
+	<script language="JavaScript" src="/android_asset/js/help.js"></script>
+	<script language="JavaScript" src="/android_asset/js/imageMapResizer.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+	<link rel="icon" type="image/png" href="/sse/img/sse_icon.png"/>
+</head>
+<body>
+	<h1 class="smallPad" id="anchor_main">
+		文件加密
+		<div class="smallFont">（轻触某个字母或向下滚动，即可查看更多主题）</div>
+	</h1>
+	
+	<div class="screenShot">
+		<img src="../../img/zh-Hans/fileencryptor_SSB.png" usemap="#ScreenShotMap" id="img_ID" style="width:400px; max-width: 100%;"/>
+	</div>
+	
+	<map name="ScreenShotMap" id="map_ID">
+		<area shape='rect' coords='224,13,333,126' href="#anchor_a"/>
+		<area shape='rect' coords='586,29,695,142' href="#anchor_b"/>
+		<area shape='rect' coords='586,214,695,327' href="#anchor_c"/>
+		<area shape='rect' coords='586,475,695,588' href="#anchor_d"/>
+		<area shape='rect' coords='441,820,550,933' href="#anchor_e"/>
+		<area shape='rect' coords='186,820,299,933' href="#anchor_f"/>
+		<area shape='rect' coords='52,820,165,933' href="#anchor_g"/>
+		<area shape='rect' coords='304,622,413,735' href="#anchor_h"/>	
+		<area shape='rect' coords='163,622,272,735' href="#anchor_i"/>	
+	</map>
+	
+	<div class="anchor" id="other_menu">
+		<h2>其他主题</h2>
+		<ul class="menu">
+			<li><a href="#quick_start" class="large">快速入门</a></li>
+			<li><a href="#anchor_multiSelect" class="large">批处理</a></li>
+			<li><a href="#anchor_more" class="large">其他...</a></li>
+			<li><a href="#anchor_saf" class="large">SAF 模式（Android 5+）</a></li>
+			<li><a href="#anchor_faq" class="large">常见问题解答</a></li>
+		</ul>	
+	</div>
+	
+	<div class="anchor" id="quick_start">
+		<h2>快速入门</h2>
+		<b>加密</b>
+		<ul>
+			<li>选择一个文件或文件夹（轻触文件或长按文件夹）。</li>
+			<li>点按右下角的&ldquo;加密&rdquo;按钮。</li>
+			<li>设置一个密码。</li>
+			<li>将创建一个新的 .enc 文件。</li>
+			（注意：您可以在加密后删除/擦除原始文件，删除也可以自动完成：<i>设置：文件加密 → 加密后擦除源文件</i>）
+		</ul>
+		<br/> <b>解密</b>
+		<ul>
+			<li>选择一个加密文件（轻触文件）。</li>
+			<li>点按右下角的&ldquo;解密&rdquo;按钮。</li>
+			<li>输入密码。</li>
+			<li>文件或文件夹将被解密。</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_a">
+		<h2>A - 可用的驱动器</h2>
+		<ul>
+			<li>指向当前设备上的可用卷+用户自定义的主目录/默认目录的快捷方式。</li>
+			<li>自定义目录 - <img style="vertical-align: middle;" width="37px" height="20px" src="../../img/favbutton.png"/><br/>
+				<ul>
+					<li>
+						可以在此设置加密/解密文件输出目录（如已在&ldquo;<b>设置: 文件加密 → 加密/解密文件目标路径</b>&rdquo;中启用）<br/><br/> <img src="../../img/zh-Hans/fileencryptor_customdirs.png" style="width:260px; max-width: 100%;"/><br/>
+					</li>
+				</ul>
+			</li>
+			<li><a href="javascript:scrollToElement('anchor_saf')">SAF 按钮</a>（Android 5+）</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_b">
+		<h2>B - 当前卷参数</h2>
+		<ul>
+			<li>可用空间/卷大小</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_c">
+		<h2>C - 选中的文件/文件夹</h2>
+		<ul>
+			<li>长按可以选中<b><i>文件夹</i></b></li>
+			<li>短按可以选中<b><i>文件</i></b></li>
+			<li><b>选中的文件或文件夹可以：</b>
+				<ul>
+					<li>使用<a href="javascript:scrollToElement('anchor_e')">&ldquo;加密/解密&rdquo;按钮（见下文 E 部分）</a><i><b>加密或解密</b></i>（根据选中文件的状态）；</li>
+					<li>使用您设备上的&ldquo;菜单按钮&rdquo;<i><b>重命名、打开、删除或<a href="javascript:scrollToElement('anchor_more')">擦除</a>；</b></i></li>
+					<li><i><b>注意：</b></i>长按一个<b>文件</b>与对选中的文件/文件夹执行&ldquo;菜单&rdquo;按钮操作的作用相同。</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_d">
+		<h2>D - 加密的文件</h2>
+		<ul>
+			<li>已加密文件的特征：.<i><b>enc</b></i> 扩展名、紫色背景和&ldquo;锁定&rdquo;图标。</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_e">
+		<h2>E - 加密/解密按钮</h2>
+		<ul>
+			<li>加密或解密（根据所选项目状态）文件或文件夹。</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_f">
+		<h2>F - 压缩&ldquo;开/关&rdquo;</h2>
+		<ul>
+			<li>启用/停用数据压缩。</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_g">
+		<h2>G - 转到主菜单</h2>
+		<ul>
+			<li>直接转至应用的<i><b>主菜单 </b></i></li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_h">
+		<h2>H - 更多按钮</h2>
+		<ul>
+			<li>选中的文件/文件夹可以被<i><b>重命名、删除、<a href="javascript:scrollToElement('anchor_more')">擦除</a>或打开（文件）。 </b></i></li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_i">
+		<h2>I - 设置会话密码</h2>
+		<ul>
+			<li>设置会话（&ldquo;主&rdquo;）密码。</li>
+			<li>未设置进入应用的密码，但设置了当前加密/解密会话的密码。您也可以为任何目的设置不限数量的密码。</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_multiSelect">
+		<h2>选中多个文件</h2>
+		<ul>
+			<li>选中多个文件（批处理）<b>（Pro 版功能） </b></li>
+			<li>可以在应用设置中启用/停用：设置 <b>→ 文件加密：选中多个文件</b></li>
+		</ul>
+		<br/> <img src="../../img/zh-Hans/fileencryptor_multiselect.png" style="width:325px; max-width: 100%;"/>
+	</div>
+	
+	<div class="anchor" id="anchor_more">
+		<h2>其他...</h2>
+		<ul>
+
+			<li>可以按后退按钮中断加密/解密过程。</li>
+			<li><b>擦除：</b><br/>
+				<ul>
+					<li>数据先经物理覆盖再被删除（删除不可撤销）。</li>
+					<li><b>注意：</b>受现代系统和硬件/驱动程序级别本身的高速缓存、再分配机制以及损耗均衡的影响，报告的文件系统状态（报告给应用程序）和实际/物理内存状态之间会出现不均衡。有时，某些设备（取决于系统/闪存驱动器）的擦除功能可能无法100％工作。没有办法完全确定，因为此应用程序只能使用物理介质的虚像。</li>
+				</ul>
+			</li>
+			<li>
+				<b>图标</b><br/>
+				<div class="delimiter">&nbsp;</div>
+				<table class="color">
+					<tr>
+						<td><img width="35px" height="31px" src="../../img/icons/directory.png"/></td>
+						<td>文件夹</td>
+					</tr>
+					<tr>
+						<td><img width="35px" height="31px" src="../../img/icons/directory_readonly.png"/></td>
+						<td>只读文件夹</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/file.png"/></td>
+						<td>文件</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/file_readonly.png"/></td>
+						<td>只读文件</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/file_enc.png"/></td>
+						<td>加密的文件</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/file_enc_readonly.png"/></td>
+						<td>只读加密文件</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/back_file.png"/></td>
+						<td>返回父文件夹</td>
+					</tr>
+				</table>
+				<div class="delimiter">&nbsp;</div>
+			</li>
+			<li><b>密码不正确</b>
+				<ul>
+					<li>如没有正确的密码，则无法解密任何文件。</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_saf">
+		<h2>SAF 模式（Android 5+）</h2>
+			<b>背景</b><br/> <span>谷歌在 Android 4.4（KitKat）版中突然取消了所有第三方（非预装）应用写入外部/可移动存储设备的许可权限。由于这项决定，很多应用的功能受到严重影响，还有些则完全无法使用。在开发商的压力下，谷歌在 Android 5 中集成了一个折衷解决方案。通过使用一个新的 API，借助 SAF（存储访问框架），应用又可以重新获得写入外部存储设备的权限。</span><br/><br/><b>第一次启动</b><br/> <span>
+				<ul>
+					<li>出现选择目录对话框。您需要选择您要操作的目录（或卷）。</li>
+					<li>点按右上角的&ldquo;<B>更多按钮</B>&rdquo;，然后选择&ldquo;<B>显示 SD 卡（Show SD card）</B>&rdquo;。</li>
+					<li>点按左上角的&ldquo;<B>菜单按钮</B>&rdquo;，然后选择您要使用的存储设备。</li>
+					<li>点按底部的&ldquo;<B>选择（SELECT）</B>&rdquo;。</li>
+				</ul>
+			</span> <br/> <b>限制</b><br/> <span>SAF 模式下有一些限制，您应该有所了解。 
+				<ul>
+					<li>在 SAF 模式下不能设置主目录/自定义目录，不过最近一次选定的 SAF URI 可以自动保存：&ldquo;<B>主目录（Home）按钮</B>&rdquo; → &ldquo;<B>转到最近选择的 SAF 目录（Go to Last Picked SAF Dir）</B>&rdquo;。 </li>
+					<li>无法使用&ldquo;擦除&rdquo;功能。如果在应用设置中选中了&ldquo;加密后擦除（Wipe after Encryption）&rdquo;选项，文件将只可被删除。</li>
+					<li>相比标准的直接文件访问模式，在 SAF 模式下执行文件操作的性能略低（尤其是当目录中包含大量文件/子目录时）。</li>
+					<li>仅当目标应用能够解码 SAF URI 时才能执行&ldquo;打开文件（Open File）&rdquo;功能。</li>
+				</ul>
+			</span>
+	</div>
+	
+	<div class="anchor" id="anchor_faq">
+		<h2>文件加密功能常见问题解答</h2>
+			<b>问题：<i>系统版本 KitKat（Android 4.4），外置 SD 卡只读 - 消息：EACCESS（权限被拒绝）</i></b><br/><br/><b>解答：</b>除预装应用（由设备或系统映像制造商预先安装）外，Android 4.4 不允许任何应用写入访问外置 SD 卡。我们对此无能为力。唯一的解决办法是获得您设备的 ROOT 权限，然后更改权限或升级到 Android 5 并使用 <a href="javascript:scrollToElement('anchor_saf')">SAF</a>。<br/><br/>如需了解更多信息，建议使用谷歌搜索查找此类信息：<code style="font-size: 125%;"><b>android 4.4 external card read only（android 4.4 外部 卡 只读）</b></code> <br/><br/><b>其他方案</b> - 在您的外置 SD 卡中创建以下目录：<br/><code style="font-size: 90%;"><b><font color="red">Android/data/<br/>com.paranoiaworks.unicus.android.sse</font></b></code><br/><br/>应用应对此文件夹有写入权限。 <br/><br/>
+	</div>
+	
+	<div id="toMainMenu" class="gradient"><a href="/sse/zh-Hans">&lt;&lt; 返回 SSE 主菜单</a></div>
+	<div id="reserveSpace"></div>
+	<script language="JavaScript">
+		formatPage();
+		imageMapResize(document.getElementById("map_ID"));
+	</script>
+	
+</body>
+</html>

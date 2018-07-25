@@ -1,0 +1,137 @@
+﻿<!doctype html>
+<html lang="zh-Hans">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Android 版 Secret Space Encryptor  - 工具箱</title>
+	<script language="JavaScript" src="/android_asset/js/help.js"></script>
+	<script language="JavaScript" src="/android_asset/js/imageMapResizer.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+	<link rel="icon" type="image/png" href="/sse/img/sse_icon.png"/>
+</head>
+<body>
+	<h2 style="margin-top: -0.6em;">密码生成器</h2>
+		<ul>
+			<li>可自定义的密码生成器</li>
+			<li>密码生成器也集成进了密码保险箱应用</li>
+		</ul>
+	<br/>
+	<h2>清空剪贴板</h2>
+		<ul>
+			<li>擦除系统剪贴板上的内容</li>
+		</ul>
+	<br/>
+	<h2>应用报告</h2>
+		<ul>
+			<li>应用安全性报告</li>
+		</ul>
+	<br/>
+	<h2>算法性能评测</h2>
+		<ul>
+			<li>密码算法性能测量</li>
+			<li>
+				<b>Android 2.1 版与 2.2 版的比较 </b><br/>
+				<ul>
+					<li>同一设备（<i>Creative ZEN Touch 2）</i></li>
+					<li>同一算法（<i>AES-256（Rijndael））</i></li>
+					<li>不同 Android 版本（<i><i>Android 2.1 Eclair（解释器）对比 Android 2.2 Froyo（JIT 动态编译器））</i></i></li>
+				</ul>
+				<div class="delimiter">&nbsp;</div>
+				<table class="color centertd">
+					<tr>
+						<th colspan="3">Creative ZEN Touch 2</th>
+					</tr>
+					<tr class="grey">
+						<th class="textToLeft">测试</th>
+						<th>Android 2.1</th>
+						<th>Android 2.2</th>
+					</tr>
+					<tr>
+						<td>加密 A</td>
+						<td>325.36 KB/秒</td>
+						<td>975.21 KB/秒</td>
+					</tr>
+					<tr>
+						<td>解密 A</td>
+						<td>275.44 KB/秒</td>
+						<td>877.19 KB/秒</td>
+					</tr>
+					<tr>
+						<td>加密 B</td>
+						<td>382.04 KB/秒</td>
+						<td>1.13 MB/秒</td>
+					</tr>
+					<tr>
+						<td>解密 B</td>
+						<td>385.28 KB/秒</td>
+						<td>1.12 MB/秒</td>
+					</tr>
+					<tr class="grey">
+						<th class="textToLeft">得分</th>
+						<th>342 分</th>
+						<th>1039 分</th>
+					</tr>
+				</table>
+				<div class="delimiter">&nbsp;</div>
+			</li>
+			<li>
+				<b>平台独立版与本机代码版的比较： </b><br/>
+				<ul>
+					<li>Creative ZEN Touch 2 + Android 2.2</li>
+					<li>Java Dalvik 虚拟机与 C++ 本机代码编译</li>
+				</ul>
+				<div class="delimiter">&nbsp;</div>
+				<table class="color centertd">
+					<tr class="grey">
+						<th class="textToLeft">算法</th>
+						<th>平台独立版<br/>（得分）</th>
+						<th>本机代码版<br/>（得分）</th>
+					</tr>
+					<tr>
+						<td>AES-256</td>
+						<td>1039</td>
+						<td>6507</td>
+					</tr>
+					<tr>
+						<td>RC6-256</td>
+						<td>972</td>
+						<td>9912</td>
+					</tr>
+					<tr>
+						<td>Serpent-256</td>
+						<td>729</td>
+						<td>6238</td>
+					</tr>
+					<tr>
+						<td>Blowfish-256</td>
+						<td>1082</td>
+						<td>9121</td>
+					</tr>
+					<tr>
+						<td>Twofish-256</td>
+						<td>1051</td>
+						<td>8225</td>
+					</tr>
+					<tr>
+						<td>GOST-256</td>
+						<td>856</td>
+						<td>6457</td>
+					</tr>
+					<tr>
+						<td>Blowfish-448</td>
+						<td>1065</td>
+						<td>9095</td>
+					</tr>
+				</table>
+				<div class="delimiter">&nbsp;</div>
+			</li>
+		</ul>	
+		<i>注：此项测试不包括文件输入输出时间。</i> <br/><br/>
+	
+	<div id="toMainMenu" class="gradient"><a href="/sse/zh-Hans">&lt;&lt; 返回 SSE 主菜单</a></div>
+	<div id="reserveSpace"></div>
+	<script language="JavaScript">formatPage();</script>
+	
+</body>
+</html>

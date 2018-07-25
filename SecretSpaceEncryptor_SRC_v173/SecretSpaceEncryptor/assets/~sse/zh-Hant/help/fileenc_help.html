@@ -1,0 +1,240 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Android 版 Secret Space Encryptor  - 檔案加密</title>
+	<script language="JavaScript" src="/android_asset/js/help.js"></script>
+	<script language="JavaScript" src="/android_asset/js/imageMapResizer.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+	<link rel="icon" type="image/png" href="/sse/img/sse_icon.png"/>
+</head>
+<body>
+	<h1 class="smallPad" id="anchor_main">
+		檔案加密
+		<div class="smallFont">（輕觸某個字母或向下捲動，即可檢視更多主題）</div>
+	</h1>
+	
+	<div class="screenShot">
+		<img src="../../img/fileencryptor_SSB.png" usemap="#ScreenShotMap" id="img_ID" style="width:400px; max-width: 100%;"/>
+	</div>
+	
+	<map name="ScreenShotMap" id="map_ID">
+		<area shape='rect' coords='224,13,333,126' href="#anchor_a"/>
+		<area shape='rect' coords='586,29,695,142' href="#anchor_b"/>
+		<area shape='rect' coords='586,214,695,327' href="#anchor_c"/>
+		<area shape='rect' coords='586,475,695,588' href="#anchor_d"/>
+		<area shape='rect' coords='441,820,550,933' href="#anchor_e"/>
+		<area shape='rect' coords='186,820,299,933' href="#anchor_f"/>
+		<area shape='rect' coords='52,820,165,933' href="#anchor_g"/>
+		<area shape='rect' coords='304,622,413,735' href="#anchor_h"/>	
+		<area shape='rect' coords='163,622,272,735' href="#anchor_i"/>	
+	</map>
+	
+	<div class="anchor" id="other_menu">
+		<h2>其他主題</h2>
+		<ul class="menu">
+			<li><a href="#quick_start" class="large">快速入門</a></li>
+			<li><a href="#anchor_multiSelect" class="large">批次處理</a></li>
+			<li><a href="#anchor_more" class="large">其他...</a></li>
+			<li><a href="#anchor_saf" class="large">SAF 模式（Android 5+）</a></li>
+			<li><a href="#anchor_faq" class="large">常見問題解答</a></li>
+		</ul>	
+	</div>
+	
+	<div class="anchor" id="quick_start">
+		<h2>快速入門</h2>
+		<b>加密</b>
+		<ul>
+			<li>選擇一個檔案或資料夾（輕觸檔案或長按資料夾）。</li>
+			<li>點按右下角的「加密」按鈕。</li>
+			<li>設定一個密碼。</li>
+			<li>將建立一個新的 .enc 檔案。</li>
+			（注意：您可以在加密後刪除/抹除原始檔，刪除也可以自動完成：<i>設定：檔加密 → 加密後抹除原始檔</i>）
+		</ul>
+		<br/> <b>解密</b>
+		<ul>
+			<li>選擇一個加密檔案（輕觸檔案）。</li>
+			<li>點按右下角的「解密」按鈕。</li>
+			<li>輸入密碼。</li>
+			<li>檔案或資料夾將被解密。</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_a">
+		<h2>A - 可用的磁碟機</h2>
+		<ul>
+			<li>指向當前裝置上的可用卷+使用者自訂的主目錄/預設目錄的捷徑。</li>
+			<li>自訂目錄 - <img style="vertical-align: middle;" width="37px" height="20px" src="../../img/favbutton.png"/><br/>
+				<ul>
+					<li>
+						可以在此設定加密/解密檔案輸出目錄（如已在「<b>設定: 檔案加密 → 加密/解密檔案目的路徑</b>」中啟用）<br/><br/> <img src="../../img/fileencryptor_customdirs.png" style="width:260px; max-width: 100%;"/><br/>
+					</li>
+				</ul>
+			</li>
+			<li><a href="javascript:scrollToElement('anchor_saf')">SAF 按鈕</a>（Android 5+）</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_b">
+		<h2>B - 當前卷參數</h2>
+		<ul>
+			<li>可用空間/卷大小</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_c">
+		<h2>C - 選中的檔案/資料夾</h2>
+		<ul>
+			<li>長按可以選中<b><i>資料夾</i></b></li>
+			<li>短按可以選中<b><i>檔案</i></b></li>
+			<li><b>選中的檔案或資料夾可以：</b>
+				<ul>
+					<li>使用<a href="javascript:scrollToElement('anchor_e')">「加密/解密」按鈕（見下文 E 部分）</a><i><b>加密或解密</b></i>（根據選中檔案的狀態）；</li>
+					<li>使用您裝置上的「功能表按鈕」<i><b>重新命名、開啟、刪除或<a href="javascript:scrollToElement('anchor_more')">抹除</a>；</b></i></li>
+					<li><i><b>注意：</b></i>長按一個<b>檔案</b>與對選中的檔案/資料夾執行「功能表」按鈕操作的作用相同。</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_d">
+		<h2>D - 加密的檔案</h2>
+		<ul>
+			<li>已加密檔案的特徵：.<i><b>enc</b></i> 副檔名、紫色背景和「鎖定」圖示。</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_e">
+		<h2>E - 加密/解密按鈕</h2>
+		<ul>
+			<li>加密或解密（根據所選項目狀態）檔案或資料夾。</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_f">
+		<h2>F - 壓縮「開/關」</h2>
+		<ul>
+			<li>啟用/停用資料壓縮。</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_g">
+		<h2>G - 轉到主功能表</h2>
+		<ul>
+			<li>直接轉至應用程式的<i><b>主功能表 </b></i></li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_h">
+		<h2>H - 更多按鈕</h2>
+		<ul>
+			<li>選中的檔案/資料夾可以被<i><b>重新命名、刪除、<a href="javascript:scrollToElement('anchor_more')">抹除</a>或開啟（檔案）。 </b></i></li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_i">
+		<h2>I - 設定工作階段密碼</h2>
+		<ul>
+			<li>設定工作階段（「主」）密碼。</li>
+			<li>未設定進入應用程式的密碼，但設定了當前加密/解密工作階段的密碼。您也可以為任何目的設定不限數量的密碼。</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_multiSelect">
+		<h2>選中多個檔案</h2>
+		<ul>
+			<li>選中多個檔案（批次處理）<b>（Pro 版功能） </b></li>
+			<li>可以在應用程式設定中啟用/停用：設定 <b>→ 檔案加密：選中多個檔案</b></li>
+		</ul>
+		<br/> <img src="../../img/fileencryptor_multiselect.png" style="width:325px; max-width: 100%;"/>
+	</div>
+	
+	<div class="anchor" id="anchor_more">
+		<h2>其他...</h2>
+		<ul>
+
+			<li>可以按後退按鈕中斷加密/解密過程。</li>
+			<li><b>抹除：</b>
+				<ul>
+					<li>資料先經實體覆寫再被刪除（刪除不可撤銷）。</li>
+					<li><b>注意：</b>受現代系統和硬體/驅動程式級別本身的快取記憶體、再分配機制以及損耗均衡的影響，報告的檔案系統狀態（報告給應用程式）和實際/實體記憶體狀態之間會出現不均衡。有時，某些裝置（取決於系統/快閃記憶體驅動器）的擦除功能可能無法100％工作。沒有辦法完全確定，因為此應用程式只能使用物理介質的虛像。</li>
+				</ul>
+			</li>
+			<li>
+				<b>圖示</b><br/>
+				<div class="delimiter">&nbsp;</div>
+				<table class="color">
+					<tr>
+						<td><img width="35px" height="31px" src="../../img/icons/directory.png"/></td>
+						<td>資料夾</td>
+					</tr>
+					<tr>
+						<td><img width="35px" height="31px" src="../../img/icons/directory_readonly.png"/></td>
+						<td>唯讀資料夾</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/file.png"/></td>
+						<td>檔案</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/file_readonly.png"/></td>
+						<td>唯讀檔案</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/file_enc.png"/></td>
+						<td>加密的檔案</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/file_enc_readonly.png"/></td>
+						<td>唯讀加密檔案</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/back_file.png"/></td>
+						<td>返回父資料夾</td>
+					</tr>
+				</table>
+				<div class="delimiter">&nbsp;</div>
+			</li>
+			<li><b>密碼不正確</b>
+				<ul>
+					<li>如沒有正確的密碼，則無法解密任何檔案。</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_saf">
+		<h2>SAF 模式（Android 5+）</h2>
+			<b>背景</b><br/> <span>谷歌在 Android 4.4（KitKat）版中突然取消了所有協力廠商（非預裝）應用程式寫入外部/卸除式存儲裝置的授權權限。由於這項決定，很多應用程式的功能受到嚴重影響，還有些則完全無法使用。在開發商的壓力下，谷歌在 Android 5 中整合了一個折衷解決方案。透過使用一個新的 API，借助 SAF（存儲存取框架），應用程式又可以重新獲得寫入外部存儲裝置的權限。</span><br/><br/><b>第一次啟動</b><br/> <span>
+				<ul>
+					<li>出現選擇目錄對話方塊。您需要選擇您要操作的目錄（或卷）。</li>
+					<li>點按右上角的「<B>更多按鈕</B>」，然後選擇「<B>顯示 SD 卡（Show SD card）</B>」。</li>
+					<li>點按左上角的「<B>功能表按鈕</B>」，然後選擇您要使用的存儲裝置。</li>
+					<li>點按底部的「<B>選擇（SELECT）</B>」。</li>
+				</ul>
+			</span> <br/> <b>限制</b><br/> <span>SAF 模式下有一些限制，您應該有所瞭解。 
+				<ul>
+					<li>在 SAF 模式下不能設定主目錄/自訂目錄，不過最近一次選定的 SAF URI 可以自動儲存：「<B>主目錄（Home）按鈕</B>」 → 「<B>轉到最近選擇的 SAF 目錄（Go to Last Picked SAF Dir）</B>」。 </li>
+					<li>無法使用「抹除」功能。如果在應用程式設定中選中了「加密後抹除（Wipe after Encryption）」選項，檔案將只可被刪除。</li>
+					<li>相比標準的直接檔案存取模式，在 SAF 模式下執行檔案操作的效能略低（尤其是當目錄中包含大量檔案/子目錄時）。</li>
+					<li>僅當目的應用程式能夠解碼 SAF URI 時才能執行「開啟檔案（Open File）」功能。</li>
+				</ul>
+			</span>
+	</div>
+	
+	<div class="anchor" id="anchor_faq">
+		<h2>檔案加密功能常見問題解答</h2>
+			<b>問題：<i>系統版本 KitKat（Android 4.4），外置 SD 卡唯讀 - 訊息：EACCESS（權限被拒絕）</i></b><br/><br/><b>解答：</b>除預裝應用程式（由裝置或系統映像製造商預先安裝）外，Android 4.4 不允許任何應用程式寫入存取外置 SD 卡。我們對此無能為力。唯一的解決辦法是獲得您裝置的 ROOT 權限，然後變更權限或升級到 Android 5 並使用 <a href="javascript:scrollToElement('anchor_saf')">SAF</a>。<br/><br/>如需瞭解更多資訊，建議使用谷歌搜尋尋找此類資訊：<code style="font-size: 125%;"><b>android 4.4 external card read only（android 4.4 外部 卡 唯讀）</b></code> <br/><br/><b>其他方案</b> - 在您的外置 SD 卡中建立以下目錄：<br/><code style="font-size: 90%;"><b><font color="red">Android/data/<br/>com.paranoiaworks.unicus.android.sse</font></b></code><br/><br/>應用程式應對此資料夾有寫入權限。 <br/><br/>
+	</div>
+	
+	<div id="toMainMenu" class="gradient"><a href="/android_asset/~sse/zh-Hant">&lt;&lt; 返回 SSE 主功能表</a></div>
+	<div id="reserveSpace"></div>
+	<script language="JavaScript">
+		formatPage();
+		imageMapResize(document.getElementById("map_ID"));
+	</script>
+	
+</body>
+</html>

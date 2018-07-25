@@ -1,0 +1,82 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Secret Space Encryptor for Android - Password Manager, File Encryption, Text (messages, notes, ...) Encryption</title>
+	<script language="JavaScript" src="/android_asset/js/help.js"></script>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+	<link rel="shortcut icon" href="/android_asset/img/sse_favicon.png"></link>
+</head>
+<body>
+	<h1 class="smallPad">
+		<div class="normalLabelCenter">Secret Space Encryptor</div>
+		<div id="versionText" class="textToCenter smallerFont">(version 1.7.3)</div>
+	</h1>
+	<ul>
+		<li><b>Password Manager, Text Encryption and File Encryption are integrated in the all-in-one solution.</b></li>
+		<li><b>Password Vault: </b>Store and manage all passwords, PINs, and notes in one secure place protected by one master password. Import/Export function is available (compressed, fully encrypted .pwv file format or unencrypted, editable .xml file format).</li>
+		<li><b>Text Encryptor: </b>Keep your messages, notes, and any other text safe from all unwanted readers. Use the internal database or just copy/paste to/from your favorite applications. A password is set for the current encryption/decryption session, and you may have an unlimited number of passwords for any purpose (notes, emails, social networking, communication with persons A B C, ...).</li>
+		<li><b>File Encryptor: </b>Securely encrypt your private and confidential files or whole folders.</li>
+		<li><b>Algorithms: </b>Everything is encrypted using strong encryption algorithms: AES (Rijndael) 256bit, RC6 256bit, Serpent 256bit, Blowfish 448bit, Twofish 256bit, GOST 256bit + <b>Threefish 1024bit and SHACAL-2 512bit (for S.S.E. Pro Version)</b> ciphers are available.</li>
+		<li><b>Steganography: </b>The Text Encryptor contains a steganographic feature (concealing a text within an image - JPG). A steganographic algorithm (F5 algorithm) is used in combination with chosen symmetric cipher algorithm to make a final steganogram (JPEG image).</li>
+		<li>
+			<b>Detailed format specifications:</b>
+			<ul>
+				<li><a href="pwv_specifications.html">Password Vault</a></li>
+				<li><a href="te_specifications.html">Text Encryptor</a></li>
+				<li><a href="fe_specifications.html">File Encryptor</a></li>
+			</ul>
+		</li>
+		<li><b>Other Utils: </b>Password Generator, Clipboard Cleaner, Algorithm Benchmark, ...</li>
+		<li id="noAds">Minimal permissions. No ads.</li>
+		<li>The encryption engine is based on the Bouncy Castle Crypto Library (Java) and Crypto++ (C++).</li>
+		<li>Cross-platform desktop versions <b>(Windows, Linux, Mac OS X, ...)</b> of the <b>Text Encryptor</b> and <b>File Encryptor</b> are available on the application home page (<a href="http://www.paranoiaworks.mobi/download" >download section</a>).</li>
+		<li><b>Paranoia Text Encryption for iOS (iPhone/iPad/iPod)</b> is available on <a href="http://www.paranoiaworks.mobi/pte" target="_blank">P.T.E. for iOS</a>.</li>
+		<li><b>A web-based Text Encryptor</b> (client-side AES) is available on: <a href="https://pteo.paranoiaworks.mobi">https://pteo.paranoiaworks.mobi</a></li>
+		<li>This software is open source.</li>
+	</ul>
+	<br/>
+	<b>&#169; Paranoia Works 2017</b><br/>
+	<br/>
+	<a href="license.html">Read License Information</a><br/>
+	<br/>
+	<div>We would appreciate any feedback from you regarding suggestions for improvement, reports of technical problems, and....., you are welcome to contact us via email:</div>
+	<div id='signHere'></div>
+	<div>Application Home Page (up-to-date help, source codes, etc.):<br/>
+	<a href="http://www.paranoiaworks.mobi/sse">http://www.paranoiaworks.mobi/sse</a></div>
+	
+	<br/>
+	<ul id="rate" class="menu"><li><a href="https://play.google.com/store/apps/details?id=com.paranoiaworks.unicus.android.sse"><b>If you like it, you can RATE IT.</b></a><b><span style="color:#0044EE;"> (Google Play)</span></b></li></ul>
+	<!--	
+	<b>and</b>
+	<ul class="menu"><li><a href="http://www.paranoiaworks.mobi/sse/sse_donation.html"><b>If you really like it, you can DONATE.</b></a><b> <span style="color:#0044EE;">(PayPal)</span></b></li></ul>
+	-->
+	<div class="anchor" id="anchor_b">
+		<h2>Special Thanks</h2>
+		<ul>
+			<li><b>Victor Khokhlov</b>: Russian and Ukrainian localization + other contributions</li>
+		</ul>
+	</div>
+	<br/>
+	
+	<div class="delimiter">&nbsp;</div>
+	<div class="gradient">&nbsp;</div>
+	<div id="toMainMenu" class="gradient"><a href="/sse">&lt;&lt; Back to SSE main menu</a></div>
+	<div id="reserveSpace"><br/><a href="license.html">License</a></div>
+	<script language="JavaScript">formatPage();</script>
+	<script language="JavaScript">
+		try {if(getValue("SHOW_UPGRADE_FEATURES") == 0) document.getElementById("rate").style.display = 'none';}catch(err){} 
+		try {
+			if(getValue("CN_VERSION") == 1)
+			{
+				document.getElementById("noAds").style.display = 'none';
+				var str = document.getElementById("versionText").innerHTML;
+				document.getElementById("versionText").innerHTML = str.replace(")", " CN)");
+			}
+		}catch(err){}
+	</script>
+	<script language="JavaScript">setSignElement('signHere', 'paranoiaworks.mobile', 'gmail.com');</script>
+</body>
+</html>

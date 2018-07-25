@@ -1,0 +1,386 @@
+body {
+	margin-left: 0.6em;
+	margin-right: 8px;
+	margin-top: 0.6em;
+	margin-bottom: 0.4em;
+	background-color: #ffffff;
+	font-family: arial, sans-serif;
+}
+
+a {
+	color: #098572;
+	font-size: 100%;
+	font-weight: bold;
+}
+
+a.large {
+	color: #098572;
+	font-size: 115%;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #ff0000;
+}
+
+hr {
+	color: #888888;
+	background-color: #888888;
+	height: 1px;
+	border: 0;
+}
+
+img {
+	border: 0px;
+}
+
+img.linkIcon {
+	vertical-align: middle;
+	padding-right: 5px;
+}
+
+ul {
+	list-style-type: disc;
+	list-style-position: inside;
+	padding: 0px;
+	margin: 0px;
+}
+
+ul li {
+	margin: 0.15em;
+}
+
+ul li ul {
+	list-style-type: none;
+	list-style-position: outside;
+	padding-left: 0.8em;
+	margin: 0px;
+}
+
+ul li ul li {
+	background-image: url('../img/arrow_right@2x.png');
+	background-size: 7px 6px;
+	background-repeat: no-repeat;
+	background-position: left 0.45em;
+	padding-left: 12px;
+	margin: 0.15em;
+}
+
+ul.horizontal {
+	padding-left: 0px;
+	margin: 0px;
+	list-style-type: none;
+	width: 100%;
+}
+
+ul.horizontal  li {
+	padding-left: 10px;
+	display: block;
+	float: left;
+}
+
+ul.menu {
+	list-style-type: none;
+	list-style-position: outside;
+	padding-left: 0.0em;
+	padding-bottom: 0.3em;
+	margin: 0px;
+}
+
+ul.menu li {
+	background: url("../img/arrow_right_large@2x.png") no-repeat center top #FFFFFF;
+	background-size: 9px 12px;
+	background-position: left;
+	padding-left: 14px;
+	padding-bottom: 0.0em;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td {
+	padding: 0;
+}
+
+table.layout {
+	width: 100%;
+	margin: 0;
+	border-collapse: collapse;
+}
+
+table.color th {
+	border-width: 1px;
+	border-style: solid;
+	color: #FFFFFF;
+	border-color: #000000;
+	background-color: #000000;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	font-size: 85%;
+}
+
+table.color td {
+	border-width: 1px;
+	border-style: solid;
+	color: #000000;
+	border-color: #000000;
+	background-color: #EEEEEE;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	font-size: 85%;
+}
+
+table.centertd tr td {
+	text-align: center;
+}
+
+table.centertd tr > td:first-child { 
+	text-align: left !important;
+}
+
+tr.grey th {
+	background-color: #333333;
+}
+
+h1 {
+	font-size: 125%;
+	font-weight: bold;
+	background: url("../img/h1bg.png") repeat-x center top #FFFFFF;
+    color: #454545;
+	text-align: left;
+	margin-top: -0.6em;
+	margin-left: -0.6em;
+	margin-right: -8px;
+	padding-left: 0.6em;
+	padding-right: 0.6em;
+	padding-top: 1.0em;
+	padding-bottom: 1.0em;
+	border-top: 0.18em solid #AAAAAA;
+	border-bottom: 1px solid #AAAAAA;
+}
+
+h1.smallPad  {
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
+
+h1 div.smallerFont {
+	font-size: 85%;
+}
+
+h1 div.smallerFont70 {
+	font-size: 70%;
+}
+
+h1 div.smallFont {
+	font-size: 60%;
+}
+
+h2 {
+	font-size: 125%;
+	font-weight: bold;
+	background: url("../img/h2bg.png") repeat-x center top #FFFFFF;
+    color: #454545;
+	margin-top: 0px;
+	margin-left: -0.6em;
+	margin-right: -8px;
+	padding-left: 0.6em;
+	padding-right: 0.6em;
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+	border-top: 1px solid #AAAAAA;
+	border-bottom: 1px solid #AAAAAA;
+}
+
+.font120  {
+	font-size: 120%;
+}
+
+div.screenShot {	
+	width: 100%;
+	/*text-align: center;*/
+}
+
+div.delimiter {	
+	width: 100%;
+	height: 6px;
+	font-size: 0pt;
+}
+
+div.delimiterThin{	
+	font-size: 40%;
+}
+
+div.marginVert_06em {
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+div.anchor {
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
+}
+
+div.smallLabel {
+	font-size: 110%;
+	font-weight: bold;
+}
+
+div.normalLabel {
+	font-size: 125%;
+	font-weight: bold;
+}
+
+div.normalLabelCenter {
+	font-size: 125%;
+	font-weight: bold;
+	text-align: center;
+}
+
+div.gradient {
+	background: url("../img/h2bg.png") repeat-x center top #FFFFFF;
+    color: #454545;
+	padding-top: 0.6em;
+	padding-bottom: 0.7em;
+	margin-left: -0.6em;
+	margin-right: -8px;
+	padding-left: 0.6em;
+	padding-right: 0.6em;
+	border-top: 1px solid #AAAAAA;
+	border-bottom: 1px solid #AAAAAA;
+}
+
+span.smallerFont {
+	font-size: 80%;
+}
+
+.textToLeft { 
+	text-align: left !important;
+	padding-left: 6px !important;
+}
+
+.textToCenter { 
+	text-align: center !important;
+}
+
+#signHere {
+	font-weight: bold;
+	padding-top: 0.0em;
+	padding-bottom: 0.5em;
+}
+
+/* Main Icons */
+table.links tr {
+	color: #098572;
+	font-size: 135%;
+	font-weight: bold;
+}
+
+table.links tr td {
+	text-align: center;
+	vertical-align: middle;	
+}
+
+table.links tr td div {
+	text-decoration: underline;
+}
+
+table.links tr:hover {
+	color: #ff0000;
+}
+
+span.outer  {
+	padding-left: 0.7em;
+	padding-right: 0.7em;
+}
+
+span.outer span { 	
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	margin-top: -0.1em;
+	margin-bottom: -0.4em;
+}
+
+span.outer25 span { 	
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
+	height: 25px;
+	width: 25px;
+	display: inline-block;
+	margin-top: -0.1em;
+	margin-bottom: -0.4em;
+}
+
+span.outer span.mainIconSafe {
+	background-image: url('../~sse/img/icons/main_safe@2x.png'); 
+}
+
+span.outer span.mainIconText {
+	background-image: url('../~sse/img/icons/main_text@2x.png'); 
+}
+
+span.outer span.mainIconFile {
+	background-image: url('../~sse/img/icons/main_file@2x.png'); 
+}
+
+span.outer span.mainIconUtils {
+	background-image: url('../~sse/img/icons/main_utils@2x.png'); 
+}
+
+span.outer span.mainIconSettings {
+	background-image: url('../~sse/img/icons/main_settings@2x.png'); 
+}
+
+span.outer span.mainIconSSEProSmall{
+	background-image: url('../~sse/img/icons/main_ssepro_small@2x.png'); 
+}
+
+span.outer25 span.iconOnline{
+	background-image: url('../~sse/img/icons/icon_online_50x50.png'); 
+}
+
+span.outer25 span.iconRelatedSettings{
+	background-image: url('../~sse/img/icons/icon_setting_50x50.png'); 
+}
+
+span.outer25 span.iconVideoTutorial{
+	background-image: url('../~sse/img/icons/icon_video_50x50.png'); 
+}
+
+span.outer span.mainIconBlank{
+	background-image: url('../~sse/img/icons/blank_100x100.png'); 
+}
+
+span.outerB span { 	
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+	height: 60px;
+	width: 60px;
+	display: inline-block;
+	margin-top: -0.5em;
+	margin-bottom: -0.65em;
+}
+
+pre.blueBold b {
+	color: blue;
+}
+
+span.outerB span.mainIconSSE{
+	background-image: url('../~sse/img/icons/main_sse@2x.png'); 
+}
+
+span.outerB span.mainIconSSEPro{
+	background-image: url('../~sse/img/icons/main_ssepro@2x.png'); 
+}
+
+span.outerB span.mainIconBlank{
+	background-image: url('../~sse/img/icons/blank_120x120.png'); 
+}

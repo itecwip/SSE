@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="425" height="440" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <g>
+  <title>Layer 1</title>
+  <rect x="135.8" y="19.25" fill="#DCDCDC" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="120.3" height="41" id="svg_1"/>
+  <rect x="59.4" y="122.45" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="80.2" height="34.5" id="svg_2"/>
+  <rect x="249.7" y="122.45" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="80.2" height="34.5" id="svg_3"/>
+  <polyline points="99.5,196.9499969482422 105.69999694824219,183.75 102.5,183.75 102.5,163.5500030517578 96.5,163.5500030517578 96.5,183.75 93.19999694824219,183.75 99.5,196.9499969482422 " id="svg_4"/>
+  <polyline points="95.80000305175781,114.55000305175781 113.0999984741211,108.1500015258789 111,105.6500015258789 150.8000030517578,72.25 147,67.6500015258789 107.19999694824219,101.05000305175781 105.0999984741211,98.55000305175781 95.80000305175781,114.55000305175781 " id="svg_5"/>
+  <polyline points="293.5,114.55000305175781 276.1000061035156,108.1500015258789 278.20001220703125,105.6500015258789 238.39999389648438,72.25 242.3000030517578,67.6500015258789 282.1000061035156,101.05000305175781 284.20001220703125,98.55000305175781 293.5,114.55000305175781 " id="svg_6"/>
+  <polyline points="289.79998779296875,196.9499969482422 296,183.75 292.79998779296875,183.75 292.79998779296875,163.5500030517578 286.79998779296875,163.5500030517578 286.79998779296875,183.75 283.5,183.75 289.79998779296875,196.9499969482422 " id="svg_7"/>
+  <rect x="59.4" y="202.75" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="80.2" height="34.5" id="svg_8"/>
+  <rect x="251.4" y="202.75" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="80.2" height="34.5" id="svg_9"/>
+  <rect x="285.8" y="19.25" fill="#DCDCDC" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="120.3" height="41" id="svg_10"/>
+  <rect x="249.7" y="282.25" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="156.4" height="51.7" id="svg_11"/>
+  <polyline points="383,276.95001220703125 389.29998779296875,259.54998779296875 386,259.54998779296875 386,70.25 380,70.25 380,259.54998779296875 376.79998779296875,259.54998779296875 383,276.95001220703125 " id="svg_12"/>
+  <polyline points="289.79998779296875,276.95001220703125 296,263.75 292.79998779296875,263.75 292.79998779296875,243.5500030517578 286.79998779296875,243.5500030517578 286.79998779296875,263.75 283.5,263.75 289.79998779296875,276.95001220703125 " id="svg_13"/>
+  <rect x="18.5" y="282.25" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="140" height="51.7" id="svg_14"/>
+  <polyline points="99.5,276.95001220703125 105.69999694824219,263.75 102.5,263.75 102.5,243.5500030517578 96.5,243.5500030517578 96.5,263.75 93.19999694824219,263.75 99.5,276.95001220703125 " id="svg_15"/>
+  <polyline points="165,306.75 182.39999389648438,300.45001220703125 182.39999389648438,303.75 242,303.75 242,309.75 182.39999389648438,309.75 182.39999389648438,313.04998779296875 165,306.75 " id="svg_16"/>
+  <polyline points="87.42500305175781,377.3374938964844 105.125,359.9375 95.92500305175781,359.9375 95.92500305175781,341.63751220703125 79.0250015258789,341.63751220703125 79.0250015258789,359.9375 69.82499694824219,359.9375 87.42500305175781,377.3374938964844 " id="svg_17"/>
+  <rect x="18.5" y="382.825" fill="#DCDCDC" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="140" height="41.5" id="svg_18"/>
+  <text x="37.5" y="3.25" transform="matrix(1, 0, 0, 1, 130.789, 39)" font-family="Sans-serif" font-size="12px" id="svg_19" fill="black" font-weight="bold">Password</text>
+  <text transform="matrix(1 0 0 1 305.1335 39)" font-family="'Arial-BoldMT'" font-size="12px" id="svg_24"/>
+  <text x="37.5" y="3.25" transform="matrix(1, 0, 0, 1, 44.1231, 139.333)" font-family="Sans-serif" font-size="12px" id="svg_31" fill="black" font-weight="bold">SHA-3</text>
+  <text x="37.5" y="3.25" transform="matrix(1, 0, 0, 1, 221.456, 140.333)" font-family="Sans-serif" font-size="12px" id="svg_32" fill="black" font-weight="bold">Skein-1024</text>
+  <text x="37.5" y="3.25" transform="matrix(1, 0, 0, 1, 42.7896, 219.333)" font-family="Sans-serif" font-size="12px" id="svg_33" fill="black" font-weight="bold">scrypt</text>
+  <text x="37.5" y="3.25" transform="matrix(1, 0, 0, 1, 235.456, 219.333)" font-family="Sans-serif" font-size="12px" id="svg_34" fill="black" font-weight="bold">scrypt</text>
+  <text x="36.9375" y="0.25" transform="matrix(1, 0, 0, 1, 248.707, 303.5)" font-family="Sans-serif" font-size="12px" id="svg_35" fill="black" font-weight="bold">Encryption (*B)</text>
+  <text x="37.5" y="3.25" transform="matrix(1, 0, 0, 1, 227.466, 313.1)" font-family="Sans-serif" font-size="8px" id="svg_36" fill="black" font-weight="bold">(chosen symmetric cipher in EAX)</text>
+  <text transform="matrix(1, 0, 0, 1, 142.003, 293.667)" font-family="Sans-serif" font-size="8px" id="svg_37" fill="black" y="26.875002" x="43.125001">encrypted data</text>
+  <text x="16.6875" y="6.625" transform="matrix(1, 0, 0, 1, 32.9897, 393)" font-family="Sans-serif" font-size="12px" id="svg_40" fill="black" font-weight="bold">Steganogram</text>
+  <text x="16.6875" y="6.625" transform="matrix(1, 0, 0, 1, 32.3188, 407.4)" font-family="Sans-serif" font-size="12px" id="svg_41" fill="black" font-weight="bold">(JPEG image)</text>
+  <text transform="matrix(1, 0, 0, 1, 130.789, 39)" font-family="Sans-serif" font-size="12px" fill="black" id="svg_72" y="3.25" x="185.898502" font-weight="bold">Data (Text)</text>
+  <text fill="black" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="135.750039" y="257.93753" id="svg_73" font-size="8px" font-family="Sans-serif" text-anchor="middle" xml:space="preserve">KEY for F5 (*C)</text>
+  <text fill="black" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="325.875059" y="257.93753" id="svg_74" font-size="8px" font-family="Sans-serif" text-anchor="middle" xml:space="preserve">encryption KEY</text>
+  <rect id="svg_20" x="18.5" y="19.25" fill="#DCDCDC" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="88.237498" height="41"/>
+  <text id="svg_21" x="-87.418755" y="-1.8125" transform="matrix(1, 0, 0, 1, 130.789, 39)" font-family="Sans-serif" font-size="12px" fill="black" font-weight="bold">Carrier</text>
+  <text id="svg_22" x="-83.935875" y="10.9375" transform="matrix(1, 0, 0, 1, 130.789, 39)" font-family="Sans-serif" font-size="12px" fill="black" font-weight="bold">Image</text>
+  <text id="svg_23" x="-215.719498" y="0.25" transform="matrix(1, 0, 0, 1, 248.707, 303.5)" font-family="Sans-serif" font-size="12px" fill="black" font-weight="bold">Steganography (*A)</text>
+  <text id="svg_25" x="-165.716003" y="3.25" transform="matrix(1, 0, 0, 1, 227.466, 313.1)" font-family="Sans-serif" font-size="8px" fill="black" font-weight="bold">(F5 algorithm)</text>
+  <polyline id="svg_27" points="37.79376220703125,276.95001220703125 44.09375,259.54998779296875 40.79376220703125,259.54998779296875 40.79376220703125,70.25 34.79376220703125,70.25 34.79376220703125,259.54998779296875 31.59375,259.54998779296875 37.79376220703125,276.95001220703125 "/>
+ </g>
+
+</svg>

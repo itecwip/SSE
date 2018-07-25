@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.paranoiaworks.unicus.android.sse"
+	android:versionCode="47"
+	android:versionName="1.7.3"
+	>
+
+	<uses-sdk android:minSdkVersion="9" android:targetSdkVersion="21"/>
+	<!-- <uses-sdk android:minSdkVersion="7" android:maxSdkVersion="8"/> -->
+		
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="com.android.vending.BILLING" />
+	<!-- <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> -->
+	<!-- <uses-permission android:name="android.permission.ACCESS_SUPERUSER" /> -->
+	
+	<supports-screens 
+		android:smallScreens="true"
+		android:normalScreens="true"
+		android:largeScreens="true"
+		android:xlargeScreens="true"
+		android:anyDensity="true"
+		/>
+		
+	<application
+		android:icon="@drawable/icon"
+		android:label="@string/app_name"
+		android:theme="@style/AppTheme"
+		android:name=".StaticApp"
+		android:largeHeap="true"
+		>
+		<activity
+			android:name="LauncherActivity"
+			android:label="@string/app_name"
+			android:launchMode="singleTop"
+			android:noHistory="true"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			>
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+				<category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<action android:name="android.intent.action.EDIT"/>		
+				<category android:name="android.intent.category.DEFAULT"/>	
+				<data android:scheme="file" android:host="*" android:mimeType="*/*"/>          			
+				<data android:pathPattern=".*\\.enc" />
+				<data android:pathPattern=".*\\..*\\.enc"/>
+				<data android:pathPattern=".*\\..*\\..*\\.enc"/>
+				<data android:pathPattern=".*\\..*\\..*\\..*\\.enc"/>
+				<data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.enc"/>
+				<data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.enc"/>		
+			</intent-filter>
+			<intent-filter>			    
+				<action android:name="android.intent.action.SEND"/>	
+				<action android:name="android.intent.action.SEND_MULTIPLE"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="*/*" />
+			</intent-filter>	
+		</activity>
+		<activity
+			android:name="MainActivity"
+			android:label="@string/app_name"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			>
+		</activity>
+		<activity
+			android:name="FileEncActivity"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			>
+			<!--  
+			<intent-filter>
+			    <category android:name="android.intent.category.DEFAULT"/>
+				<action android:name="android.intent.action.VIEW"/>
+				<action android:name="android.intent.action.EDIT"/>			
+				<data android:scheme="file" android:host="*" android:mimeType="*/*"/>	
+			</intent-filter>	
+			 -->				
+        </activity>
+		<activity
+			android:name="MessageEncActivity"
+			android:windowSoftInputMode="adjustPan"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			>
+        </activity>
+		<activity
+			android:name="PasswordVaultActivity"
+			android:windowSoftInputMode="adjustResize"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			>
+        </activity>
+        <activity
+			android:name="OtherUtilsActivity"
+			android:windowSoftInputMode="adjustPan"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			>
+        </activity>
+		<activity
+			android:name="SettingsActivity"
+			android:windowSoftInputMode="adjustPan"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			>
+        </activity>
+        <activity
+			android:name="UpgradeToProActivity"
+			android:windowSoftInputMode="adjustPan"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			>
+        </activity>
+		<activity
+			android:name="ext.com.nononsenseapps.filepicker.FilePickerActivity"
+			android:label="@string/app_name"
+			android:theme="@style/FilePicker.Theme">
+			<intent-filter>
+				<action android:name="android.intent.action.GET_CONTENT" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<uses-library android:required="false" android:name="com.sec.android.app.multiwindow" />
+		<meta-data android:name="com.sec.android.support.multiwindow" android:value="true" />
+		<meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_W" android:value="632.0dip" />
+		<meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_H" android:value="598.0dip" />
+		<meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_W" android:value="632.0dip" />
+		<meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_H" android:value="598.0dip" />
+	</application>
+</manifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="0px"
+	android:minHeight="22dp"
+	android:padding="0px"
+	android:layout_margin="0px"
+/>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-Hant">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+</head>
+<body>
+
+ <b>背景</b><br/> <span style="font-size: 80%;">谷歌在 Android 4.4（KitKat）版中突然取消了所有協力廠商（非預裝）應用程式寫入外部/卸除式存儲裝置的授權權限。由於這項決定，很多應用程式的功能受到嚴重影響，還有些則完全無法使用。在開發商的壓力下，谷歌在 Android 5 中整合了一個折衷解決方案。透過使用一個新的 API，借助 SAF（存儲存取框架），應用程式又可以重新獲得寫入外部存儲裝置的權限。</span><br/><br/><b>第一次啟動</b><br/> <span style="font-size: 80%;">
+	<ul>
+		<li>出現選擇目錄對話方塊。您需要選擇您要操作的目錄（或卷）。</li>
+		<li>點按右上角的「<b>更多按鈕</b>」，然後選擇「<b>顯示 SD 卡（Show SD card）</b>」。</li>
+		<li>點按左上角的「<b>功能表按鈕</b>」，然後選擇您要使用的存儲裝置。</li>
+		<li>點按底部的「<b>選擇（SELECT）</b>」。</li>
+	</ul>
+</span> <br/> <b>限制</b><br/> <span style="font-size: 80%;">SAF 模式下有一些限制，您應該有所瞭解。 
+	<ul>
+		<li>在 SAF 模式下不能設定主目錄/自訂目錄，不過最近一次選定的 SAF URI 可以自動儲存：「<B>主目錄（Home）按鈕</B>」 → 「<B>轉到最近選擇的 SAF 目錄（Go to Last Picked SAF Dir）</B>」。</li>
+		<li>無法使用「抹除」功能。如果在應用程式設定中選中了「加密後抹除（Wipe after Encryption）」選項，檔案將只可被刪除。</li>
+		<li>相比標準的直接檔案存取模式，在 SAF 模式下執行檔案操作的效能略低（尤其是當目錄中包含大量檔案/子目錄時）。</li>
+		<li>僅當目的應用程式能夠解碼 SAF URI 時才能執行「開啟檔案（Open File）」功能。</li>
+	</ul>
+</span>
+
+</body>
+ 

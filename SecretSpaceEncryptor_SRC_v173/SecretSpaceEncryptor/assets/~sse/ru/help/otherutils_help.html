@@ -1,0 +1,137 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Secret Space Encryptor для Android - Другие утилиты</title>
+	<script language="JavaScript" src="/android_asset/js/help.js"></script>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+	<link rel="shortcut icon" href="/android_asset/img/sse_favicon.png"></link>
+</head>
+<body>
+	<h2 style="margin-top: -0.6em;">Генератор паролей</h2>
+		<ul>
+			<li>Настраиваемый генератор паролей</li>
+			<li>Этот генератор паролей также интегрирован в приложение Сейф паролей</li>
+		</ul>
+	<br/>
+	<h2>Уборщик буфера обмена</h2>
+		<ul>
+			<li>Стирает содержимое системного буфера обмена</li>
+		</ul>
+	<br/>
+	<h2>Отчет приложения</h2>
+		<ul>
+			<li>Отчет безопасности приложения</li>
+		</ul>
+	<br/>
+	<h2>Аттестация алгоритмов</h2>
+		<ul>
+			<li>Измеряет производительность алгоритмов шифрования</li>
+			<li>
+				<b>Сравнение Android 2.1 и 2.2: </b><br/>
+				<ul>
+					<li>одинаковые устройства <i>(Creative ZEN Touch 2)</i></li>
+					<li>одинаковый алгоритм <i>(AES-256 (Rijndael))</i></li>
+					<li>разные версии Android <i>(Android 2.1 Eclair (Interpreter) против Android 2.2 Froyo (JIT))</i></li>
+				</ul>
+				<div class="delimiter">&nbsp;</div>
+				<table class="color centertd">
+					<tr>
+						<th colspan="3">Creative ZEN Touch 2</th>
+					</tr>
+					<tr class="grey">
+						<th class="textToLeft">Тест</th>
+						<th>Android 2.1</th>
+						<th>Android 2.2</th>
+					</tr>
+					<tr>
+						<td>Шифрование.A</td>
+						<td>325.36 kB/s</td>
+						<td>975.21 kB/s</td>
+					</tr>
+					<tr>
+						<td>Расшифровка.A</td>
+						<td>275.44 kB/s</td>
+						<td>877.19 kB/s</td>
+					</tr>
+					<tr>
+						<td>Шифрование.B</td>
+						<td>382.04 kB/s</td>
+						<td>1.13 MB/s</td>
+					</tr>
+					<tr>
+						<td>Расшифровка.B</td>
+						<td>385.28 kB/s</td>
+						<td>1.12 MB/s</td>
+					</tr>
+					<tr class="grey">
+						<th class="textToLeft">Счет</th>
+						<th>342 очка</th>
+						<th>1039 очков</th>
+					</tr>
+				</table>
+				<div class="delimiter">&nbsp;</div>
+			</li>
+			<li>
+				<b>Платформенно независимый код против собственного: </b><br/>
+				<ul>
+					<li>Creative ZEN Touch 2 + Android 2.2</li>
+					<li>Компиляция Java Dalvik VM против C++</li>
+				</ul>
+				<div class="delimiter">&nbsp;</div>
+				<table class="color centertd">
+					<tr class="grey">
+						<th class="textToLeft">Алгоритм</th>
+						<th>Платформенно<br/>независимый<br/>(очки)</th>
+						<th>Собственный<br/>код<br/>(очки)</th>
+					</tr>
+					<tr>
+						<td>AES-256</td>
+						<td>1039</td>
+						<td>6507</td>
+					</tr>
+					<tr>
+						<td>RC6-256</td>
+						<td>972</td>
+						<td>9912</td>
+					</tr>
+					<tr>
+						<td>Serpent-256</td>
+						<td>729</td>
+						<td>6238</td>
+					</tr>
+					<tr>
+						<td>Blowfish-256</td>
+						<td>1082</td>
+						<td>9121</td>
+					</tr>
+					<tr>
+						<td>Twofish-256</td>
+						<td>1051</td>
+						<td>8225</td>
+					</tr>
+					<tr>
+						<td>GOST-256</td>
+						<td>856</td>
+						<td>6457</td>
+					</tr>
+					<tr>
+						<td>Blowfish-448</td>
+						<td>1065</td>
+						<td>9095</td>
+					</tr>
+				</table>
+				<div class="delimiter">&nbsp;</div>
+			</li>
+		</ul>	
+		<i>Примечание: Этот тест не включает время на операции ввода/вывода.</i>
+		<br/><br/>
+	
+	<div id="toMainMenu" class="gradient"><a href="/android_asset/~sse/ru">&lt;&lt; Назад в главное меню SSE</a></div>
+	<div id="reserveSpace"></div>
+	<script language="JavaScript">formatPage();</script>
+	
+</body>
+</html>

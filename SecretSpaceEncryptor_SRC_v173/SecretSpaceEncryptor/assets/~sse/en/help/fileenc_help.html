@@ -1,0 +1,277 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Secret Space Encryptor for Android - File Encryptor</title>
+	<script language="JavaScript" src="/android_asset/js/help.js"></script>
+	<script language="JavaScript" src="/android_asset/js/imageMapResizer.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+	<link rel="shortcut icon" href="/sse/img/sse_icon.png"></link>
+</head>
+<body>
+	<h1 class="smallPad" id="anchor_main">
+		File Encryptor
+		<div class="smallFont">(Touch a letter or scroll down for more topics)</div>
+	</h1>
+	
+	<div class="screenShot">
+		<img src="../../img/fileencryptor_SSB.png" usemap="#ScreenShotMap" id="img_ID" style="width:400px; max-width: 100%;" alt="File Encryption Android"/>
+	</div>
+	
+	<map name="ScreenShotMap" id="map_ID">
+		<area shape='rect' coords='224,13,333,126' href="#anchor_a"/>
+		<area shape='rect' coords='586,29,695,142' href="#anchor_b"/>
+		<area shape='rect' coords='586,214,695,327' href="#anchor_c"/>
+		<area shape='rect' coords='586,475,695,588' href="#anchor_d"/>
+		<area shape='rect' coords='441,820,550,933' href="#anchor_e"/>
+		<area shape='rect' coords='186,820,299,933' href="#anchor_f"/>
+		<area shape='rect' coords='52,820,165,933' href="#anchor_g"/>
+		<area shape='rect' coords='304,622,413,735' href="#anchor_h"/>	
+		<area shape='rect' coords='163,622,272,735' href="#anchor_i"/>	
+	</map>
+	
+	<div class="anchor" id="other_menu">
+		<h2>Other Topics</h2>
+		<ul class="menu">
+			<li><a href="#quick_start" class="large">Quick Start</a></li>
+			<li><a href="#anchor_multiSelect" class="large">Batch Processing</a></li>
+			<li><a href="#anchor_more" class="large">More...</a></li>
+			<li><a href="#anchor_saf" class="large">SAF Mode (Android 5+)</a></li>
+			<li><a href="#anchor_faq" class="large">FAQ</a></li>
+			<hr/>
+			<div><span class="outer25"><span class="iconRelatedSettings"/></span>&nbsp;<a href="settings_help.html#anchor_fe" class="large">Related Settings</a></div>
+			<div class="delimiterThin">&nbsp;</div>
+			<div><span class="outer25"><span class="iconVideoTutorial"/></span>&nbsp;<a href="http://www.paranoiaworks.mobi/rd/005.htm" class="large">Video Tutorial</a></div>
+		</ul>	
+	</div>
+	
+	<div class="anchor" id="quick_start">
+		<h2>Quick Start</h2>
+		<b>Encryption</b>
+		<ul>
+			<li>Select a file or folder (touch a file/folder icon).</li>
+			<li>Tap the Encrypt button (bottom-right corner).</li>
+			<li>Set a password.</li>
+			<li>A new ".enc file" will be created.</li>
+			(Note: You can delete/<a href="javascript:scrollToElement('anchor_more')">wipe</a> the original file(s) after the encryption or it can be done automatically: <i><b>Settings: File Encryptor → Wipe Source After Encryption</b></i>)
+		</ul>
+		<br/>
+		<b>Decryption</b>
+		<ul>
+			<li>Select an encrypted file (touch a file).</li>
+			<li>Tap the Decrypt button (bottom-right corner).</li>
+			<li>Enter the correct password.</li>
+			<li>The selected file will be decrypted.</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_a">
+		<h2>A - Available Drives</h2>
+		<ul>
+			<li>Shortcuts to the available volumes on the current device + user-defined Home/Default directories.</li>
+			<li>Custom Directories - <img style="vertical-align: middle;" width="37px" height="20px" src="../../img/favbutton.png"/><br/>
+				<ul>
+					<li>
+						Encrypted/Decrypted files output directories can be set here (if enabled in <i><b>Settings: File Encryptor → Encrypted/Decrypted Files Destination</b></i>)<br/><br/>
+						<img src="../../img/fileencryptor_customdirs.png" style="width:260px; max-width: 100%;"/><br/>
+					</li>
+				</ul>
+			</li>
+			<li><a href="javascript:scrollToElement('anchor_saf')">SAF button</a> (Android 5+)</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_b">
+		<h2>B - Current Volume Parameters</h2>
+		<ul>
+			<li>available space / volume size</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_c">
+		<h2>C - Selected File/Folder</h2>
+		<ul>
+			<li>Long-click to select <b><i>folder</i></b></li>
+			<li>Short-click to select <b><i>file</i></b></li>
+			<li>or touch a file/folder icon</li>
+			<li><b>Selected file or folder can be:</b>
+				<ul>
+					<li><i><b>Encrypted or Decrypted</b></i> (according to the state of the selected file) by the <a href="javascript:scrollToElement('anchor_e')">Encrypt/Decrypt button (E)</a>;</li>
+					<li><i><b>Renamed, Opened, Deleted, or <a href="javascript:scrollToElement('anchor_more')">Wiped</a></b></i> by using the "Menu button" (bottom, second from right);</li>
+					<li><i><b>Note:</b></i> Long-clicking on a <b>file</b> leads to the same behavior as using the Menu button on the selected file/folder.</li>
+				</ul>
+			</li>
+			<li><a href="#anchor_multiSelect">Multiple File Selection</a></li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_d">
+		<h2>D - Encrypted File</h2>
+		<ul>
+			<li>Encrypted files can be recognized by <i><b>.enc</b></i> extensions, purple backgrounds, and “lock” icons.</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_e">
+		<h2>E - Encrypt/Decrypt Button</h2>
+		<ul>
+			<li>Encrypt or decrypt (according to the selected item) files or folders.</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_f">
+		<h2>F - Compression ON/OFF</h2>
+		<ul>
+			<li>Activate/deactivate data compression.</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_g">
+		<h2>G - Direct to the Main Menu</h2>
+		<ul>
+			<li>Go directly to the application's <i><b>Main Menu</b></i></li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_h">
+		<h2>H - More Button</h2>
+		<ul>
+			<li>Selected file/folder can be <i><b>Renamed, Deleted, <a href="javascript:scrollToElement('anchor_more')">Wiped</a> or Opened (file).</b></i></li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_i">
+		<h2>I - Set Session Password</h2>
+		<ul>
+			<li>Set session ("master") password.</li>
+			<li>A password is not set to enter the application, but set for the current encryption/decryption session. You may have an unlimited number of passwords for any purpose.</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_multiSelect">
+		<h2>Multiple File Selection</h2>
+		<ul>
+			<li>Multiple file selection (batch processing) - <b>(PRO version feature)</b></li>
+			<li>This can be activated/deactivated in the application's settings; <b>Settings → File Encryptor: Multiple File Selection</b></li>
+		</ul>
+		<br/>
+		<img src="../../img/fileencryptor_multiselect.png" style="width:325px; max-width: 100%;"/>
+	</div>
+	
+	<div class="anchor" id="anchor_more">
+		<h2>More...</h2>
+		<ul>
+
+			<li>The encryption/decryption process can be interrupted by the "Back Button".</li>
+			<li>
+				<b>Wiping:</b></br>
+				<ul>
+				<li>Data is physically overwritten before deleting (cannot be undeleted).</li>
+				<li><b>warning:</b> Due to caches, reallocation mechanisms, and wear-leveling in modern systems and on hardware/driver levels itself, there is a disproportion between "reported file system state" (reported to the app) and "real/physical memory state". There is a possibility that sometimes on some devices (depended on system/flash memory driver) the wipe feature will not work on 100%. There is no way, how to be absolutely sure, since the app works always only with a "virtual" image of a physical media.</li>
+				</ul>
+			</li>
+			<li>
+				<b>Icons</b><br/>
+				<div class="delimiter">&nbsp;</div>
+				<table class="color">
+					<tr>
+						<td><img width="35px" height="31px" src="../../img/icons/directory.png"/></td>
+						<td>Folder</td>
+					</tr>
+					<tr>
+						<td><img width="35px" height="31px" src="../../img/icons/directory_readonly.png"/></td>
+						<td>Read-Only Folder</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/file.png"/></td>
+						<td>
+							File
+							<br/>(more types: image, video, ...)
+						</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/file_readonly.png"/></td>
+						<td>
+							Read-Only File
+							<br/>(more types: image, video, ...)
+						</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/file_enc.png"/></td>
+						<td>Encrypted File</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/file_enc_readonly.png"/></td>
+						<td>Read-Only Encrypted File</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/back_file.png"/></td>
+						<td>Back to the Parent Folder</td>
+					</tr>
+				</table>
+				<div class="delimiter">&nbsp;</div>
+			</li>
+			<li><b>Incorrect Password</b>
+				<ul>
+					<li>There is no way to decrypt any file without a correct password.</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_saf">
+		<h2>SAF Mode (Android 5+)</h2>
+			<b>Background</b><br/>
+			<span>In Android 4.4 (KitKat), Google suddenly cut off all third-party (non-preinstalled) applications from the permission to write to external/removable storage. Thanks to this decision, a lot of applications have been crippled and some have become entirely useless. Pressure on Google has led to a compromise solution that has been integrated into Android 5. Applications can regain the write permission to external storage using a new API together with SAF (Storage Access Framework).</span><br/>
+			<br/>
+			<b>First Start</b><br/>
+			<span>
+				<ul>
+					<li>Directory picker will appear. You need to select the directory (or volume) with which you want to work.</li>
+					<li>Tap the <b>More button</b> (top-right corner) and choose <b>Show SD card</b>.</li>
+					<li>Tap the <b>Menu button</b> (top-left corner) and choose the storage you want to use.</li>
+					<li>Tap <b>SELECT</b> (bottom).</li>
+				</ul>
+			</span>
+			<br/>
+			<b>Limitations</b><br/>
+			<span>
+				There are some limitations in the SAF mode you should know. 
+				<ul>
+					<li>Home/Custom directories cannot be set in SAF; however, the last-picked SAF URI is automatically saved: <b>Home Button → Go to Last Picked SAF Dir</b>.</li>
+					<li>The <a href="javascript:scrollToElement('anchor_more')">wipe</a> feature does not work. If option “Wipe after Encryption” is checked in the app settings, file(s) will be deleted only.</li>
+					<li>SAF mode provides lower performance than the standard direct file access mode (especially with dirs that contain a lot of files/subdirs).</li>
+					<li>The “Open File” function will work only if the destination application is able to decode the SAF URI.</li>
+				</ul>
+			</span>
+	</div>
+	
+	<div class="anchor" id="anchor_faq">
+		<h2>File Encryption FAQ</h2>
+			<b>Issue: <i>My file(s) are still visible after the encryption.</i></b>
+			<br/><br/>
+			<b>Answer: </b>The SSE File Encryptor works as an archiver (a new .enc file is created). You can delete/wipe the original file(s) after the encryption process is completed or it can be done automatically: <i><b>Settings: File Encryptor → Wipe Source After Encryption</b></i>
+			<br/><br/><hr/><br/>
+			<b>Issue: <i>In KitKat (Android 4.4), the external SD card is read only—message: EACCESS (Permission denied).</i></b>
+			<br/><br/>
+			<b>Answer: </b>Android 4.4 does not allow write access to the external SD card to any app except for preinstalled apps (preinstalled by device, or system image manufacturer). We can do absolutely nothing about this issue. The only solution is to root your device and change permissions or upgrade to Android 5 and use <a href="javascript:scrollToElement('anchor_saf')">SAF</a>.
+			<br/><br/>
+			Use Google for more info - search for something like: <code><b><font color="blue">android 4.4 external card read only</font></b></code>		
+			<br/><br/>
+			<b>Alternatively</b> - Create the following directory (on your external SD card):<br/>
+			<code style="font-size: 90%;"><b><font color="red">Android/data/<br/>com.paranoiaworks.unicus.android.sse</font></b></code><br/><br/>
+			The app should have write permissions in this folder.		
+			<br/><br/>
+	</div>
+	
+	<div id="toMainMenu" class="gradient"><a href="/sse">&lt;&lt; Back to SSE main menu</a></div>
+	<div id="reserveSpace"></div>
+	<script language="JavaScript">
+		formatPage();
+		imageMapResize(document.getElementById("map_ID"));
+	</script>
+	
+</body>
+</html>

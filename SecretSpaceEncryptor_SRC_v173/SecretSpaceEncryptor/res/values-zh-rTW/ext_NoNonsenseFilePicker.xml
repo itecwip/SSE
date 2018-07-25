@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>	
+	<!-- File/Dir Picker -->
+	<string name="nnfp_new_folder">新增資料夾</string>
+    <string name="nnfp_create_folder_error">無法建立資料夾</string>
+    <string name="nnfp_name">檔案/資料夾名稱</string>
+    <string name="nnfp_go_back">返回</string>
+    <string name="nnfp_select_something_first">請先選擇一項</string>
+    <plurals
+        name="nnfp_select_dir">
+        <item quantity="one">選擇目錄</item>
+        <item quantity="other">選擇目錄</item>
+    </plurals>
+    <plurals
+        name="nnfp_select_file">
+        <item quantity="one">選擇檔案</item>
+        <item quantity="other">選擇檔案</item>
+    </plurals>
+    <plurals
+        name="nnfp_select_dir_or_file">
+        <item quantity="one">選擇目錄或檔案</item>
+        <item quantity="other">選擇目錄或檔案</item>
+    </plurals>
+</resources>

@@ -1,0 +1,257 @@
+﻿<!doctype html>
+<html lang="uk">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Secret Space Encryptor для Android - Шифрувач файлів</title>
+	<script language="JavaScript" src="/android_asset/js/help.js"></script>
+	<script language="JavaScript" src="/android_asset/js/imageMapResizer.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+	<link rel="shortcut icon" href="/sse/img/sse_icon.png"></link>
+</head>
+<body>
+	<h1 class="smallPad" id="anchor_main">
+		Шифрувач файлів
+		<div class="smallFont">(натисніть літеру або перегорніть вниз для перегляду розділів)</div>
+	</h1>
+	
+	<div class="screenShot">
+		<img src="../../img/fileencryptor_SSB.png" usemap="#ScreenShotMap" id="img_ID" style="width:400px; max-width: 100%;"/>
+	</div>
+	
+	<map name="ScreenShotMap" id="map_ID">
+		<area shape='rect' coords='224,13,333,126' href="#anchor_a"/>
+		<area shape='rect' coords='586,29,695,142' href="#anchor_b"/>
+		<area shape='rect' coords='586,214,695,327' href="#anchor_c"/>
+		<area shape='rect' coords='586,475,695,588' href="#anchor_d"/>
+		<area shape='rect' coords='441,820,550,933' href="#anchor_e"/>
+		<area shape='rect' coords='186,820,299,933' href="#anchor_f"/>
+		<area shape='rect' coords='52,820,165,933' href="#anchor_g"/>
+		<area shape='rect' coords='304,622,413,735' href="#anchor_h"/>	
+		<area shape='rect' coords='163,622,272,735' href="#anchor_i"/>	
+	</map>
+	
+	<div class="anchor" id="other_menu">
+		<h2>Інші теми</h2>
+		<ul class="menu">
+			<li><a href="javascript:scrollToElement('quick_start')" class="large">Швидкий початок</a></li>
+			<li><a href="javascript:scrollToElement('anchor_multiSelect')" class="large">Пакетна обробка</a></li>
+			<li><a href="javascript:scrollToElement('anchor_more')" class="large">Ще...</a></li>
+			<li><a href="javascript:scrollToElement('anchor_saf')" class="large">Режим SAF (Android 5+)</a></li>
+			<li><a href="javascript:scrollToElement('anchor_faq')" class="large">Часто задавані питання</a></li>
+		</ul>	
+	</div>
+	
+	<div class="anchor" id="quick_start">
+		<h2>Швидкий початок</h2>
+		<b>Шифрування</b><ul>
+			<li>Виберіть файл або папку (натисніть файл, довге натискання для папки).</li>
+			<li>Натисніть кнопку Шифрувати (нижній правий кут).</li>
+			<li>Задайте пароль.</li>
+			<li>Новий файл ".enc" буде створено.</li>
+			(Примітка: Ви можете видалити/зачистити вихідний файл(и) після шифрування або це може бути зроблено автоматично: <i><b>Налаштування: Шифрувач файлів → Зачищати джерело після шифрування</b></i>)
+		</ul>
+		<br/>
+		<b>Разшифрування</b>
+		<ul>
+			<li>Виберіть зашифрований файл (натисніть файл).</li>
+			<li>Натисніть кнопку Розшифрувати (нижній правий кут).</li>
+			<li>Задайте пароль.</li>
+			<li>Файл або папка буде розшифровано.</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_a">
+		<h2>A - Доступні диски</h2>
+		<ul>
+			<li>ярлик на доступні диски на поточному пристрої + завдані користувачем папки Домашня/За замовченням</li>
+			<li>Налаштовувані папки - <img style="vertical-align: middle;" width="37px" height="20px" src="../../img/favbutton.png"/><br/>
+				<ul>
+					<li>
+						Папки виводу зашифрованих/розшифрованих файлів можна задати тут (Якщо увімкнено <b>Налаштування: Шифрувач файлів → Кінцева папка для зашифрованих/розшифрованих файлів</b>)<br/>
+						<img src="../../img/fileencryptor_customdirs.png" style="width:260px; max-width: 100%;"/><br/>
+					</li>
+				</ul>
+			</li>
+			<li><a href="javascript:scrollToElement('anchor_saf')">Кнопка SAF</a> (Android 5+)</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_b">
+		<h2>B - Параметри поточного тома</h2>
+		<ul>
+			<li>доступне місце / розмір тому</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_c">
+		<h2>C - Обраний файл/папка</h2>
+		<ul>
+			<li>довге натискання для вибору <b><i>папки</i></b></li>
+			<li>коротке натискання для вибору <b><i>файла</i></b></li>
+			<li><b>Обраний файл або папка може бути:</b>
+				<ul>
+					<li><i><b>Зашифровано</b></i> або <i><b>Разшифровано</b></i> (у відповідності зі статусом обраного файла) за допомогою кнопки <a href="javascript:scrollToElement('anchor_e')">Шифрувати/Розшифрувати (E)</a></li>
+					<li><i><b>Перейменовано, Відкрито, Видалено або <a href="javascript:scrollToElement('anchor_more')">Зачищено</a></b></i> з використанням кнопки "Меню" на вашому пристрої</li>
+					<li><i><b>Примітка:</b></i> довге натискання на <b>файлі</b> призводить до тієї ж поведінки як і використання кнопки "Меню" на обраному файлі/папці</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_d">
+		<h2>D - Зашифрований файл</h2>
+		<ul>
+			<li>зашифрований файл може бути роспізнано по: розширенню <i><b>.enc</b></i>, пофарбованому фіолетовим фоном та значку "замка"</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_e">
+		<h2>E - Кнопка Шифрувати/Розшифрувати</h2>
+		<ul>
+			<li>шифрує або розшифровує (у відповідності з поточним обраним елементом) файл або папку</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_f">
+		<h2>F - Стиснення УВІМКНЕНО/ВИМКНЕНО</h2>
+		<ul>
+			<li>активує/деактивує стиснення даних</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_g">
+		<h2>G - Спрямовує в Головне меню</h2>
+		<ul>
+			<li>переходить прямо в <i><b>Головне меню</b></i> додатку</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_h">
+		<h2>H - Кнопка Ще</h2>
+		<ul>
+			<li>Обраний файл/папка може бути <i><b>Перейменовано, Видалено, <a href="javascript:scrollToElement('anchor_more')">Зачищено</a> або Відкрито (файл)</b></i></li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_i">
+		<h2>I - Задати пароль сесії</h2>
+		<ul>
+			<li>Встановити пароль ("мастер") сесії.</li>
+			<li>Пароль не встановлюється для входу в додаток, але встановлюється на поточну сесію шифрування/розшифрування. Ви можете мати необмежену кількість паролів для будь-яких цілей.</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_multiSelect">
+		<h2>Множинний вибір файлів</h2>
+		<li>Множинний вибір файлів (пакетна обробка) - <b>(функція доступна в версії PRO)</b>.</li>
+		<li>Може бути активована/деактивована в налаштуваннях додатку <b>Налаштування → Шифрувач файлів: Множинний вибір файлів</b></li>
+		<br/>
+		<img src="../../img/fileencryptor_multiselect.png" style="max-width:320px"/>
+	</div>
+	
+	<div class="anchor" id="anchor_more">
+		<h2>Ще...</h2>
+		<ul>
+
+			<li>процес шифрування/розшифрування може бути перерван кнопкою &quot;Назад&quot;</li>
+			<li><b>Зачищенняа</b>
+				<ul>
+					<li>дані фізично перезаписуються перед видаленням (не можуть буди відновлені)</li>
+					<li><b>Примітка:</b> Внаслідок кешування, механізмів перерозподілу, рівневого обгортання в сучасних системах і власне на апаратному/драйверному рівнях, є невідповідність між "сповіщуваним системою станом файла" (сповіщуваним додатку) та "реальним/фізичним станом пам'яті". Є вірогідність, що іноді на деяких пристроях (залежить від драйвера системи/флеш-пам'яті) функція очищення не буде спрацьовувати на 100%. Не існує способу як бути абсолютно впевненим, так як додаток працює завжди із "віртуальним" образом фізичного носія.</li>
+				</ul>
+			</li>
+			<li>
+				<b>Значки</b><br/>
+				<div class="delimiter">&nbsp;</div>
+				<table class="color">
+					<tr>
+						<td><img width="35px" height="31px" src="../../img/icons/directory.png"/></td>
+						<td>Папка</td>
+					</tr>
+					<tr>
+						<td><img width="35px" height="31px" src="../../img/icons/directory_readonly.png"/></td>
+						<td>Папка тільки для читання</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/file.png"/></td>
+						<td>Файл</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/file_readonly.png"/></td>
+						<td>Файл тільки для читання</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/file_enc.png"/></td>
+						<td>Зашифрований файл</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/file_enc_readonly.png"/></td>
+						<td>Зашифрований файл тільки для читання</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/back_file.png"/></td>
+						<td>Назад в батьківську папку</td>
+					</tr>
+				</table>
+				<div class="delimiter">&nbsp;</div>
+			</li>
+			<li><b>Невірний пароль</b><ul>
+					<li>не існує способу розшифрувати будь-який файл без правильного пароля</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_saf">
+		<h2>Режим SAF (Android 5+)</h2>
+        <b>Передмова</b><br/>
+        <span>В Android 4.4 (KitKat) - Google раптово відокремив всі сторонні (не передвстановлені) додатки від дозволу на запис на зовнішнє/з&#39;ємне сховище. Завдяки цьму рішенню багато додатків були притиснуті та деякі з них повністю стали некорисні. Тиск на Google призвів до компромісного рішення, яке було запроваджено в Android 5. Додаток може відновити дозвіл на запис на зовнішнє сховище, використовуючи новий API, разом з SAF (Storage Access Framework).</span><br/>
+        <br/>
+        <b>Перший запуск</b><br/>
+        <span>
+	        <ul>
+		        <li>Буде показано вибір папок. Вам потрібно вибрати папку (або том) з якою ви бажаєте працювати.</li>
+		        <li>Натисніть <b>кнопку Ще</b> (верхній правий кут) та виберіть <b>Показати SD-карту</b>.</li>
+		        <li>Натисніть <b>кнопку Меню</b> (верхній лівий кут) та виберіть сховище, яке бажаєте використовувати.</li>
+		        <li>Натисніть <b>ВИБРАТИ</b> (внизу).</li>
+	        </ul>
+        </span>
+        <br/>
+        <b>Обмеження</b><br/>
+        <span>
+            Є деякі обмеження режиму SAF, про які ви маєте знати.
+	        <ul>
+		        <li>Домашня папка не може бути задана в SAF, при цьому останній обраний SAF URI автоматично зберігається: <b>Кнопка Додому → Перейти до останньої обраної папки SAF</b>.</li>
+		        <li>Функція Зачищення не працює - Якщо опція "Зачищати після шифрування" увімкнена в налаштуваннях додатку, файл(и) буде тільки видалено.</li>
+		        <li>Режим SAF забезпечує нижчу продуктивність у порівнянні зі стандартним режимом прямого файлового доступу (особливо з папками, що містять багато файлів/підпапок).</li>
+		        <li>Функція відкрити файл буде працювати тільки якщо кінцевий додаток буде здатен розпізнати SAF URI.</li>
+	        </ul>
+        </span>
+
+	</div>
+	
+	<div class="anchor" id="anchor_faq">
+		<h2>Часто задавані питання по Шифрувачу файлів</h2>
+			<b>Проблема: <i>KitKat (Android 4.4) - Зовнішня SD-карта тільки для читання - повідомлення: EACCESS (Дозвіл відхилено).</i></b>
+			<br/><br/>
+			<b>Відповідь:</b> Android 4.4 недозволяє доступ запису на зовнішню SD-карту будь-якому додатку, за виключенням одного з перевстановлених (передвстановлених виробником пристрою (або системним образом)). Ми також абсолютно нічого не можемо подіяти з цією проблемою. Едине рішення - це отримати права адміністратора вашого пристрою та змінити дозволи або оновитися до Android 5 та скористатися <a href="javascript:scrollToElement('anchor_saf')">SAF</a>.
+			<br/><br/>
+			Скористайтеся пошуком Google для додаткової інформації - введіть щось на зразок: <code><b>android 4.4 external card read only</b></code>		
+			<br/><br/>
+			<b>Альтернативно</b> - Створіть наступну папку (на вашій зовнішній SD-картці):<br/>
+			<code><b><font color="red">Android/data/<br/>com.paranoiaworks.unicus.android.sse</font></b></code><br/><br/>
+			Додаток має отримати дозвіл запису в цю папку.		
+			<br/><br/>
+	</div>
+	
+	<div id="toMainMenu" class="gradient"><a href="/android_asset/~sse/uk">&lt;&lt; Назад в головне меню SSE</a></div>
+	<div id="reserveSpace"></div>
+	<script language="JavaScript">
+		formatPage();
+		imageMapResize(document.getElementById("map_ID"));
+	</script>
+	
+</body>
+</html>

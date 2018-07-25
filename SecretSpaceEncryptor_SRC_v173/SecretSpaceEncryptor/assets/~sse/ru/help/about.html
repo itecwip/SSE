@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Secret Space Encryptor для Android (Менеджер паролей, Шифратор файлов, Шифратор текста)</title>
+	<script language="JavaScript" src="/android_asset/js/help.js"></script>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+	<link rel="shortcut icon" href="/android_asset/img/sse_favicon.png"></link>
+</head>
+<body>
+	<h1 class="smallPad">
+		<div class="normalLabelCenter smallerFont">Secret Space Encryptor</div>
+		<div id="versionText" class="textToCenter smallerFont">(версия 1.7.3)</div>
+	</h1>
+	<ul>
+		<li><b>Менеджер паролей, Шифратор текста и Шифратор файлов объединены в решение все в одном.</b></li>
+		<li><b>Сейф паролей:</b> Хранит и управляет вашими паролями, ПИН-кодами или записями в одном безопасном месте, защищенным мастер-паролем. Доступна функция импорта/экспорта (упакованном, полностью зашифрованном файловом формате .pwv или незашифрованном, редактируемом формате .xml).</li>
+		<li><b>Шифратор текста:</b> Хранит ваши сообщения, записи и другие тексты в безопасности от непосвященных читателей. Используйте внутреннею базу данных или просто копируйте/вставляйте в/из ваших любимых приложений. Пароль задается для текущей сессии шифровки/расшифровки, так у вас будет неограниченное число паролей для разных нужд (записи, почты, соцсетей, общения с людьми A B C, ...).</li>
+		<li><b>Шифратор файлов:</b> Безопасно шифрует ваши частные и конфиденциальные файлы и целые папки. Доступна функция Зачистки (безопасного удаления).</li>
+		<li><b>Другие утилиты:</b> Генератор паролей, Уборщик буфера обмена, Аттестация алгоритмов, ...</li>
+		<li>Все зашифровано с использованием сильных алгоритмов шифрования: AES (Rijndael) 256bit, RC6 256bit, Serpent 256bit, Blowfish 448bit, Twofish 256bit, GOST 256bit + <b>Threefish 1024bit, SHACAL-2 512bit (для версии S.S.E. Pro)</b>.</li>
+		<li id="noAds">Минимальные разрешения. Нет рекламы.</li>
+		<li>Движок шифрования основан на Bouncy Castle Crypto Library (Java) и Crypto++ (C++).</li>
+		<li>Кросс-платформенные настольные версии<b> (Windows, Linux, Mac OS X, ...)</b> <b>Шифратора текста</b> и <b>Шифратора файлов</b> доступны на домашней странице приложения (<a href="http://www.paranoiaworks.mobi/download" >раздел загрузки</a>).</li>
+		<li><b>Paranoia Text Encryption для iOS (iPhone/iPad/iPod)</b> доступен на <a href="http://www.paranoiaworks.mobi/pte" target="_blank">P.T.E. for iOS</a>.
+		<li>Основанный на интернет-технологии <b>Шифратор текста</b> (на стороне клиента AES) доступен по адресу: <a href="https://pteo.paranoiaworks.mobi">https://pteo.paranoiaworks.mobi</a></li>
+		<li>Это программное обеспечение с открытым исходным кодом.</li>
+		<li><b>(EN) Detailed format specifications:</b> <a href="../../en/help/pwv_specifications.html">Password Vault</a>, <a href="../../en/help/te_specifications.html">Text Encryptor</a>, <a href="../../en/help/fe_specifications.html">File Encryptor</a></li>
+	</ul>
+	<br/>
+	<b>&#169; Paranoia Works 2017</b><br/>
+	<br/>
+	<b>Перевод: Виктор Хохлов</b><br/>
+	<br/>
+	<a href="javascript:gotoAndRoll('../../en/help/license.html', 0)">Читать информацию о лицензии</a><br/>
+	<br/>
+	<div>Мы благодарны за любую обратную связь по вашим советам по улучшению, техническим отчетам о проблемах и ..., вы всегда можете связаться с нами по почте:</div>
+	<div id='signHere'></div>
+	<div>Домашняя страница приложения (актуальная справка, исходные коды, инструменты шифрования файлов, ...):<br/>
+	<a href="http://www.paranoiaworks.mobi/sse">http://www.paranoiaworks.mobi/sse</a></div>
+	
+	<br/>
+	<ul id="rate" class="menu"><li><a href="https://play.google.com/store/apps/details?id=com.paranoiaworks.unicus.android.sse"><b>Если вам понравилось приложение, поставьте ОЦЕНКУ.</b></a><b><span style="color:#0044EE;"> (Google Play)</span></b></li></ul>
+	<!--	
+	<b>and</b>
+	<ul class="menu"><li><a href="http://www.paranoiaworks.mobi/sse/sse_donation.html"><b>If you really like it, you can DONATE.</b></a><b> <span style="color:#0044EE;">(PayPal)</span></b></li></ul>
+	-->
+	<br/>
+	
+	<div class="delimiter">&nbsp;</div>
+	<div class="gradient">&nbsp;</div>
+	<div id="toMainMenu" class="gradient"><a href="/android_asset/~sse/ru">&lt;&lt; Назад в главное меню SSE</a></div>
+	<div id="reserveSpace"><br/><a href="../../en/help/license.html">Лицензия</a></div>
+	<script language="JavaScript">formatPage();</script>
+	<script language="JavaScript">
+		try {if(getValue("SHOW_UPGRADE_FEATURES") == 0) document.getElementById("rate").style.display = 'none';}catch(err){} 
+		try {
+			if(getValue("CN_VERSION") == 1)
+			{
+				document.getElementById("noAds").style.display = 'none';
+				var str = document.getElementById("versionText").innerHTML;
+				document.getElementById("versionText").innerHTML = str.replace(")", " CN)");
+			}
+		}catch(err){}
+	</script>
+	<script language="JavaScript">setSignElement('signHere', 'paranoiaworks.mobile', 'gmail.com');</script>
+</body>
+</html>

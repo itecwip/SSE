@@ -1,0 +1,170 @@
+﻿<!doctype html>
+<html lang="uk">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Secret Space Encryptor для Android - Шифрувач тексту</title>
+	<script language="JavaScript" src="/android_asset/js/help.js"></script>
+	<script language="JavaScript" src="/android_asset/js/imageMapResizer.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+	<link rel="shortcut icon" href="/sse/img/sse_icon.png"></link>
+</head>
+<body>
+	<h1 class="smallPad" id="anchor_main">
+		Шифрувач тексту
+		<div class="smallFont">(натисніть літеру або перегорніть вниз для перегляду розділів)</div>
+	</h1>
+	
+	<div class="screenShot">
+		<img src="../../img/messageencryptor_SSB.png" usemap="#ScreenShotMap" style="width:400px; max-width: 100%;"/>
+	</div>
+	
+	<map name="ScreenShotMap" id="map_ID">
+		<area shape='rect' coords='205,154,314,267' href="#anchor_a"/>
+		<area shape='rect' coords='205,488,314,600' href="#anchor_b"/>
+		<area shape='rect' coords='585,193,694,306' href="#anchor_c"/>
+		<area shape='rect' coords='585,345,694,458' href="#anchor_d"/>
+		<area shape='rect' coords='585,559,694,672' href="#anchor_e"/>
+		<area shape='rect' coords='526,762,635,875' href="#anchor_f"/>
+		<area shape='rect' coords='205,762,314,875' href="#anchor_g"/>
+		<area shape='rect' coords='340,154,449,267' href="#anchor_h"/>
+		<area shape='rect' coords='342,762,451,875' href="#anchor_i"/>
+	</map>
+	
+	<div class="anchor" id="other_menu">
+		<h2>Інші розділи</h2>
+		<ul class="menu">
+			<li><a href="javascript:scrollToElement('quick_start')" class="large">Швидкий початок</a></li>
+			<li><a href="javascript:scrollToElement('session_password')" class="large">Пароль сесії</a></li>
+			<li><a href="javascript:scrollToElement('forgotten_password')" class="large">Забутий пароль</a></li>
+			<li><a href="javascript:scrollToElement('pasteboard')" class="large">Системний буфер обміну</a></li>
+			<hr/>
+			<span class="outer25"><span class="iconOnline"/></span>&nbsp;<a href="https://pteo.paranoiaworks.mobi/" class="large">Інтернет версія (AES)</a>
+		</ul>	
+	</div>
+	
+	<div class="anchor" id="quick_start">
+		<h2>Швидкий початок</h2>
+		<ul>
+		<b>Шифрування</b>
+		<ul>
+			<li>Задайте <a href="javascript:scrollToElement('session_password')">пароль</a> для поточної сесії.</li>
+			<li>Наберіть або вставте текст в поле "<a href="javascript:scrollToElement('anchor_c')">Розшифрований текст</a>" (секція <b>C</b> на <a href="javascript:scrollToElement('anchor_main')">малюнку</a>).</li>
+			<li>Натисніть кнопку Шифрувати.</li>
+			<li>Зашифрований текст з&#39;явиться в полі "<a href="javascript:scrollToElement('anchor_e')">Зашифрований текст</a>" (секція <b>E</b> на <a href="javascript:scrollToElement('anchor_main')">малюнку</a>).</li>
+			<li>Скопіюйте зашифрований текст в системний <a href="javascript:scrollToElement('pasteboard')">буфер обміну</a> та використовуйте його де забажаєте або збережіть його в базі даних додатку для пізнішого використання (кнопка <b>F</b>).</li>
+		</ul>
+		<br/>
+		<b>Розшифрування</b>
+		<ul>
+			<li>Задайте <a href="javascript:scrollToElement('session_password')">пароль</a> для поточної сесії.</li>
+			<li>Наберіть або вставте зашифрований текст в полі "<a href="javascript:scrollToElement('anchor_e')">Зашифрованный текст</a>" (секція <b>E</b> на <a href="javascript:scrollToElement('anchor_main')">малюнку</a>).</li>
+			<li>Натисніть кнопку Розшифрувати. (<i>примітка: <b>алгоритм розшифрування</b> визначається автоматично</i>)</li>
+			<li>Расшифрованный текст появится в поле "<a href="javascript:scrollToElement('anchor_c')">Расшифрованный текст</a>" (секция <b>C</b> на <a href="javascript:scrollToElement('anchor_main')">малюнку</a>).</li>
+			<li>Скопіюйте розшифрований текст в системний <a href="javascript:scrollToElement('pasteboard')">буфер обміну</a> та використовуйте його де забажаєте.</li>
+		</ul>
+		</ul>	
+	</div>
+	
+	<div class="anchor" id="session_password">
+		<h2>Пароль сесії</h2>
+		<ul>
+			<li>Додаток Шифрувач тексту непрацює як стандартний "Додаток сейф". Пароль не встановлюється на вхід в додаток, але задається для поточної сесії шифрування/розшифрування. Ви можете мати необмежену кількість паролів для будь-яких цілей (заміток, пошти, спілкування з людьми A B C, ...).</li>
+		</ul>
+	</div>
+	
+	 <div class="anchor" id="forgotten_password">
+		<h2>Забутий пароль</h2>
+		<ul>
+			<li>Не існує "чорного входу" для розшифрування будь-якого тексту без правильного пароля. Якщо ви забули ваш пароль... звиняйте ;-)</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="pasteboard">
+		<h2>Системний буфер обміну</h2>
+		<ul>
+			<li>Дейкі системи використовують назву <b>область монтажу (pasteboard)</b>.</li>
+			<li>Скористайтесь пошуком Google для додаткової інформації - введіть щось на зразок: <i><b>android using copy paste</b></i> </li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_a">
+		<h2>A - Копіювати/Вставити текст</h2>
+		<ul>
+			<li><i><b>копіює</b></i> текст з поля "<a href="javascript:scrollToElement('anchor_c')">Незашифрований текст</a>" в системний буфер обміну</li>
+			<li><i><b>вставляє</b></i> текст з системного буферу обміну в поле "<a href="javascript:scrollToElement('anchor_c')">Незашифрований текст</a>"</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_b">
+		<h2>B - Шифрувати/Розшифрувати текст</h2>
+		<ul>
+			<li><i><b>шифрує</b></i> текст в поле "<a href="javascript:scrollToElement('anchor_c')">Незашифрований текст</a>" та поміщає результат в полі "<a href="javascript:scrollToElement('anchor_e')">Зашифрований текст</a>"</li>
+			<li><i><b>розшифровує</b></i> зашифровує текст в полі "<a href="javascript:scrollToElement('anchor_e')">Зашифрований текст</a>" та поміщає результат в полі "<a href="javascript:scrollToElement('anchor_c')">Ррзшифрований текст</a>"</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_c">
+		<h2>C - Поле розшифрованого тексту</h2>
+		<ul>
+			<li>помістіть сюди текст, який бажаєте розшифрувати</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_d">
+		<h2>D - Кнопка Задати пароль</h2>
+		<ul>
+			<li>Задає <a href="javascript:scrollToElement('session_password')">Пароль сесії</a>.</li>
+			<li>колір цієї кнопки залежить ві поточної стійкості пароля (червоний - слабкий, жовтий - добрий, зелений - сильний)</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_e">
+		<h2>E - Поле зашифрованого тексту</h2>
+		<ul>
+			<li>помістіть сюди текст, який бажаєте розшифрувати</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_f">
+		<h2>F - Кнопка Ще</h2>
+		<ul>
+			<li><b>Завантажити текст з БД або файлу:</b> завантажує попередньо збережені дані з бази даних додатка (або з файлу)</li>
+			<li><b>Зберегти текст в БД або файл:</b> зберігає дані в полі "<a href="javascript:scrollToElement('anchor_e')">Зашифрований текст</a>" в базі даних додатка (або в файл) для використання пізніше</li>
+			<li><b>Видалити текст з БД або видалити файл:</b> видаляє обрані дані з бази даних додатка (або видаляє файл)</li>
+			<li>+ <b>Стеганографія</b> (приховування тексту в зображенні - JPG, алгоритм F5)</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_g">
+		<h2>G - Копіювати/Вставити зашифрований текст</h2>
+		<ul>
+			<li><i><b>копіює</b></i> текст з поля "<a href="javascript:scrollToElement('anchor_e')">Зашифрований текст</a>" в системний буфер обміну</li>
+			<li><i><b>вставляє</b></i> текст з системного буферу обміну в поле "<a href="javascript:scrollToElement('anchor_e')">Зашифрований текст</a>"</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_h">
+		<h2>H - Стерти текстові поля</h2>
+		<ul>
+			<li>Очищає текстові поля.</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_i">
+		<h2>I - Відправити текст в додаток</h2>
+		<ul>
+			<li>Відправляє зашифрований текст в обраний додаток.</li>
+		</ul>
+	</div>
+	
+	<div id="toMainMenu" class="gradient"><a href="/android_asset/~sse/uk">&lt;&lt; Назад в головне меню SSE</a></div>
+	<div id="reserveSpace"></div>
+	<script language="JavaScript">
+		formatPage();
+		imageMapResize(document.getElementById("map_ID"));
+	</script>
+
+</body>
+</html>

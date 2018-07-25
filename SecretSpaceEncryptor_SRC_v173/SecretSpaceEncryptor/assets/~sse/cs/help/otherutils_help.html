@@ -1,0 +1,137 @@
+﻿<!doctype html>
+<html lang="cs">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Secret Space Encryptor for Android - Other Utils</title>
+	<script language="JavaScript" src="/android_asset/js/help.js"></script>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+	<link rel="shortcut icon" href="/android_asset/img/sse_favicon.png"></link>
+</head>
+<body>
+	<h2 style="margin-top: -0.6em;">Generátor Hesel</h2>
+		<ul>
+			<li>Nastavitelný Generátor Hesel</li>
+			<li>Tento generátor je dále také integrován ve Správci Hesel</li>
+		</ul>
+	<br/>
+	<h2>Clipboard Cleaner</h2>
+		<ul>
+			<li>Vymaže obsah schránky systému (clipboard)</li>
+		</ul>
+	<br/>
+	<h2>Aplikační Report</h2>
+		<ul>
+			<li>Bezpečnostní report aplikace</li>
+		</ul>
+	<br/>
+	<h2>Alg. Benchmark</h2>
+		<ul>
+			<li>testování rychlosti šifrování/dešifrování jednotlivých algoritmů</li>
+			<li>
+				<b>Porovnání Androidu 2.1 vs. 2.2: </b><br/>
+				<ul>
+					<li>shodné zařízení <i>(Creative ZEN Touch 2)</i></li>
+					<li>shodný algoritmus <i>(AES-256 (Rijndael))</i></li>
+					<li>rozdílné verze Androidu <i>(Android 2.1 Eclair (Interpreter) vs. Android 2.2 Froyo (JIT))</i></li>
+				</ul>
+				<div class="delimiter">&nbsp;</div>
+				<table class="color centertd">
+					<tr>
+						<th colspan="3">Creative ZEN Touch 2</th>
+					</tr>
+					<tr class="grey">
+						<th class="textToLeft">Test</th>
+						<th>Android 2.1</th>
+						<th>Android 2.2</th>
+					</tr>
+					<tr>
+						<td>Enc.A</td>
+						<td>325.36 kB/s</td>
+						<td>975.21 kB/s</td>
+					</tr>
+					<tr>
+						<td>Dec.A</td>
+						<td>275.44 kB/s</td>
+						<td>877.19 kB/s</td>
+					</tr>
+					<tr>
+						<td>Enc.B</td>
+						<td>382.04 kB/s</td>
+						<td>1.13 MB/s</td>
+					</tr>
+					<tr>
+						<td>Dec.B</td>
+						<td>385.28 kB/s</td>
+						<td>1.12 MB/s</td>
+					</tr>
+					<tr class="grey">
+						<th class="textToLeft">Skóre</th>
+						<th>342 bodů</th>
+						<th>1039 bodů</th>
+					</tr>
+				</table>
+				<div class="delimiter">&nbsp;</div>
+			</li>
+			<li>
+				<b>Platform Independent vs. Native Code: </b><br/>
+				<ul>
+					<li>Creative ZEN Touch 2 + Android 2.2</li>
+					<li>Java Dalvik VM vs. C++ Native Code compilation</li>
+				</ul>
+				<div class="delimiter">&nbsp;</div>
+				<table class="color centertd">
+					<tr class="grey">
+						<th class="textToLeft">Algoritmus</th>
+						<th>Platform Ind.<br/>(bodů)</th>
+						<th>Native Code<br/>(bodů)</th>
+					</tr>
+					<tr>
+						<td>AES-256</td>
+						<td>1039</td>
+						<td>6507</td>
+					</tr>
+					<tr>
+						<td>RC6-256</td>
+						<td>972</td>
+						<td>9912</td>
+					</tr>
+					<tr>
+						<td>Serpent-256</td>
+						<td>729</td>
+						<td>6238</td>
+					</tr>
+					<tr>
+						<td>Blowfish-256</td>
+						<td>1082</td>
+						<td>9121</td>
+					</tr>
+					<tr>
+						<td>Twofish-256</td>
+						<td>1051</td>
+						<td>8225</td>
+					</tr>
+					<tr>
+						<td>GOST-256</td>
+						<td>856</td>
+						<td>6457</td>
+					</tr>
+					<tr>
+						<td>Blowfish-448</td>
+						<td>1065</td>
+						<td>9095</td>
+					</tr>
+				</table>
+				<div class="delimiter">&nbsp;</div>
+			</li>
+		</ul>	
+		<i>Pozn.: Tento test nezohledňuje I/O operace souborového systému.</i>
+		<br/><br/>
+
+	<div id="toMainMenu" class="gradient"><a href="/sse/~cs">&lt;&lt; Zpět do hlavního menu aplikace</a></div>
+	<div id="reserveSpace"></div>
+	<script language="JavaScript">formatPage();</script>
+	
+</body>
+</html>

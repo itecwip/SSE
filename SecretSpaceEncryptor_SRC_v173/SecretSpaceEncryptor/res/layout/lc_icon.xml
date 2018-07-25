@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	>
+	<RelativeLayout
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+		android:gravity="center"
+		android:padding="6dp"
+		>
+		<ImageView
+			android:id="@+id/iconImagePW"
+			android:scaleType="centerInside"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:adjustViewBounds="true"
+			android:maxWidth="85dp"
+			android:maxHeight="85dp"
+			android:padding="0px"
+			android:layout_margin="0px"
+			></ImageView>
+	</RelativeLayout>
+	<TextView
+		android:id="@+id/iconTextPW"
+		android:text="@string/common_question_delete"
+		android:textColor="@color/white_file"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:gravity="center"
+		android:ellipsize="end"
+		android:maxLines="2"
+		android:minLines="2"
+		android:background="@drawable/d_icon_undertext"	
+		android:paddingLeft="4dp"
+		android:paddingRight="4dp"
+		android:paddingTop="2dp"
+		android:paddingBottom="2dp"
+		></TextView>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="cs">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+</head>
+<body>
+
+<b>Co je SAF</b><br/>
+<span style="font-size: 80%;">V Androidu 4.4 (KitKat) se Google rozhodl, že odřízne 3rd-party aplikace (aplikace, které nejsou dodávané jako součást systému) od práva zápisu na externí média. Díky tomuto rozhodnutí přestala celá řada aplikací řádně fungovat. Po tlaku ze strany vývojářů a veřejnosti bylo do Androidu 5 integrováno kompromisní řešení - aplikace může zapisovat na externí média za pomocí SAF (Storage Access Framework).</span><br/>
+<br/>
+<b>První spuštění</b><br/>
+<span style="font-size: 80%;">
+	<ul>
+		<li>Po spuštění se objeví "Directory picker", který vám umožní vybrat adresář/jednotku, se kterou chcete pracovat.</li>
+		<li>Klepněte na <b>More button</b> (pravý horní roh) a vyberte <b>Zobrazit SD kartu</b>.</li>
+		<li>Klepněte na <b>Menu button</b> (levý horní roh) a vyberte požadované úložiště.</li>
+		<li>Klepněte na <b>VYBERTE ADRESÁŘ</b>.</li>
+	</ul>
+</span>
+<br/>
+<b>Omezení</b><br/>
+<span style="font-size: 80%;">
+Práce v SAF módu má jistá omezení:
+	<ul>
+		<li>Nelze uložit domovský adresář, nicméně poslední vybrané SAF URI je automaticky uloženo viz: <b>Tlačítko domovského adresáře → Posledně vybraný SAF adr.</b>.</li>
+		<li>Funkci Wipe nelze použít - Pokud je v nastavení aplikace aktivní volba "Smazat zdroje po zašifrování" soubory budou pouze smazány (bez wipe).</li>
+		<li>SAF mód omezuje výkon aplikace (obzvláště při práci s adresáři, které obsahují velký počet položek).</li>
+		<li>Funkce "Otevřít soubor" funguje pouze v případě, že je cílová aplikace schopna dekódovat SAF URI.</li>
+	</ul>
+</span>
+
+</body>
+ 

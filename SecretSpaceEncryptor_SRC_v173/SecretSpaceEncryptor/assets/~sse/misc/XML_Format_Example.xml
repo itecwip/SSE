@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Vault xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.paranoiaworks.mobi/sse/xsd/ssevault.xsd">
+	<Folder>
+		<Name><![CDATA[Password Folder 1 Title]]></Name>
+		<Comment><![CDATA[Password Folder 1 Comment]]></Comment>
+		<Position></Position>
+		<IconCode>-256</IconCode>
+		<Items>
+			<Item>
+				<Name><![CDATA[Password Item 1 Title]]></Name>
+				<Password><![CDATA[PASSWORD 1]]></Password>
+				<Comment><![CDATA[Password Item 1 Notes]]></Comment>
+				<Modified>2014-08-15T10:32:32</Modified>
+				<IconCode>-256</IconCode>
+			</Item>
+			<Item>
+				<Name><![CDATA[Password Item 2 Title]]></Name>
+				<Password><![CDATA[PASSWORD 2]]></Password>
+				<Comment><![CDATA[Password Item 2 Notes]]></Comment>
+				<Modified>2014-08-15T10:33:51</Modified>
+				<IconCode>-256</IconCode>
+			</Item>
+		</Items>
+	</Folder>
+	<Folder>
+		<Name><![CDATA[Password Folder 2 Title]]></Name>
+		<Comment><![CDATA[Password Folder 2 Comment]]></Comment>
+		<Position></Position>
+		<IconCode>-256</IconCode>
+		<Items>
+		</Items>
+	</Folder>
+</Vault>

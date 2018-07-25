@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="310" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <line id="svg_1" y2="110" x2="485" y1="141" x1="304" stroke-dasharray="5,3" stroke-miterlimit="10" stroke="#999999" fill="none"/>
+  <line id="svg_2" y2="253" x2="87" y1="183" x1="15" stroke-dasharray="5,3" stroke-miterlimit="10" stroke="#999999" fill="none"/>
+  <line id="svg_3" y2="253" x2="237" y1="183" x1="304" stroke-dasharray="5,3" stroke-miterlimit="10" stroke="#999999" fill="none"/>
+  <line id="svg_4" y2="110" x2="267" y1="141" x1="237" stroke-dasharray="5,3" stroke-miterlimit="10" stroke="#999999" fill="none"/>
+  <line id="svg_5" y2="141" x2="87" y1="57" x1="69" stroke-dasharray="5,3" stroke-miterlimit="10" stroke="#999999" fill="none"/>
+  <line id="svg_6" y2="141" x2="237" y1="57" x1="255" stroke-dasharray="5,3" stroke-miterlimit="10" stroke="#999999" fill="none"/>
+  <rect id="svg_7" height="42" width="186" stroke-miterlimit="10" stroke-width="2" stroke="#000000" fill="#FFFFFF" y="15" x="69"/>
+  <text font-weight="bold" fill="black" id="svg_8" font-size="18" font-family="Sans-serif" transform="matrix(1, 0, 0, 1, 87.813, 43.0278)">Plain Text (UTF-8)</text>
+  <polyline id="svg_9" points="162.5,119.551 178.803,102.05 170.326,102.05 170.326,80.765 154.674,80.765 154.674,102.05 146.197,102.05   162.5,119.551 "/>
+  <rect id="svg_10" height="42" width="150" stroke-miterlimit="10" stroke-width="2" stroke="#000000" fill="#FFFFFF" y="141" x="87"/>
+  <rect id="svg_11" height="42" width="72" stroke-miterlimit="10" stroke-width="2" stroke="#000000" fill="#FFFFFF" y="141" x="15"/>
+  <rect id="svg_12" height="42" width="67" stroke-miterlimit="10" stroke-width="2" stroke="#000000" fill="#FFFFFF" y="141" x="237"/>
+  <text font-weight="bold" fill="black" id="svg_13" font-size="18" font-family="Sans-serif" transform="matrix(1, 0, 0, 1, 96.5059, 167.82)">Encrypted Data</text>
+  <text font-weight="normal" fill="black" id="svg_14" font-size="12" font-family="Sans-serif" transform="matrix(1, 0, 0, 1, 117.292, 71.7979)">compression (*A)</text>
+  <text fill="black" id="svg_15" font-size="12" font-family="Sans-serif" transform="matrix(1, 0, 0, 1, 123.966, 132.27)">encryption (*B)</text>
+  <text font-weight="bold" fill="black" id="svg_16" font-size="17" font-family="Sans-serif" transform="matrix(0.915, 0, 0, 1, 21.1567, 167.82)">Salt (*C)</text>
+  <text font-weight="bold" fill="black" id="svg_17" font-size="14" font-family="Sans-serif" transform="matrix(0.915, 0, 0, 1, 248.258, 159.696)">Config</text>
+  <text font-weight="bold" fill="black" id="svg_18" font-size="14" font-family="Sans-serif" transform="matrix(0.915, 0, 0, 1, 260.185, 176.989)">1B</text>
+  <text fill="black" id="svg_19" font-size="12" font-family="Sans-serif" transform="matrix(1, 0, 0, 1, 126.775, 198.562)">BASE64 (*D)</text>
+  <polyline id="svg_20" points="162,245.09 178.303,227.589 169.826,227.589 169.826,206.304 154.174,206.304 154.174,227.589 145.697,227.589   162,245.09 "/>
+  <rect id="svg_21" height="42" width="150" stroke-miterlimit="10" stroke-width="2" stroke="#000000" fill="#FFFFFF" y="253" x="87"/>
+  <text font-weight="bold" fill="black" id="svg_22" font-size="18" font-family="Sans-serif" transform="matrix(1, 0, 0, 1, 115.045, 279.82)">Result Text</text>
+  <rect id="svg_23" height="34" width="67" stroke-miterlimit="10" stroke-width="2" stroke="#000000" fill="#FFFFFF" y="76" x="267"/>
+  <rect id="svg_24" height="34" width="67" stroke-miterlimit="10" stroke-width="2" stroke="#000000" fill="#FFFFFF" y="76" x="334"/>
+  <rect id="svg_25" height="34" width="84" stroke-miterlimit="10" stroke-width="2" stroke="#000000" fill="#FFFFFF" y="76" x="401"/>
+  <text fill="black" id="svg_26" font-size="14" font-family="Sans-serif" transform="matrix(0.7139, 0, 0, 1, 270.888, 90.0898)">Compression</text>
+  <text fill="black" id="svg_27" font-size="14" font-family="Sans-serif" transform="matrix(1, 0, 0, 1, 344.652, 90.0898)">Version</text>
+  <text fill="black" id="svg_28" font-size="14" font-family="Sans-serif" transform="matrix(0.8049, 0, 0, 1, 408.441, 90.0898)">Algorithm (*E)</text>
+  <text fill="black" id="svg_29" font-size="14" font-family="Sans-serif" transform="matrix(1, 0, 0, 1, 294.483, 105.259)">1b</text>
+  <text fill="black" id="svg_30" font-size="14" font-family="Sans-serif" transform="matrix(1, 0, 0, 1, 360.214, 105.259)">3b</text>
+  <text fill="black" id="svg_31" font-size="14" font-family="Sans-serif" transform="matrix(1, 0, 0, 1, 431.484, 105.259)">4b</text>
+ </g>
+</svg>

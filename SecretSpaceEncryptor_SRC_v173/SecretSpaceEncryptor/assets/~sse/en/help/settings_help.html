@@ -1,0 +1,98 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Secret Space Encryptor for Android - Settings</title>
+	<script language="JavaScript" src="/android_asset/js/help.js"></script>
+	<script language="JavaScript" src="/android_asset/js/imageMapResizer.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+	<link rel="shortcut icon" href="/sse/img/sse_icon.png"></link>
+</head>
+<body>
+	<h1 class="smallPad" id="anchor_main">
+		Settings
+		<div class="smallFont">(Touch a letter or scroll down for more topics)</div>
+	</h1>
+	
+	<div class="screenShot">
+		<img src="../../img/settings_SSB.png" usemap="#ScreenShotMap" id="img_ID" style="width:400px; max-width: 100%;"/>
+	</div>
+	
+	<map name="ScreenShotMap" id="map_ID">
+		<area shape='rect' coords='598,292,707,405' href="#anchor_a"/>
+		<area shape='rect' coords='351,764,460,877' href="#anchor_b"/>
+	</map>
+	
+	<div class="anchor" id="anchor_a">
+		<h2>A - Available Settings</h2>
+		<ul>
+			<li id="anchor_pv"><b class="font120">Password Vault</b>
+				<ul>
+					<li><b>Algorithm: </b>Encryption algorithm for the Password Vault.</li>
+					<li><b>Password List Font Size: </b>Text size in the password (item) list section (size of the password name and password).</li>
+					<!--<li><b>Show Bottom Menu Bar: </b>Show Options Menu on the bottom of the "Folders screen" by default.</li>-->
+					<li><b>Auto Backup Folder: </b>If enabled, the password vault data is exported (PWV_AutoBackup.pwv file) to the chosen folder on every password vault content change. It can be backed up to a cloud storage for example.</li>
+					<li><b>Lock Screen: </b>Lock Password Vault screen when the application goes background (when application is "minimized").</li>
+				</ul>
+			</li>
+			<hr/>
+			<li id="anchor_te"><b class="font120">Text Encryptor</b>
+				<ul>
+					<li><b>Algorithm: </b>Encryption algorithm for the Text Encryptor.</li>
+					<li><b>Font Size: </b>Text size in unencrypted/encrypted text fields.</li>
+					<li><b>Final Encoding: </b>An output text encoding. Available encodings: Base64 (PTE default), Base32 (RFC 4648), Numbers Only (0-9).</li>
+					<li><b>Add Space: </b>Add space after every Nth character (to encoded texts).</li>
+					<li><b>Hide Info Messages: </b>Hide less important pop-up messages (for example: <i>message was copied to...</i>).</li>
+					<li><b>Lock Screen: </b>Lock Text Encryptor screen when the application goes background (when application is "minimized").</li>
+				</ul>
+			</li>
+			<hr/>
+			<li id="anchor_fe"><b class="font120">File Encryptor</b>
+				<ul>
+					<li><b>Algorithm: </b>encryption algorithm for the File Encryptor.</li>
+					<li><b>Multiple File Selection: (PRO version only)</b> - Activate/deactivate multiple file selection mode (batch processing).</li>
+					<li><b>Encrypted Files Destination: </b><br/>
+						<b>Same as Source:</b> Output files are placed to the same directory where the input files are located.<br/>
+						<b>Predefined Location:</b> Use the "Custom Directories" button (top-left corner - <img style="vertical-align: middle;" width="37px" height="20px" src="../../img/favbutton.png"/> ) in the File Encryptor to set the location (<b>Set Current Dir as... → Encrypted File Directory</b>).<br/>
+						<b>Ask:</b> The app will ask you for output files location before every encryption process.<br/>
+					</li>
+					<li><b>Decrypted Files Destination:</b> The same approach as "Encrypted Files Destination" above.</li>
+					<li><b>Wipe Source After Encryption: </b>Delete (with wiping) source files automatically after encryption.</li>
+					<li><b>Delete .enc File After Decryption: </b>Delete a source file (encrypted .enc file) automatically after decryption.</li>
+					<li><b>Show .enc File(s) Replace Warning:</b> Show "continue/cancel" dialog when .enc file(s) with given name already exist(s).</li>
+					<li><b>Thumbnail Size:</b> Set a size of image thumbnails or disable the thumbnails.</li>
+					<li><b>Lock Screen: </b>Lock File Encryptor screen when the application goes background (when application is "minimized"); session password has to be set.</li>
+				</ul>
+			</li>
+			<hr/>
+			<li id="anchor_spec_a"><b class="font120">Common Settings</b>
+				<ul>
+					<li><b>Import/Export Path: </b>Application import/export directory.</li>
+					<li><b>Application Launch Protection: </b>Ask for an authentication on every start of the application. This password is used only for the launch authentication. It has nothing to do with encryption features, or related lock screen features. Only a derivative (output of complex KDF functions) of an authentication password is stored, however it isn't recommended to use the same password for encryption purposes.</li>
+					<li><b>Prevent Screenshot Taking: </b>Treat the content of the window as secure, preventing it from appearing in screenshots. This option is available on Android 4.4 or later. Restart of the app is needed.</li>
+					<li><b>Allow Unicode Passwords: </b>Only the ASCII 32-126 characters are allowed for passwords by default ( => compatibility - almost every device/system has a sufficient keyboard). If you allow "Unicode Passwords", you can use every character that your keyboard allows.</li>
+					<li><b>Disable Native Code Algorithms: </b>Use platform independent version of code only (use only when native code causes problems with this device).</li>
+					<li><b>Show Sub-Applications Exit Dialog: </b>Confirm return to the main menu (on Back button click only; direct "Main Menu" buttons will not be affected).</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_b">
+		<h2>B - Save Changes</h2>
+		<ul>
+			<li>Save changes and return to the main menu.</li>
+		</ul>
+	</div>
+		
+	<div id="toMainMenu" class="gradient"><a href="/sse">&lt;&lt; Back to SSE main menu</a></div>
+	<div id="reserveSpace"></div>
+	<script language="JavaScript">
+		formatPage();
+		imageMapResize(document.getElementById("map_ID"));
+	</script>
+	
+</body>
+</html>

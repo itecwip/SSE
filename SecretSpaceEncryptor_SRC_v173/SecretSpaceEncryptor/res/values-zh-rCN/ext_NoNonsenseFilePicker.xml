@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>	
+	<string name="nnfp_new_folder">新建文件夹</string>
+    <string name="nnfp_create_folder_error">无法创建文件夹</string>
+    <string name="nnfp_name">文件/文件夹名称</string>
+    <string name="nnfp_go_back">返回</string>
+    <string name="nnfp_select_something_first">请先选择一项</string>
+    <plurals
+        name="nnfp_select_dir">
+        <item quantity="one">选择目录</item>
+        <item quantity="other">选择目录</item>
+    </plurals>
+    <plurals
+        name="nnfp_select_file">
+        <item quantity="one">选择文件</item>
+        <item quantity="other">选择文件</item>
+    </plurals>
+    <plurals
+        name="nnfp_select_dir_or_file">
+        <item quantity="one">选择目录或文件</item>
+        <item quantity="other">选择目录或文件</item>
+    </plurals>
+</resources>

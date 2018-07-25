@@ -1,0 +1,221 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Secret Space Encryptor for Android - Text Encryptor</title>
+	<script language="JavaScript" src="/android_asset/js/help.js"></script>
+	<script language="JavaScript" src="/android_asset/js/imageMapResizer.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+	<link rel="shortcut icon" href="/sse/img/sse_icon.png"></link>
+</head>
+<body>
+	<h1 class="smallPad" id="anchor_main">
+		Text Encryptor
+		<div class="smallFont">(Touch a letter or scroll down for more topics)</div>
+	</h1>
+	
+	<div class="screenShot">
+		<img src="../../img/messageencryptor_SSB.png" usemap="#ScreenShotMap" style="width:400px; max-width: 100%;" alt="Message, Text Encryption Android"/>
+	</div>
+	
+	<map name="ScreenShotMap" id="map_ID">
+		<area shape='rect' coords='205,154,314,267' href="#anchor_a"/>
+		<area shape='rect' coords='205,488,314,600' href="#anchor_b"/>
+		<area shape='rect' coords='585,193,694,306' href="#anchor_c"/>
+		<area shape='rect' coords='585,345,694,458' href="#anchor_d"/>
+		<area shape='rect' coords='585,559,694,672' href="#anchor_e"/>
+		<area shape='rect' coords='526,762,635,875' href="#anchor_f"/>
+		<area shape='rect' coords='205,762,314,875' href="#anchor_g"/>
+		<area shape='rect' coords='340,154,449,267' href="#anchor_h"/>
+		<area shape='rect' coords='342,762,451,875' href="#anchor_i"/>
+	</map>
+	
+	<div class="anchor" id="other_menu">
+		<h2>Other Topics</h2>
+		<ul class="menu">
+			<li><a href="#quick_start" class="large">Quick Start</a></li>
+			<li><a href="#steganography" class="large">Steganography</a></li>
+			<li><a href="#session_password" class="large">Session Password</a></li>
+			<li><a href="#forgotten_password" class="large">Forgotten Password</a></li>
+			<li><a href="#pasteboard" class="large">System Clipboard</a></li>
+			<li><a href="#anchor_faq" class="large">FAQ</a></li>
+			<hr/>
+			<div><span class="outer25"><span class="iconRelatedSettings"/></span>&nbsp;<a href="settings_help.html#anchor_te" class="large">Related Settings</a></div>
+			<div class="delimiterThin">&nbsp;</div>
+			<div><span class="outer25"><span class="iconVideoTutorial"/></span>&nbsp;<a href="http://www.paranoiaworks.mobi/rd/006.htm" class="large">Video Tutorial</a></div>
+			<hr/>
+			<div><span class="outer25"><span class="iconOnline"/></span>&nbsp;<a href="https://pteo.paranoiaworks.mobi/" class="large">Online Version (client-side AES)</a></div>
+		</ul>	
+	</div>
+	
+	<div class="anchor" id="quick_start">
+		<h2>Quick Start</h2>
+		<ul>
+		<b>Encryption</b>
+		<ul>
+			<li>Set a <a href="javascript:scrollToElement('session_password')">password</a> for the current session.</li>
+			<li>Write or paste a text into the "<a href="javascript:scrollToElement('anchor_c')">Unencrypted Text</a>" area (Section <b>C</b> within the <a href="javascript:scrollToElement('anchor_main')">image</a>).</li>
+			<li>Press the Encrypt button.</li>
+			<li>The encrypted text will appear in the "<a href="javascript:scrollToElement('anchor_e')">Encrypted Text</a>" area (Section <b>E</b> within the <a href="javascript:scrollToElement('anchor_main')">image</a>).</li>
+			<li>Copy the encrypted text to the system <a href="javascript:scrollToElement('pasteboard')">clipboard</a> and use it wherever you want or save it to the app database for later use (<b>F</b> button).</li>
+		</ul>
+		<br/>
+		<b>Decryption</b>
+		<ul>
+			<li>Set a <a href="javascript:scrollToElement('session_password')">password</a> for the current session.</li>
+			<li>Write or paste an encrypted text into the "<a href="javascript:scrollToElement('anchor_e')">Encrypted Text</a>" area (Section <b>E</b> within the <a href="javascript:scrollToElement('anchor_main')">image</a>).</li>
+			<li>Press the Decrypt Button. (<i>Note: <b>Decryption algorithm</b> is detected automatically.</i>)</li>
+			<li>The decrypted text will appear in the "<a href="javascript:scrollToElement('anchor_c')">Unencrypted Text</a>" area (Section <b>C</b> within the <a href="javascript:scrollToElement('anchor_main')">image</a>).</li>
+			<li>Copy the unencrypted text to the system <a href="javascript:scrollToElement('pasteboard')">clipboard</a> and use it wherever you want.</li>
+		</ul>
+		</ul>	
+	</div>
+	
+	<div class="anchor" id="steganography">
+		<h2>Steganography</h2>
+		<ul>
+			<li>A steganographic feature is included (concealing a text within an image - JPG). A steganographic algorithm <b>(F5 algorithm)</b> is used in combination with chosen symmetric cipher algorithm to make a final steganogram (JPEG image).</li>
+			<li><i>note: Some applications for communication (like WhatsApp, Viber, Messenger, ...) can resize or recompress images to lower bandwidth. Concealed data are corrupted during the process</i> => <i>do not use these applications to send steganograms.</i></li>
+		</ul>
+		<br/>
+		<ul>
+			<b>Make Steganogram</b>
+			<ul>
+				<li>Set a <a href="javascript:scrollToElement('session_password')">password</a> for the current session.</li>
+				<li>Write or paste a text you want to encrypt (and conceal) into the "<a href="javascript:scrollToElement('anchor_c')">Unencrypted Text</a>" area (Section <b>C</b> within the <a href="javascript:scrollToElement('anchor_main')">image</a>).</li>
+				<li>Tap the "More" button (bottom-right corner - <b>F</b>).</li>
+				<li>Choose "Encrypt and Make Steganogram".</li>
+				<li>Select a carrier image (jpg, png, bmp).</li>
+				<li>Tap the "Continue" button.</li>
+				<li>The steganogram will be made and saved (please be patient, it can take some time).</li>
+			</ul>
+			<br/>
+			<b>Decrypt from Steganogram</b>
+			<ul>
+				<li>Set a <a href="javascript:scrollToElement('session_password')">password</a> for the current session.</li>
+				<li>Tap the "More" button (bottom-right corner - <b>F</b>).</li>
+				<li>Choose "Decrypt from Steganogram".</li>
+				<li>Select a steganogram.</li>
+				<li>The decrypted text will appear in the "<a href="javascript:scrollToElement('anchor_c')">Unencrypted Text</a>" area (Section <b>C</b> within the <a href="javascript:scrollToElement('anchor_main')">image</a>).</li>
+				<li>Copy the unencrypted text to the system <a href="javascript:scrollToElement('pasteboard')">clipboard</a> and use it wherever you want.</li>
+			</ul>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="session_password">
+		<h2>Session Password</h2>
+		<ul>
+			<li>The Text Encryptor app does not work as a standard "Vault application". A password is not set to enter the application, but set for the current encryption/decryption session. You may have an unlimited number of passwords for any purpose (notes, emails, communication with persons A, B, C, etc.).</li>
+		</ul>
+	</div>
+	
+	 <div class="anchor" id="forgotten_password">
+		<h2>Forgotten Password</h2>
+		<ul>
+			<li>There is no “backdoor” way to decrypt any text without a correct password. If you forget your password, “sorry.” ;-)</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="pasteboard">
+		<h2>System Clipboard</h2>
+		<ul>
+			<li>Some other systems use the name "<b>pasteboard</b>".</li>
+			<li>Just use Google for more information, for example, search for something like: <i><b>android using copy paste</b></i> </li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_a">
+		<h2>A - Copy/Paste Text</h2>
+		<ul>
+			<li><i><b>Copy</b></i> text from the "<a href="javascript:scrollToElement('anchor_c')">Unencrypted Text</a>" area to the system clipboard.</li>
+			<li><i><b>Paste</b></i> text from the system clipboard to the "<a href="javascript:scrollToElement('anchor_c')">Unencrypted Text</a>" area.</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_b">
+		<h2>B - Encrypt/Decrypt Text</h2>
+		<ul>
+			<li><i><b>Encrypt</b></i> text in the "<a href="javascript:scrollToElement('anchor_c')">Unencrypted Text</a>" area and put the result into the "<a href="javascript:scrollToElement('anchor_e')">Encrypted Text</a>" area.</li>
+			<li><i><b>Decrypt</b></i> encrypted text in the "<a href="javascript:scrollToElement('anchor_e')">Encrypted Text</a>" area and put the result into the "<a href="javascript:scrollToElement('anchor_c')">Unencrypted Text</a>" area.</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_c">
+		<h2>C - Unencrypted Text Area</h2>
+		<ul>
+			<li>Place the text you want to encrypt here.</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_d">
+		<h2>D - Set Password Button</h2>
+		<ul>
+			<li>Set a <a href="javascript:scrollToElement('session_password')">session password</a>.</li>
+			<li>The color of this button depends on the current password strength (red = weak, yellow = fair, and green = strong).</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_e">
+		<h2>E - Encrypted Text Area</h2>
+		<ul>
+			<li>Place the text you want to decrypt here.</li>
+			<li>The text in this area is <span style="color: red;">red</span> when one of the text fields (unenc/enc) is changed, so the data in the other field does not correspond to the actual value.</li>
+			<li>The text in this area is <span style="color: blue;">blue</span> when the encrypted text "has not been used" (copied, saved).</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_f">
+		<h2>F - More Options Button</h2>
+		<ul>
+			<li><b>Load Text from DB or from File: </b>Load previously saved data from the application database (or from a file).</li>
+			<li><b>Save Text to DB or to File: </b>Save data in the "<a href="javascript:scrollToElement('anchor_e')">Encrypted Text</a>" area to the application database (or to a file) for later use.</li>
+			<li><b>Delete Text from DB or Delete File: </b>Delete selected data from the application database (or delete a file).</li>
+			<li>+ <b><a href="#steganography" class="large">steganographic features</a></b></li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_g">
+		<h2>G - Copy/Paste Encrypted Text</h2>
+		<ul>
+			<li><i><b>Copy</b></i> text from the "<a href="javascript:scrollToElement('anchor_e')">Encrypted Text</a>" area to the system clipboard.</li>
+			<li><i><b>Paste</b></i> text from the system clipboard to the "<a href="javascript:scrollToElement('anchor_e')">Encrypted Text</a>" area.</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_h">
+		<h2>H - Erase Text Areas</h2>
+		<ul>
+			<li>Clear text areas.</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_i">
+		<h2>I - Send Text to Application</h2>
+		<ul>
+			<li>Send encrypted text to the chosen application.</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_faq">
+		<h2>Text Encryption FAQ</h2>
+		<b>Issue: <i>The message is decrypted even when I change the algorithm in the app settings. How is it possible?</i></b>
+		<br/><br/>
+		<b>Answer: </b>You can set an <b>ENCRYPTION</b> algorithm (the decryption algorithm is detected automatically - the information about the used algorithm is part of the app data format).
+		<br/><br/><hr/><br/>
+		<b>Issue: <i>The application produces a completely different output (using the same input) whenever I tap the encrypt button. How is it possible?</i></b>
+		<br/><br/>
+		<b>Answer: </b>Two words for Google: <code><b><font color="blue">cryptographic salt</font></b></code>
+		<br/><br/>
+	</div>
+	
+	<div id="toMainMenu" class="gradient"><a href="/sse">&lt;&lt; Back to SSE main menu</a></div>
+	<div id="reserveSpace"></div>
+	<script language="JavaScript">
+		formatPage();
+		imageMapResize(document.getElementById("map_ID"));
+	</script>
+
+</body>
+</html>

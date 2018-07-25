@@ -1,0 +1,123 @@
+﻿<!doctype html>
+<html lang="cs">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Secret Space Encryptor for Android - Šifrování Textu</title>
+	<script language="JavaScript" src="/android_asset/js/help.js"></script>
+	<script language="JavaScript" src="/android_asset/js/imageMapResizer.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+	<link rel="shortcut icon" href="/android_asset/img/sse_favicon.png"></link>
+</head>
+<body>
+	<h1 class="smallPad" id="anchor_main">
+		Šifrování Textu
+		<div class="smallFont">(klikněte na písmeno, nebo scrolujte dolů pro další témata)</div>
+	</h1>
+	
+	<div class="screenShot">
+		<img src="../../img/messageencryptor_SSB.png" usemap="#ScreenShotMap" style="width:400px; max-width: 100%;"/>
+	</div>
+	
+	<map name="ScreenShotMap" id="map_ID">
+		<area shape='rect' coords='205,154,314,267' href="#anchor_a"/>
+		<area shape='rect' coords='205,488,314,600' href="#anchor_b"/>
+		<area shape='rect' coords='585,193,694,306' href="#anchor_c"/>
+		<area shape='rect' coords='585,345,694,458' href="#anchor_d"/>
+		<area shape='rect' coords='585,559,694,672' href="#anchor_e"/>
+		<area shape='rect' coords='526,762,635,875' href="#anchor_f"/>
+		<area shape='rect' coords='205,762,314,875' href="#anchor_g"/>
+		<area shape='rect' coords='340,154,449,267' href="#anchor_h"/>
+		<area shape='rect' coords='342,762,451,875' href="#anchor_i"/>
+	</map>
+	
+	<div><i>pozn.: vzhledem k výsledné velikosti aplikačního balíčku jsou screenshoty ve výchozím jazyce (tedy v angličtině)</i></div><br/>
+	<div class="anchor" id="anchor_a">
+		<h2>A - Kopírovat/Vložit Text</h2>
+		<ul>
+			<li><i><b>zkopíruje</b></i> text z <a href="javascript:scrollToElement('anchor_c')" >Oblasti C</a> do systémové schránky</li>
+			<li><i><b>vloží</b></i> text uložený v systémové schránce do <a href="javascript:scrollToElement('anchor_c')" >Oblasti C</a></li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_b">
+		<h2>B - Šifrovat/Dešifrovat Text</h2>
+		<ul>
+			<li><i><b>zašifruje</b></i> text v <a href="javascript:scrollToElement('anchor_c')" >Oblasti C</a> a vloží ho do <a href="javascript:scrollToElement('anchor_e')" >Oblasti E</a></li>
+			<li><i><b>dešifruje</b></i> zašifrovaný text v <a href="javascript:scrollToElement('anchor_e')" >Oblasti E</a> a vloží ho do <a href="javascript:scrollToElement('anchor_c')" >Oblasti C</a></li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_c">
+		<h2>C - Nešifrovaný Text</h2>
+		<ul>
+			<li>sem můžete vložit text pro zašifrování</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_d">
+		<h2>D - Zadejte Heslo</h2>
+		<ul>
+			<li>barva závisí na "síle" hesla</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_e">
+		<h2>E - Šifrovaný Text</h2>
+		<ul>
+			<li>sem můžete vložit text k dešifrování</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_f">
+		<h2>F - Tlačítko Více</h2>
+		<ul>
+			<li><b>Nahrát zprávu z DB nebo ze Souboru: </b>nahraje text uložený v databázi aplikace (nebo ze souboru)</li>
+			<li><b>Uložit zprávu do DB nebo do Souboru: </b>uloží text z <a href="javascript:scrollToElement('anchor_e')" >Oblasti E</a> do databáze aplikace (nebo do souboru)</li>
+			<li><b>Smazat zprávu z DB nebo smazat Soubor: </b>odstraní vybraný text z databáze (nebo smaže daný soubor)</li>
+			<li>+ <b>Steganografie</b> (ukrytí textu v obrázku - JPG, algoritmus F5)</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_g">
+		<h2>G - Kopírovat/Vložit Zašifrovaný Text</h2>
+		<ul>
+			<li>funguje stejně jako <a href="javascript:scrollToElement('anchor_a')" >Tlačítka A</a>, ale s textem v <a href="javascript:scrollToElement('anchor_e')" >Oblasti E</a></li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_h">
+		<h2>H - Vymazat Textová Pole</h2>
+		<ul>
+			<li>Promaže obě textová pole.</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_i">
+		<h2>I - Předání textu</h2>
+		<ul>
+			<li>Předá šifrovaný text zvolené aplikaci.</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_more">
+		<h2>Více...</h2>
+		<ul>
+			<li><b>Nesprávné heslo</b>
+				<ul>
+					<li>data jsou šifrována za použití zadaného hesla a nelze je dešifrovat jinak, než použitím správného hesla</li>
+				</ul>
+			</li>		
+		</ul>
+	</div>
+	
+	<div id="toMainMenu" class="gradient"><a href="/sse/~cs">&lt;&lt; Zpět do hlavního menu aplikace</a></div>
+	<div id="reserveSpace"></div>
+	<script language="JavaScript">
+		formatPage();
+		imageMapResize(document.getElementById("map_ID"));
+	</script>
+
+</body>
+</html>

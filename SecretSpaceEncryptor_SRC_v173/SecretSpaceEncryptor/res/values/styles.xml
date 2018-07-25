@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+	<!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme">
+
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+		<item name="android:windowBackground">@drawable/background_x</item>
+		<item name="android:windowTitleBackgroundStyle">@style/Application_Title_Background</item>
+    </style>
+    
+    <style name="GreenText">
+        <item name="android:textColor">#00FF00</item>
+    </style>
+    
+	<style name="ButtonArrowDown" parent="Button_B">
+        <item name="android:drawableLeft">@drawable/arrow_down_green_b</item>
+    </style>
+    
+    <style name="ButtonArrowUp" parent="Button_B">
+        <item name="android:drawableLeft">@drawable/arrow_up_green_b</item>
+    </style>
+    
+    <style name="ButtonArrowDownRed" parent="Button_B">
+        <item name="android:drawableLeft">@drawable/arrow_down_red</item>
+    </style>
+    
+    <style name="ButtonArrowUpRed" parent="Button_B">
+        <item name="android:drawableLeft">@drawable/arrow_up_red</item>
+    </style>
+    
+	<style name="ButtonHelp" parent="Button_B">
+        <item name="android:drawableLeft">@drawable/help_icon</item>
+        <item name="android:minWidth">20dp</item>
+    </style>
+    
+    <style name="ButtonHelpCropped" parent="Button_C">
+        <item name="android:drawableLeft">@drawable/help_icon_cropped</item>
+    </style>
+    
+    <style name="ButtonFullScreenCropped" parent="Button_C">
+        <item name="android:drawableLeft">@drawable/go_fullscreen_cropped</item>
+    </style>
+    
+    <style name="ButtonCopyToTextEncryptorCropped" parent="Button_C">
+        <item name="android:drawableLeft">@drawable/to_text_encryptor</item>
+    </style>
+    
+    <style name="ButtonCopyToFileEncryptorCropped" parent="Button_C">
+        <item name="android:drawableLeft">@drawable/to_file_encryptor</item>
+    </style>
+    
+    <style name="ButtonToClipboardCropped" parent="Button_C">
+        <item name="android:drawableLeft">@drawable/to_clipboard</item>
+    </style>
+    
+    <style name="ButtonToClipboardNumCropped" parent="Button_C">
+        <item name="android:drawableLeft">@drawable/to_clipboard_num</item>
+    </style>
+    
+    <style name="ButtonPasswordGenerator" parent="Button_E">
+        <item name="android:drawableLeft">@drawable/password_generator_icon_cropped</item>
+        <item name="android:layout_marginLeft">0dp</item>
+		<item name="android:layout_marginRight">1dp</item>
+		<item name="android:layout_marginBottom">0dp</item>
+		<item name="android:layout_marginTop">1dp</item>
+    </style>
+     
+    <style name="ButtonHomeCropped" parent="Button_D">
+        <item name="android:drawableLeft">@drawable/home_icon_cropped</item>
+    </style>
+     
+    <style name="ButtonBackTo" parent="Button_B">
+        <item name="android:drawableLeft">@drawable/backto_icon</item>
+        <item name="android:minWidth">20dp</item>
+    </style>
+    
+	<style name="ButtonSessionPassword" parent="Button_B">
+        <item name="android:drawableLeft">@drawable/key_inact</item>
+    </style>
+    
+	<style name="ButtonCompress" parent="Button_B">
+        <item name="android:drawableLeft">@drawable/compress_inact</item>
+    </style>
+    
+	<style name="ButtonExit" parent="Button_B">
+        <item name="android:drawableLeft">@drawable/button_exit</item>
+        <item name="android:minWidth">20dp</item>
+    </style>
+    
+	<style name="ButtonSendTextToButtonDisabled" parent="Button_B">
+        <item name="android:drawableLeft">@drawable/send_text_disabled</item>
+        <item name="android:minWidth">20dp</item>
+    </style>
+    
+	<style name="ButtonNewFolder" parent="Button_B">
+        <item name="android:drawableLeft">@drawable/new_folder_icon</item>
+    </style>
+    
+    <style name="ButtonMore" parent="Button_B">
+        <item name="android:drawableLeft">@drawable/ic_menu_more_mod</item>
+        <item name="android:minWidth">20dp</item>
+    </style>
+    
+    <style name="ButtonClean" parent="Button_B">
+        <item name="android:drawableLeft">@drawable/clean_icon</item>
+        <item name="android:minWidth">20dp</item>
+    </style>
+    
+	<style name="ButtonSwitchTopBottom" parent="Button_B">
+        <item name="android:drawableLeft">@drawable/switch_top_bottom</item>
+        <item name="android:minWidth">20dp</item>
+    </style>
+        
+    <style name="TextViewTitle">
+        <item name="android:textColor">@color/white_file</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingTop">3.0dp</item>
+    </style>   
+        <style name="TextViewTitleWhite">
+        <item name="android:textColor">@color/white_file</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingTop">3.0dp</item>
+    </style>
+    
+	<style name="TextViewTitleBackground">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/du_grad_vert_blue</item>
+		<item name="android:padding">5.0dp</item>		
+		<item name="android:gravity">center_vertical</item>
+    </style>
+    
+	<style name="TextViewTitleSmall">
+        <item name="android:textColor">@color/white_file</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    
+	<style name="CryptButtonBase" parent="Button_B">
+        <item name="android:drawableLeft">@drawable/crypt_button_left</item>
+        <item name="android:drawableRight">@drawable/crypt_button_right</item>
+        <item name="android:drawablePadding">-100.0dp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">16.5sp</item>
+    </style>
+    
+    <style name="SSEUpgradeProButton" parent="Button_B">
+        <item name="android:drawableLeft">@drawable/ssepro</item>
+        <item name="android:drawableRight">@drawable/button_expander_2d</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">16.5sp</item>
+    </style>
+    
+    <style name="SSEProButton" parent="Button_B">
+        <item name="android:drawableLeft">@drawable/ssepro</item>
+        <item name="android:drawableRight">@drawable/button_expander_2d</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">16.5sp</item>
+    </style>
+    
+    <style name="FileEncTextView">
+        <item name="android:background">@drawable/d_textview_a</item>
+        <item name="android:textColor">#eeeeee</item>
+        <item name="android:paddingLeft">6.0dp</item>
+        <item name="android:paddingRight">6.0dp</item>
+		<item name="android:paddingTop">1px</item>
+        <item name="android:paddingBottom">1px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">start</item>
+    </style>
+    
+	<style name="TextEncryptorStatusBar">
+        <item name="android:background">@drawable/d_textview_e</item>
+        <item name="android:textColor">#FFFFFF</item>
+		<item name="android:shadowColor">#000000</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">1</item>
+        <item name="android:paddingLeft">6.0dp</item>
+        <item name="android:paddingRight">6.0dp</item>
+		<item name="android:paddingTop">1dp</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">11.0sp</item>
+    </style>
+    
+	<style name="DelimiterWhite">
+        <item name="android:background">@color/white_file</item>
+        <item name="android:layout_marginLeft">20.0dp</item>
+        <item name="android:layout_marginBottom">6.0dp</item>
+        <item name="android:layout_marginTop">6.0dp</item>
+        <item name="android:layout_marginRight">20.0dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">2.0dp</item>
+    </style> 
+    
+	<style name="DelimiterWhiteVertical">
+        <item name="android:background">@color/white_file</item>
+        <item name="android:layout_marginLeft">3.0dp</item>
+        <item name="android:layout_marginRight">3.0dp</item>
+        <item name="android:layout_width">1.5dp</item>
+        <item name="android:layout_height">30.0dp</item>
+        <item name="android:gravity">center</item>
+		<item name="android:layout_gravity">center</item>	
+    </style> 
+    
+    <style name="DelimiterThin">
+        <item name="android:background">@color/grey</item>
+        <item name="android:layout_marginLeft">0.0dp</item>
+        <item name="android:layout_marginRight">0.0dp</item>
+        <item name="android:layout_marginBottom">8.0dp</item>
+        <item name="android:layout_marginTop">8.0dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0px</item>
+        <item name="android:minHeight">1.0px</item>
+    </style>
+	
+	<style name="HelpMe_Button">
+		<item name="android:gravity">center</item>
+		<item name="android:layout_gravity">center</item>	
+		<item name="android:background">@drawable/d_helpme_button</item>
+		<item name="android:drawableRight">@drawable/forwardto_icon</item>
+		<item name="android:drawableLeft">@drawable/null_expander_a</item>
+	</style>
+	
+	<style name="Red_Button" parent="android:style/Widget.Button">	
+		<item name="android:background">@drawable/d_helpme_button</item>
+	</style>
+	
+	<style name="Default_Button" parent="android:style/Widget.Button">
+		<item name="android:gravity">center</item>
+		<item name="android:layout_gravity">center</item>
+	</style>
+	
+	<style name="Default_TextAppearance_Small" parent="@android:style/TextAppearance.Small">
+		<item name="android:textColor">@android:color/primary_text_light</item>
+    </style>
+    
+    <style name="Default_TextAppearance_Small_White" parent="@android:style/TextAppearance.Small">
+		<item name="android:textColor">#FFFFFF</item>
+    </style>
+    
+	<style name="Default_TextAppearance_Small_White_Shadow" parent="@android:style/TextAppearance.Small">
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:shadowColor">#000000</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Application_Title_Background" parent="Default_TextAppearance_Small_White_Shadow">
+    	<item name="android:textColor">#00FF00</item>
+		<item name="android:background">@drawable/d_application_title_background</item>
+		<item name="android:paddingLeft">8.0dp</item>
+        <item name="android:paddingRight">8.0dp</item>
+    </style>
+        
+	<style name="Default_TextAppearance_Small_WhiteFile" parent="@android:style/TextAppearance.Small">
+		<item name="android:textColor">@color/white_file</item>
+    </style>
+    
+	<style name="TransparentDialog">
+		<item name="android:windowBackground">@drawable/d_transparent</item>
+		<item name="android:gravity">center</item>
+	</style>
+	
+	<style name="TextViewSingleLine">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">start</item>
+    </style>
+    
+    <style name="ButtonExpander" parent="Button_B">
+        <item name="android:drawableLeft">@drawable/button_expander</item>
+        <item name="android:drawableRight">@drawable/button_expander</item>
+    </style>
+    
+    <style name="ButtonExpanderCropped" parent="Button_C">
+        <item name="android:drawableLeft">@drawable/button_expander_cropped</item>
+        <item name="android:drawableRight">@drawable/button_expander_cropped</item>
+    </style>
+    
+	<style name="Button_A">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">40dp</item>
+		<item name="android:layout_margin">3dp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:shadowRadius">1</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowColor">@android:color/black</item>
+		<item name="android:background">@drawable/d_button_a</item>
+		<item name="android:textColor">@android:color/white</item>
+	</style>
+	
+	<style name="Button_B" parent="@android:style/Widget.Button.Small">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_margin">2dp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:shadowRadius">1</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:padding">6dp</item>
+		<item name="android:shadowColor">#888888</item>
+		<item name="android:background">@drawable/d_button_b</item>
+		<item name="android:textColor">@android:color/black</item>
+	</style>
+	
+	<style name="Button_C" parent="@android:style/Widget.Button.Small">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_margin">2dp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:shadowRadius">1</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:padding">4dp</item>
+		<item name="android:shadowColor">#888888</item>
+		<item name="android:background">@drawable/d_button_b</item>
+		<item name="android:textColor">@android:color/black</item>
+	</style>
+	
+	<style name="Button_D" parent="@android:style/Widget.Button.Small">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_margin">2dp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:shadowRadius">1</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:paddingLeft">20dp</item>
+		<item name="android:paddingRight">20dp</item>
+		<item name="android:paddingBottom">4dp</item>
+		<item name="android:paddingTop">4dp</item>
+		<item name="android:shadowColor">#888888</item>
+		<item name="android:background">@drawable/d_button_b</item>
+		<item name="android:textColor">@android:color/black</item>
+	</style>
+	
+	<style name="Button_E" parent="@android:style/Widget.Button.Small">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:gravity">center</item>
+		<item name="android:shadowRadius">1</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:padding">4dp</item>
+		<item name="android:shadowColor">#888888</item>
+		<item name="android:background">@drawable/d_button_b</item>
+		<item name="android:textColor">@android:color/black</item>
+	</style>
+	
+    <style name="Button_Standard">
+        <item name="android:layout_width">fill_parent</item>
+		<item name="android:minHeight">42dp</item>
+		<item name="android:layout_margin">3dp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:shadowRadius">1</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:padding">6dp</item>
+		<item name="android:shadowColor">#888888</item>
+		<item name="android:background">@drawable/d_button_b</item>
+		<item name="android:textColor">@android:color/black</item>
+    </style>
+	
+	<style name="TextAppearance_Spec_A">
+		<item name="android:textSize">16.0sp</item>
+		<item name="android:shadowRadius">1</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowColor">@android:color/black</item>
+		<item name="android:textColor">@android:color/white</item>
+	</style>
+	
+	<style name="ThemeAltB" parent="android:Theme">
+	    <item name="android:windowBackground">@drawable/d_background_b</item>
+	    <item name="android:windowTitleBackgroundStyle">@style/Application_Title_Background</item>
+    </style> 
+
+</resources>

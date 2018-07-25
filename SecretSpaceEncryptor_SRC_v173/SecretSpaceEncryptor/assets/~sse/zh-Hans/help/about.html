@@ -1,0 +1,67 @@
+﻿<!doctype html>
+<html lang="zh-Hans">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Android 版 Secret Space Encryptor - 密码管理器、文件加密、文本（消息、注释……）加密</title>
+	<script language="JavaScript" src="/android_asset/js/help.js"></script>
+	<script language="JavaScript" src="/android_asset/js/imageMapResizer.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+	<link rel="shortcut icon" href="/android_asset/img/sse_favicon.png"></link>
+</head>
+<body>
+	<h1 class="smallPad">
+		<div class="normalLabelCenter">秘密空间加密器</div>
+		<div class="normalLabelCenter smallerFont">(Secret Space Encryptor)</div>
+		<div id="versionText" class="textToCenter smallerFont">（1.7.3）</div>
+	</h1>
+	<ul>
+		<li><b>密码管理器、文本加密和文件加密等功能已集成为一体化解决方案。</b></li>
+		<li><b>密码保险箱：</b>将所有密码、PIN 和注释信息置于同一个安全位置用一个主密码统一存储和管理。提供导入/导出功能（使用经压缩、完全加密的 .pwv 文件格式，或未加密、可编辑的 .xml 文件格式）。</li>
+		<li><b>文本加密：</b>为您的消息、注释和其他类型文本提供安全防护，避免意外被他人读取。使用内部数据库，或仅在本应用和您喜爱的其他应用之间相互复制/粘贴。为当前加密/解密会话设置一个会话密码，您也可以为任何目的（注释、电子邮件、社交网络、与 A、B、C ……等人的通讯沟通记录等）设置不限数量的密码。</li>
+		<li><b>文件加密：</b>安全加密您的私人/保密文件或整个文件夹。</li>
+		<li><b>工具箱：</b>密码生成器、清空剪贴板、算法性能评测……</li>
+		<li>所有加密都采用强大加密算法进行：目前支持 AES（Rijndael）256 位、RC6 256 位、Serpent 256 位、Blowfish 448 位、Twofish 256 位、GOST 256 位 + <B>Threefish 1024 位、SHACAL-2 512 位（用于 S.S.E. Pro 版）</B>等加密算法。</li>
+		<li id="noAds">安装运行本应用只需很小权限。没有广告。</li>
+		<li>加密引擎基于 Bouncy Castle 加密库（Java）和 Crypto++（C++）。</li>
+		<li>应用主页（见<a href="http://www.paranoiaworks.mobi/download" >下载</a>一节）上提供了<b><a href="http://www.paranoiaworks.mobi/ptepc/helpabout/ha_zh-Hans.html">文本加密</a>（<b>Text Encryptor</b>）</b>和<b><a href="http://www.paranoiaworks.mobi/ssefepc/helpabout/ha_zh-Hans.html">文件加密</a>（<b>File Encryptor</b>）</b>的跨平台桌面版本<B>（</B><b>Windows、Linux、Mac OS X……）</b>。</li>
+		<li>在 <a href="http://www.paranoiaworks.mobi/pte/zh-Hans" target="_blank">P.T.E. for iOS</a> 提供了 <b>Paranoia Text Encryption for iOS（支持 iPhone/iPad/iPod）</b>。
+		<li><b>在线（基于网络）文本加密工具：</b><a href="https://pteo.paranoiaworks.mobi/cn">https://pteo.paranoiaworks.mobi/cn</a></li>
+		<li>本软件为开源软件。</li>
+		<li><b>(EN) Detailed format specifications:</b> <a href="../../en/help/pwv_specifications.html">Password Vault</a>, <a href="../../en/help/te_specifications.html">Text Encryptor</a>, <a href="../../en/help/fe_specifications.html">File Encryptor</a></li>
+	</ul>
+	<br/> <b>© Paranoia Works 2017</b><br/> <br/> <a href="javascript:gotoAndRoll('../../en/help/license.html', 0)">阅读许可证信息</a><br/> <br/>
+	<div>如果您有任何改进意见或技术问题报告要反馈给我们，我们将不胜感激！欢迎通过电子邮件与我们联系：</div>
+	<div id='signHere'></div>
+	<div>应用主页（提供最新帮助、源代码等）：<br/><a href="http://www.paranoiaworks.mobi/sse/zh-Hans">http://www.paranoiaworks.mobi/sse/zh-Hans</a></div>
+	
+	<br/>
+	
+	<ul id="rate" class="menu"><li><a href="https://play.google.com/store/apps/details?id=com.paranoiaworks.unicus.android.sse"><b>如果您喜欢本应用，欢迎评分</b></a><b><span style="color:#0044EE;">（Google Play）</span></b></li></ul>
+	<!--
+	<b>另外，</b>
+	
+	<ul class="menu"><li><a href="http://www.paranoiaworks.mobi/sse/sse_donation.html"><b>如果您真的喜欢本应用，欢迎捐赠</b></a><b><span style="color:#0044EE;">（PayPal）</span></b></li></ul>
+	-->
+	<div class="delimiter">&nbsp;</div>
+	<div class="gradient">&nbsp;</div>
+	<div id="toMainMenu" class="gradient"><a href="/sse/zh-Hans">&lt;&lt; 返回 SSE 主菜单</a></div>
+	<div id="reserveSpace"><br/>
+		<a href="../../en/help/license.html">Licence</a>
+	</div>
+	<script language="JavaScript">formatPage();</script>
+	<script language="JavaScript">
+		try {if(getValue("SHOW_UPGRADE_FEATURES") == 0) document.getElementById("rate").style.display = 'none';}catch(err){} 
+		try {
+			if(getValue("CN_VERSION") == 1)
+			{
+				document.getElementById("noAds").style.display = 'none';
+				var str = document.getElementById("versionText").innerHTML;
+				document.getElementById("versionText").innerHTML = str.replace(")", " CN)");
+			}
+		}catch(err){}
+	</script>
+	<script language="JavaScript">setSignElement('signHere', 'paranoiaworks.mobile', 'gmail.com');</script>
+</body>
+</html>

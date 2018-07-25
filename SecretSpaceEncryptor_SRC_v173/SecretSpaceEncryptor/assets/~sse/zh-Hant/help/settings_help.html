@@ -1,0 +1,95 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Android 版 Secret Space Encryptor  - 設定</title>
+	<script language="JavaScript" src="/android_asset/js/help.js"></script>
+	<script language="JavaScript" src="/android_asset/js/imageMapResizer.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+	<link rel="icon" type="image/png" href="/sse/img/sse_icon.png"/>
+</head>
+<body>
+	<h1 class="smallPad" id="anchor_main">
+		設定
+		<div class="smallFont">（輕觸某個字母或向下捲動，即可檢視更多主題）</div>
+	</h1>
+	
+	<div class="screenShot">
+		<img src="../../img/settings_SSB.png" usemap="#ScreenShotMap" id="img_ID" style="width:400px; max-width: 100%;"/>
+	</div>
+	
+	<map name="ScreenShotMap" id="map_ID">
+		<area shape='rect' coords='598,292,707,405' href="#anchor_a"/>
+		<area shape='rect' coords='351,764,460,877' href="#anchor_b"/>
+	</map>
+	
+	<div class="anchor" id="anchor_a">
+		<h2>A - 可用的設定</h2>
+		<ul>
+			<li><b class="font120">密碼保險箱</b>
+				<ul>
+					<li><b>演算法：</b>密碼保險箱的加密演算法。</li>
+					<li><b>密碼清單字型大小：</b>密碼（項）清單區中文字的大小（密碼名和密碼的字型大小）。</li>
+					<!--<li><b>顯示底部功能表列：</b>預設在「資料夾螢幕」的底部顯示選項功能表。</li>-->
+					<li><b>自動備份資料夾：</b>如果啟用，每次密碼保險箱內容發生變化，密碼保險箱資料會匯出（PWV_AutoBackup.pwv文件）到所選的資料夾。它可以備份到雲端存放裝置。</li>
+					<li><b>鎖定螢幕：</b>當應用程式進入幕後執行（當應用程式被「最小化」）時鎖定密碼保險箱的螢幕。</li>
+				</ul>
+			</li>
+			<hr/>
+			<li><b class="font120">文字加密</b>
+				<ul>
+					<li><b>演算法：</b>文字加密的加密演算法。</li>
+					<li><b>字號：</b>未加密/加密文字區中文字的大小。</li>
+					<li><b>隱藏資訊訊息：</b>隱藏不重要的彈出訊息（例如： <i>訊息已被複製到...</i>）。</li>
+					<li><b>最終編碼：</b>輸出文字編碼。可用編碼：Base64 (PTE default), Base32 (RFC 4648), 僅數字(0-9)</li>
+					<li><b>新增空格：</b>編碼文字每 N 個字元後。</li>
+					<li><b>鎖定螢幕：</b>當應用程式進入幕後執行（當應用程式被「最小化」）。</li>
+				</ul>
+			</li>
+			<hr/>
+			<li><b class="font120">檔案加密</b>
+				<ul>
+					<li><b>演算法：</b>檔案加密的加密演算法。</li>
+					<li><b>選中多個檔案：（只限 Pro 版）</b> - 啟用/停用檔案多選模式（批次處理）。</li>
+					<li><b>加密後抹除原始檔：</b>加密後自動刪除（並抹除）原始檔。</li>
+					<li><b>解密後刪除.enc檔案：</b>解密後自動刪除原始檔案（加密的.enc檔案）。</li>
+					<li><b>加密檔案目的路徑：</b><br/><b>與原始檔相同：</b>將輸出檔案存放於輸入檔案所在的同一目錄。<br/><b>預定義位置：</b>使用檔案加密應用程式中的「自訂目錄」按鈕（位於左上角 - <img style="vertical-align: middle;" width="37px" height="20px" src="../../img/favbutton.png"/>）來設定位置（<b>設定當前目錄為... → 加密檔案目錄</b>）。<br/><b>詢問：</b>應用程式每次加密之前都會向您詢問輸出檔案的位置。<br/>
+					</li>
+					<li><b>解密檔案目的路徑：</b>設定方式與上述「加密檔案目的路徑」相同。</li>
+					<li><b>顯示取代 .enc 檔案的警告：</b>當指定 .enc 檔名已存在時顯示「繼續/取消」對話方塊。</li>
+					<li><b>縮圖大小：</b>設定圖像縮圖大小或停用縮圖。</li>
+					<li><b>鎖定螢幕：</b>當應用程式進入幕後執行（當應用程式被「最小化」）時鎖定檔案加密應用程式的螢幕；必須設定工作階段密碼。</li>
+				</ul>
+			</li>
+			<hr/>
+			<li id="anchor_spec_a"><b class="font120">通用設定</b>
+				<ul>
+					<li><b>匯入/匯出路徑：</b>應用程式的匯入/匯出目錄。</li>
+					<li><b>應用程式啟動保護：</b>在每次啟動應用程式時要求身份驗證。此密碼僅用於啟動身份驗證。它不影響加密功能或相關的螢幕鎖定功能。</li>
+					<li><b>防止截圖：</b>安全處理視窗內容，防止它出現在截圖中。此選項可在Android 4.4或更高版本中使用。需要重新開機應用程式。</li>
+					<li><b>允許使用 Unicode 密碼：</b>預設情況下只有值為 32-126 的 ASCII 字元允許作為密碼（=&gt; 相容性，幾乎每個裝置/系統都有足夠打出所有這些字元的鍵盤）。如果「允許使用 Unicode 密碼」，您鍵盤上可以打出的每個字元都可以作為密碼。</li>
+					<li><b>禁用本機程式碼演算法：</b>僅使用平台獨立版本的程式碼（僅當在本裝置上使用本機程式碼會引發錯誤的情況下使用）。</li>
+					<li><b>顯示子應用程式結束對話方塊：</b>確認返回主功能表（只在點按「返回」按鈕時出現此提示，直接按「主功能表」按鈕將無此提示，直接返回）。</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_b">
+		<h2>B - 儲存變更</h2>
+		<ul>
+			<li>儲存變更並返回主功能表。</li>
+		</ul>
+	</div>
+		
+	<div id="toMainMenu" class="gradient"><a href="/android_asset/~sse/zh-Hant">&lt;&lt; 返回 SSE 主功能表</a></div>
+	<div id="reserveSpace"></div>
+	<script language="JavaScript">
+		formatPage();
+		imageMapResize(document.getElementById("map_ID"));
+	</script>
+	
+</body>
+</html>

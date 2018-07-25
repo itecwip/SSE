@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	>
+	<item
+		android:state_focused="true"
+		>
+		<shape>
+			<stroke
+				android:width="0dp"
+				/>
+			<solid
+				android:color="#ee444444"
+				/>
+			<corners
+				android:radius="4dp"
+				/>
+		</shape>
+	</item>
+	<item>
+		<shape>
+			<stroke
+				android:width="0dp"
+				/>
+			<solid
+				android:color="#ee444444"
+				/>
+			<corners
+				android:radius="4dp"
+				/>
+		</shape>
+	</item>
+</selector>

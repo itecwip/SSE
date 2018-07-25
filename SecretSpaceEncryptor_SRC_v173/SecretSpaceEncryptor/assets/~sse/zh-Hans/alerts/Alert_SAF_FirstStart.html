@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-Hans">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+</head>
+<body>
+
+ <b>背景</b><br/> <span style="font-size: 80%;">谷歌在 Android 4.4（KitKat）版中突然取消了所有第三方（非预装）应用写入外部/可移动存储设备的许可权限。由于这项决定，很多应用的功能受到严重影响，还有些则完全无法使用。在开发商的压力下，谷歌在 Android 5 中集成了一个折衷解决方案。通过使用一个新的 API，借助 SAF（存储访问框架），应用又可以重新获得写入外部存储设备的权限。</span><br/><br/><b>第一次启动</b><br/> <span style="font-size: 80%;">
+	<ul>
+		<li>出现选择目录对话框。您需要选择您要操作的目录（或卷）。</li>
+		<li>点按右上角的&ldquo;<b>更多按钮</b>&rdquo;，然后选择&ldquo;<b>显示 SD 卡（Show SD card）</b>&rdquo;。</li>
+		<li>点按左上角的&ldquo;<b>菜单按钮</b>&rdquo;，然后选择您要使用的存储设备。</li>
+		<li>点按底部的&ldquo;<b>选择（SELECT）</b>&rdquo;。</li>
+	</ul>
+</span> <br/> <b>限制</b><br/> <span style="font-size: 80%;">SAF 模式下有一些限制，您应该有所了解。 
+	<ul>
+		<li>在 SAF 模式下不能设置主目录/自定义目录，不过最近一次选定的 SAF URI 可以自动保存：&ldquo;<B>主目录（Home）按钮</B>&rdquo; → &ldquo;<B>转到最近选择的 SAF 目录（Go to Last Picked SAF Dir）</B>&rdquo;。</li>
+		<li>无法使用&ldquo;擦除&rdquo;功能。如果在应用设置中选中了&ldquo;加密后擦除（Wipe after Encryption）&rdquo;选项，文件将只可被删除。</li>
+		<li>相比标准的直接文件访问模式，在 SAF 模式下执行文件操作的性能略低（尤其是当目录中包含大量文件/子目录时）。</li>
+		<li>仅当目标应用能够解码 SAF URI 时才能执行&ldquo;打开文件（Open File）&rdquo;功能。</li>
+	</ul>
+</span>
+
+</body>
+ 

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	
+	<!-- Secret Space Encryptor - Password Vault -->
+	<xs:element name="Vault">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Folder" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Name" type="String300maxNotEmpty"/>
+							<xs:element name="Comment" type="String2000max"/>
+							<xs:element name="Position" type="IntOrEmpty"/>
+							<xs:element name="IconCode" type="IntOrEmpty"/>
+							<xs:element name="Items">
+								<xs:complexType mixed="true">
+									<xs:sequence>
+										<xs:element name="Item" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Name" type="String300maxNotEmpty"/>
+													<xs:element name="Password" type="String300max"/>
+													<xs:element name="Comment" type="String2000max"/>
+													<xs:element name="Modified" type="DateTimeOrEmpty"/>
+													<xs:element name="IconCode" type="IntOrEmpty"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<!-- Integer or Empty String -->
+	<xs:simpleType name="IntOrEmpty">
+		<xs:union>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:length value="0"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType>
+				<xs:restriction base="xs:integer"/>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	
+	<!-- DateTime or Empty String -->
+	<xs:simpleType name="DateTimeOrEmpty">
+		<xs:union>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:length value="0"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType>
+				<xs:restriction base="xs:dateTime"/>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	
+	<!-- String Length 300 Max and Not Empty -->
+	<xs:simpleType name="String300maxNotEmpty">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="300"/>
+			<xs:minLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<!-- String Length 300 Max-->
+	<xs:simpleType name="String300max">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="300"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<!-- String Length 2000 Max -->
+	<xs:simpleType name="String2000max">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="2000"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+</xs:schema>

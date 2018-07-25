@@ -1,0 +1,259 @@
+﻿<!doctype html>
+<html lang="cs">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Secret Space Encryptor for Android - Šifrování Souborů</title>
+	<script language="JavaScript" src="/android_asset/js/help.js"></script>
+	<script language="JavaScript" src="/android_asset/js/imageMapResizer.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/android_asset/css/help.css"/>
+	<link rel="shortcut icon" href="/android_asset/img/sse_favicon.png"></link>
+</head>
+<body>
+	<h1 class="smallPad" id="anchor_main">
+		Šifrování Souborů
+		<div class="smallFont">(klikněte na písmeno, nebo scrolujte dolů pro další témata)</div>
+	</h1>
+	
+	<div class="screenShot">
+		<img src="../../img/fileencryptor_SSB.png" usemap="#ScreenShotMap" id="img_ID" style="width:400px; max-width: 100%;"/>
+	</div>
+	
+	<map name="ScreenShotMap" id="map_ID">
+		<area shape='rect' coords='224,13,333,126' href="#anchor_a"/>
+		<area shape='rect' coords='586,29,695,142' href="#anchor_b"/>
+		<area shape='rect' coords='586,214,695,327' href="#anchor_c"/>
+		<area shape='rect' coords='586,475,695,588' href="#anchor_d"/>
+		<area shape='rect' coords='441,820,550,933' href="#anchor_e"/>
+		<area shape='rect' coords='186,820,299,933' href="#anchor_f"/>
+		<area shape='rect' coords='52,820,165,933' href="#anchor_g"/>
+		<area shape='rect' coords='304,622,413,735' href="#anchor_h"/>	
+		<area shape='rect' coords='163,622,272,735' href="#anchor_i"/>	
+	</map>
+	
+	<div><i>pozn.: vzhledem k výsledné velikosti aplikačního balíčku jsou screenshoty ve výchozím jazyce (tedy v angličtině)</i></div><br/>
+	
+		<div class="anchor" id="other_menu">
+		<h2>Other Topics</h2>
+		<ul class="menu">
+			<li><a href="#quick_start" class="large">Rychlý Start</a></li>
+			<li><a href="#anchor_multiSelect" class="large">Vícenásobné označení souborů</a></li>
+			<li><a href="#anchor_more" class="large">Více...</a></li>
+			<li><a href="#anchor_saf" class="large">SAF Mód (Android 5+)</a></li>
+			<li><a href="#anchor_faq" class="large">FAQ</a></li>
+		</ul>	
+	</div>
+	
+	<div class="anchor" id="quick_start">
+		<h2>Rychlý Start</h2>
+		<b>Šifrování</b>
+		<ul>
+			<li>Označte soubor nebo adresář (klikněte na ikonu souboru/adresáře).</li>
+			<li>Stiskněte tlačítko Šifrovat (pravý dolní roh).</li>
+			<li>Zadejte heslo.</li>
+			<li>Bude vytvořen nový soubor (koncovka .enc).</li>
+			(pozn: původní soubory můžete po ukončení šifrování smazat, případně to lze provést automaticky : <i><b>Nastavení: Šifrování Souborů → Smazat zdroje po zašifrování</b></i>)
+		</ul>
+		<br/>
+		<b>Dešifrování</b>
+		<ul>
+			<li>Označte šifrovaný soubor (klikněte na soubor).</li>
+			<li>Stiskněte tlačítko Dešifrovat (pravý dolní roh).</li>
+			<li>Zadejte správné heslo.</li>
+			<li>Soubor bude dešifrován.</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_a">
+		<h2>A - Dostupné "disky"</h2>
+		<ul>
+			<li>zkratky pro přístup do kořenových adresářů zvolených jednotek + uživatelem definovaný domovský/výchozí adresář</li>
+			<li>Domovské adresáře - <img style="vertical-align: middle;" width="37px" height="20px" src="../../img/favbutton.png"/><br/>
+				<ul>
+					<li>
+						Zde může být zadáno umístění šifrovaných/dešifrovaných souborů (pokud je povoleno v <b>Nastavení: Šifrování souborů → Adresář pro šifrované/dešifrované soubory</b>)<br/>
+						<img src="../../img/fileencryptor_customdirs.png" style="width:260px; max-width: 100%;"/><br/>
+					</li>
+				</ul>
+			</li>
+			<li>tlačítko <a href="javascript:scrollToElement('anchor_saf')">SAF</a> (Android 5+)</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_b">
+		<h2>B - Parametry aktuální jednotky</h2>
+		<ul>
+			<li>dostupné místo / velikost jednotky</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_c">
+		<h2>C - Označení souboru/adresáře</h2>
+		<ul>
+			<li>dlouhý klik pro označení <b><i>adresáře</i></b></li>
+			<li>krátký klik pro označení <b><i>souboru</i></b></li>
+			<li><b>Označený adresář/soubor může být:</b>
+				<ul>
+					<li><i><b>Zašifrován nebo Dešifrován</b></i> (podle stavu označeného souboru) tlačítkem <a href="javascript:scrollToElement('anchor_e')">Šifrovat/Dešifrovat (E)</a></li>
+					<li><i><b>Přejmenován, Otevřen, Smazán nebo <a href="javascript:scrollToElement('anchor_more')">Smazán s Wipe</a></b></i> použitím tlačítka "Menu" na zařízení</li>
+					<li><i><b>Pozn.:</b></i> dlouhý klik na <b>soubor</b> nabídne přejmenování/smazání souboru (jako při označení)</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_d">
+		<h2>D - Zašifrovaný soubor</h2>
+		<ul>
+			<li>lze poznat podle: <i>koncovky<b> .enc</b></i>, fialového pozadí a ikony se zámkem</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_e">
+		<h2>E - Tlačítko Šifrovat/Dešifrovat</h2>
+		<ul>
+			<li>zašifruje/dešifruje (podle povahy označené položky) soubor nebo adresář</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_f">
+		<h2>F - Komprimace ON/OFF</h2>
+		<ul>
+			<li>aktivuje/deaktivuje kompresi dat</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_g">
+		<h2>G - Přímo do Hlavního Menu</h2>
+		<ul>
+			<li>přejde přímo do <i><b>Hlavního Menu</b></i> aplikace</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_h">
+		<h2>H - Tlačítko "Více"</h2>
+		<ul>
+			<li>Označený adresář/soubor může být <b>Přejmenován, Smazán, <a href="javascript:scrollToElement('anchor_more')">Smazán s Wipe</a> nebo Otevřen (soubor)</b></li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_i">
+		<h2>I - Zadání "Session" Hesla</h2>
+		<ul>
+			<li>Zadejte "Session" heslo a pracujte se soubory za použití tohoto hesla.</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_multiSelect">
+		<h2>Vícenásobné označení souborů</h2>
+		<ul>
+			<li>Vícenásobné označení souborů (dávkové zpracování) - <b>(součást PRO verze)</b>.</li>
+			<li>Lze aktivovat/deaktivovat v <b>Nastavení → Šifrování souborů: Vícenásobné označení</b></li>
+		</ul>
+		<br/>
+		<img src="../../img/fileencryptor_multiselect.png" style="max-width:320px"/>
+	</div>
+	
+	<div class="anchor" id="anchor_more">
+		<h2>Více...</h2>
+		<ul>
+			<li>proces šifrování/dešifrování může být zastaven tlačítkem "Zpět" na vašem zařízení</li>
+			<li><b>Wiping</b>
+				<ul>
+					<li>data jsou před smazáním fyzicky přepsána (takže je nelze obnovit)</li>
+					<li><b>upozornění:</b> Vzhledem k různým vyrovnávacím pamětem, realokačním mechanismům a wear-levelingu v moderních operačních systémech i na úrovni driverů/hardwaru, dochází k disproporci mezi skutečným (fyzickým) stavem média a stavem reportovaným (reportovaným aplikaci). Aplikace má tak vždy přístup pouze k "virtuální" podobě souborového systému. Funkce wipe tak nemusí být vždy a na všech zařízeních funkční na 100%.</li>
+				</ul>
+			</li>
+			<li>
+				<b>Ikony</b><br/>
+				<div class="delimiter">&nbsp;</div>
+				<table class="color">
+					<tr>
+						<td><img width="35px" height="31px" src="../../img/icons/directory.png"/></td>
+						<td>Adresář</td>
+					</tr>
+					<tr>
+						<td><img width="35px" height="31px" src="../../img/icons/directory_readonly.png"/></td>
+						<td>Adresář - pouze pro čtení</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/file.png"/></td>
+						<td>Soubor</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/file_readonly.png"/></td>
+						<td>Soubor - pouze pro čtení</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/file_enc.png"/></td>
+						<td>Šifrovaný soubor</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/file_enc_readonly.png"/></td>
+						<td>Šifrovaný soubor - pouze pro čtení</td>
+					</tr>
+					<tr>
+						<td><img width="32px" height="32px" src="../../img/icons/back_file.png"/></td>
+						<td>Zpět o úroveň výš</td>
+					</tr>
+				</table>
+				<div class="delimiter">&nbsp;</div>
+			</li>
+			<li><b>Nesprávné heslo</b>
+				<ul>
+					<li>data jsou šifrována za použití zadaného hesla a nelze je dešifrovat jinak, než použitím správného hesla</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="anchor" id="anchor_saf">
+		<h2>SAF Mód (Android 5+)</h2>
+		<span>V Androidu 4.4 (KitKat) se Google rozhodl, že odřízne 3rd-party aplikace (aplikace, které nejsou dodávané jako součást systému) od práva zápisu na externí média. Díky tomuto rozhodnutí přestala celá řada aplikací řádně fungovat. Po tlaku ze strany vývojářů a veřejnosti bylo do Androidu 5 integrováno kompromisní řešení - aplikace může zapisovat na externí média za pomocí SAF (Storage Access Framework).</span><br/>
+		<br/>
+		<b>První spuštění</b><br/>
+		<span>
+			<ul>
+				<li>Po spuštění se objeví "Directory picker", který vám umožní vybrat adresář/jednotku, se kterou chcete pracovat.</li>
+				<li>Klepněte na <b>More button</b> (pravý horní roh) a vyberte <b>Zobrazit SD kartu</b>.</li>
+				<li>Klepněte na <b>Menu button</b> (levý horní roh) a vyberte požadované úložiště.</li>
+				<li>Klepněte na <b>VYBERTE ADRESÁŘ</b>.</li>
+			</ul>
+		</span>
+		<br/>
+		<b>Omezení</b><br/>
+		<span>
+		Práce v SAF módu má jistá omezení:
+			<ul>
+				<li>Nelze uložit domovský adresář, nicméně poslední vybrané SAF URI je automaticky uloženo viz: <b>Tlačítko domovského adresáře → Posledně vybraný SAF adr.</b>.</li>
+				<li>Funkci Wipe nelze použít - Pokud je v nastavení aplikace aktivní volba "Smazat zdroje po zašifrování" soubory budou pouze smazány (bez wipe).</li>
+				<li>SAF mód omezuje výkon aplikace (obzvláště při práci s adresáři, které obsahují velký počet položek).</li>
+				<li>Funkce "Otevřít soubor" funguje pouze v případě, že je cílová aplikace schopna dekódovat SAF URI.</li>
+			</ul>
+		</span>
+	</div>
+	
+	<div class="anchor" id="anchor_faq">
+		<h2>Šifrování souborů FAQ</h2>
+			<b>Dotaz: <i>KitKat (Android 4.4) - Externí SD Karta pouze pro čtení - zpráva: EACCESS (Permission denied).</i></b>
+			<br/><br/>
+			<b>Odpověď: </b>  Android 4.4 nepovoluje zápis na externí SD kartu žádným aplikacím, s výjimkou předinstalovaných (výrobcem zařízení nebo system image). S tímto problémem bohužel nemůžeme nic dělat. Jediným řešením je ROOT zařízení a změna oprávnění, případně upgrade na Android 5 viz <a href="javascript:scrollToElement('anchor_saf')">SAF</a>.
+			<br/><br/>
+			Pro více informací použijte Google - něco jako: <code style="font-size: 125%;"><b>android 4.4 external card read only</b></code>
+			<br/><br/>
+			<b>Alternativa</b> - Vytvořte následující složku (na externí SD kartě):<br/>
+			<code style="font-size: 90%;"><b><font color="red">Android/data/<br/>com.paranoiaworks.unicus.android.sse</font></b></code><br/><br/>
+			Aplikace by měla mít práva pro zápis v této složce.		
+			<br/><br/>
+	</div>
+	
+	<div id="toMainMenu" class="gradient"><a href="/sse/~cs">&lt;&lt; Zpět do hlavního menu aplikace</a></div>
+	<div id="reserveSpace"></div>
+	<script language="JavaScript">
+		formatPage();
+		imageMapResize(document.getElementById("map_ID"));
+	</script>
+	
+</body>
+</html>

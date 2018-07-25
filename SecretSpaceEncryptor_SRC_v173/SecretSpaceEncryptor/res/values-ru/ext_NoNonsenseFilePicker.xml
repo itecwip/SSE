@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>	
+    <string name="nnfp_new_folder">Новая папка</string>
+    <string name="nnfp_create_folder_error">Не удалось создать папку</string>
+    <string name="nnfp_name">Имя</string>
+    <string name="nnfp_go_back">Назад</string>
+    <string name="nnfp_select_something_first">Пожалуйста, сначала выберите что-то</string>
+	<string name="nnfp_passwordDialog_doNotPastePassword">Не вставляйте пароли, содержащие не ASCII-символы - это может привести к непредсказуемым ситуациям.</string>
+	<string name="nnfp_thanksDialogA">Разработано:</string>
+	<string name="nnfp_thanksDialogB">Особая благодарность:</string>
+	<string name="nnfp_thanksDialogC">Перевод:</string>
+
+    <plurals
+        name="nnfp_select_dir">
+        <item quantity="one">Выберите каталог</item>
+        <item quantity="other">Выберите каталоги</item>
+    </plurals>
+
+    <plurals
+        name="nnfp_select_file">
+        <item quantity="one">Выберите файл</item>
+        <item quantity="other">Выберите файлы</item>
+    </plurals>
+
+    <plurals
+        name="nnfp_select_dir_or_file">
+        <item quantity="one">Выберите файл или каталог</item>
+        <item quantity="other">Выберите файлы или каталоги</item>
+    </plurals>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/SHD_rootLayout"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:padding="5dp"
+	android:background="@drawable/d_transparent"
+	android:layout_gravity="center"
+	>
+	<RelativeLayout
+		android:id="@+id/SHD_innerLayout"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="2dp"
+		android:background="@drawable/d_corner_r5"
+		>
+		<Button
+			android:id="@+id/SHD_exit"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentTop="true"
+			android:layout_marginTop="6dp"
+			android:layout_marginRight="8dp"
+			android:background="@drawable/d_button_exit"
+			/>
+		<FrameLayout
+			android:layout_height="fill_parent"
+			android:layout_width="fill_parent"
+			>
+			<WebView
+				android:id="@+id/SHD_webView"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:scrollbars="vertical"
+				android:fadeScrollbars="false"
+				android:layout_margin="0dp"
+				android:padding="0dp"
+				/>
+		</FrameLayout>
+	</RelativeLayout>
+</RelativeLayout>
